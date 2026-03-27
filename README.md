@@ -1,5 +1,7 @@
 # ROS 2 기반 SPAS 시스템 구현
 
+https://www.notion.so/2-31c59c45d04280948bd3eb8dbf567791?source=copy_link
+
 > **산학협력프로젝트** · 발레오모빌리티코리아 × 경북대학교 컴퓨터학부  
 > Project Plan · 2026
 
