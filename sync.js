@@ -9,35 +9,26 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 async function sync() {
   console.log("🔄 Notion 동기화 시작...");
 
-  // docs 폴더 없으면 생성
   if (!fs.existsSync("docs")) fs.mkdirSync("docs");
 
-  // Notion DB에서 페이지 목록 가져오기
-  const response = await notion.databases.query({
-    database_id: process.env.NOTION_DATABASE_ID,
-  });
+  const pageId = process.env.NOTION_DATABASE_ID; // 변수명 재사용
 
-  console.log(`📄 총 ${response.results.length}개 페이지 발견`);
+  // 페이지 제목 가져오기
+  const page = await notion.pages.retrieve({ page_id: pageId });
+  const title =
+    page.properties?.title?.title?.[0]?.plain_text ||
+    page.properties?.Name?.title?.[0]?.plain_text ||
+    "untitled";
 
-  for (const page of response.results) {
-    // 페이지 제목 추출
-    const title =
-      page.properties?.Name?.title?.[0]?.plain_text ||
-      page.properties?.제목?.title?.[0]?.plain_text ||
-      "untitled";
+  // 페이지 내용 → Markdown 변환
+  const mdBlocks = await n2m.pageToMarkdown(pageId);
+  const mdContent = n2m.toMarkdownString(mdBlocks);
 
-    // Notion 페이지 → Markdown 변환
-    const mdBlocks = await n2m.pageToMarkdown(page.id);
-    const mdContent = n2m.toMarkdownString(mdBlocks);
+  const fileName = title.replace(/[\/\\:*?"<>|]/g, "_") + ".md";
+  const filePath = path.join("docs", fileName);
 
-    // 파일명 생성 (특수문자 제거)
-    const fileName = title.replace(/[\/\\:*?"<>|]/g, "_") + ".md";
-    const filePath = path.join("docs", fileName);
-
-    // 파일 저장
-    fs.writeFileSync(filePath, `# ${title}\n\n` + mdContent.parent);
-    console.log(`✅ 저장 완료: ${fileName}`);
-  }
+  fs.writeFileSync(filePath, `# ${title}\n\n` + mdContent.parent);
+  console.log(`✅ 저장 완료: ${fileName}`);
 
   console.log("🎉 동기화 완료!");
 }
