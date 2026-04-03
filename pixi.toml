@@ -1,0 +1,31 @@
+[workspace]
+authors = ["lynx2001 <kangaroo125@naver.com>"]
+channels = ["conda-forge", "robostack-staging"]
+name = "Auto_RC"
+platforms = ["osx-arm64", "osx-64", "win-64"]
+version = "0.1.0"
+
+[tasks]
+sim = "ros2 launch Auto_RC sim.launch.py"
+slam = "ros2 launch slam_toolbox online_async_launch.py"
+nav = "ros2 launch nav2_bringup navigation_launch.py"
+
+[dependencies]
+ros-humble-desktop = "*"
+ros-humble-ros-gz = "*"
+ros-humble-navigation2 = "*"
+ros-humble-nav2-bringup = "*"
+ros-humble-slam-toolbox = "*"
+ros-humble-robot-localization = "*"
+ros-humble-ackermann-msgs = "*"
+ros-humble-micro-ros-agent = "*"
+ros-humble-v4l2-camera = "*"
+ros-humble-image-transport = "*"
+ros-humble-cv-bridge = "*"
+ros-humble-rplidar-ros = "*"
+ros-humble-rviz2 = "*"
+ros-humble-rqt = "*"
+compilers = "*"
+cmake = "*"
+ninja = "*"
+pkg-config = "*"
