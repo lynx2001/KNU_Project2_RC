@@ -2,7 +2,7 @@
 authors = ["lynx2001 <kangaroo125@naver.com>"]
 channels = ["conda-forge", "robostack-staging"]
 name = "Auto_RC"
-platforms = ["osx-arm64", "osx-64", "win-64"]
+platforms = ["osx-arm64", "osx-64", "linux-64"]
 version = "0.1.0"
 
 [tasks]
