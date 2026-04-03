@@ -6,7 +6,7 @@ import xacro
 
 def generate_launch_description():
     # 패키지 이름 설정 (폴더 이름에 맞게 수정 필요할 수 있음)
-    pkg_name = 'Auto_RC'
+    pkg_name = 'auto_rc'
     
     # xacro 파일 경로 가져오기
     xacro_file = os.path.join(get_package_share_directory(pkg_name), 'urdf', 'auto_rc.urdf.xacro')
