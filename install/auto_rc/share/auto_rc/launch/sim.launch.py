@@ -1,1 +1,0 @@
-/Users/woong/source/Auto_RC/src/auto_rc/launch/sim.launch.py
