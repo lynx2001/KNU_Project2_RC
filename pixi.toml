@@ -6,9 +6,11 @@ platforms = ["osx-arm64", "osx-64", "linux-64"]
 version = "0.1.0"
 
 [tasks]
-sim = "ros2 launch Auto_RC sim.launch.py"
-slam = "ros2 launch slam_toolbox online_async_launch.py"
-nav = "ros2 launch nav2_bringup navigation_launch.py"
+build = "colcon build --symlink-install"
+
+sim = "zsh -c 'source install/setup.zsh && ros2 launch auto_rc sim.launch.py'"
+slam = "zsh -c 'source install/setup.zsh && ros2 launch slam_toolbox online_async_launch.py'"
+nav = "zsh -c 'source install/setup.zsh && ros2 launch nav2_bringup navigation_launch.py'"
 
 [dependencies]
 ros-humble-desktop = "*"
@@ -27,6 +29,10 @@ compilers = "*"
 cmake = "*"
 ninja = "*"
 pkg-config = "*"
+ros-humble-joint-state-publisher-gui = ">=2.4.0,<3"
+colcon-ros = ">=0.5.0,<0.6"
+colcon-common-extensions = ">=0.3.0,<0.4"
+
 
 [target.linux-64.dependencies]
 ros-humble-v4l2-camera = "*"

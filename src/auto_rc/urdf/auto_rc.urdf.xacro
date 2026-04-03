@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<robot name="auto_rc" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <material name="gray"><color rgba="0.5 0.5 0.5 1.0"/></material>
+  <material name="black"><color rgba="0.1 0.1 0.1 1.0"/></material>
+  <material name="blue"><color rgba="0 0 1 1"/></material>
+  <material name="red"><color rgba="1 0 0 1"/></material>
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.4 0.2 0.1"/>
+      </geometry>
+      <material name="gray"/>
+    </visual>
+  </link>
+
+  <xacro:macro name="rear_wheel" params="prefix y_reflect">
+    <link name="${prefix}_rear_wheel">
+      <visual>
+        <geometry>
+          <cylinder radius="0.05" length="0.04"/>
+        </geometry>
+        <material name="black"/>
+      </visual>
+    </link>
+    <joint name="${prefix}_rear_wheel_joint" type="continuous">
+      <parent link="base_link"/>
+      <child link="${prefix}_rear_wheel"/>
+      <origin xyz="-0.15 ${y_reflect * 0.12} 0" rpy="-1.5707 0 0"/>
+      <axis xyz="0 0 1"/>
+    </joint>
+  </xacro:macro>
+
+  <xacro:rear_wheel prefix="left" y_reflect="1" />
+  <xacro:rear_wheel prefix="right" y_reflect="-1" />
+
+  <xacro:macro name="front_steering" params="prefix y_reflect">
+    <link name="${prefix}_steering_hinge" />
+    <joint name="${prefix}_steering_joint" type="revolute">
+      <parent link="base_link"/>
+      <child link="${prefix}_steering_hinge"/>
+      <origin xyz="0.15 ${y_reflect * 0.12} 0" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-0.785" upper="0.785" effort="10.0" velocity="5.0"/>
+    </joint>
+
+    <link name="${prefix}_front_wheel">
+      <visual>
+        <geometry>
+          <cylinder radius="0.05" length="0.04"/>
+        </geometry>
+        <material name="black"/>
+      </visual>
+    </link>
+    <joint name="${prefix}_front_wheel_joint" type="continuous">
+      <parent link="${prefix}_steering_hinge"/>
+      <child link="${prefix}_front_wheel"/>
+      <origin xyz="0 0 0" rpy="-1.5707 0 0"/>
+      <axis xyz="0 0 1"/>
+    </joint>
+  </xacro:macro>
+
+  <xacro:front_steering prefix="left" y_reflect="1" />
+  <xacro:front_steering prefix="right" y_reflect="-1" />
+
+  <link name="lidar_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.035" length="0.02"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+  <joint name="lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+    <origin xyz="0.1 0 0.06" rpy="0 0 0"/>
+  </joint>
+
+  <link name="camera_link">
+    <visual>
+      <geometry>
+        <box size="0.02 0.04 0.02"/>
+      </geometry>
+      <material name="red"/>
+    </visual>
+  </link>
+  <joint name="camera_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <origin xyz="0.2 0 0.02" rpy="0 0 0"/>
+  </joint>
+
+</robot>
