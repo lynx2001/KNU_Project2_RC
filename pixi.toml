@@ -32,6 +32,7 @@ pkg-config = "*"
 ros-humble-joint-state-publisher-gui = ">=2.4.0,<3"
 colcon-ros = ">=0.5.0,<0.6"
 colcon-common-extensions = ">=0.3.0,<0.4"
+ros-humble-gazebo-ros-pkgs = "*"
 
 
 [target.linux-64.dependencies]

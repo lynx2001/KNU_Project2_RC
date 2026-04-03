@@ -1,29 +1,64 @@
 <?xml version="1.0"?>
 <robot name="auto_rc" xmlns:xacro="http://ros.org/wiki/xacro">
 
+  <xacro:macro name="box_inertia" params="m w h d">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="${m}"/>
+      <inertia ixx="${(m/12) * (h*h + d*d)}" ixy="0.0" ixz="0.0" 
+               iyy="${(m/12) * (w*w + d*d)}" iyz="0.0" 
+               izz="${(m/12) * (w*w + h*h)}"/>
+    </inertial>
+  </xacro:macro>
+
+  <xacro:macro name="cylinder_inertia" params="m r h">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="${m}"/>
+      <inertia ixx="${(m/12) * (3*r*r + h*h)}" ixy="0" ixz="0"
+               iyy="${(m/12) * (3*r*r + h*h)}" iyz="0"
+               izz="${(m/2) * (r*r)}"/>
+    </inertial>
+  </xacro:macro>
+
+  <xacro:macro name="dummy_inertia">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </xacro:macro>
+
   <material name="gray"><color rgba="0.5 0.5 0.5 1.0"/></material>
   <material name="black"><color rgba="0.1 0.1 0.1 1.0"/></material>
-  <material name="blue"><color rgba="0 0 1 1"/></material>
-  <material name="red"><color rgba="1 0 0 1"/></material>
+
+  <link name="base_footprint"/>
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0.05" rpy="0 0 0"/> 
+  </joint>
 
   <link name="base_link">
     <visual>
-      <geometry>
-        <box size="0.4 0.2 0.1"/>
-      </geometry>
+      <geometry><box size="0.4 0.2 0.1"/></geometry>
       <material name="gray"/>
     </visual>
+    <collision>
+      <geometry><box size="0.4 0.2 0.1"/></geometry>
+    </collision>
+    <xacro:box_inertia m="2.0" w="0.4" h="0.2" d="0.1"/>
   </link>
 
   <xacro:macro name="rear_wheel" params="prefix y_reflect">
     <link name="${prefix}_rear_wheel">
       <visual>
-        <geometry>
-          <cylinder radius="0.05" length="0.04"/>
-        </geometry>
+        <geometry><cylinder radius="0.05" length="0.04"/></geometry>
         <material name="black"/>
       </visual>
-    </link>
+      <collision>
+        <geometry><cylinder radius="0.05" length="0.04"/></geometry>
+      </collision>
+      <xacro:cylinder_inertia m="0.2" r="0.05" h="0.04"/> </link>
     <joint name="${prefix}_rear_wheel_joint" type="continuous">
       <parent link="base_link"/>
       <child link="${prefix}_rear_wheel"/>
@@ -36,7 +71,9 @@
   <xacro:rear_wheel prefix="right" y_reflect="-1" />
 
   <xacro:macro name="front_steering" params="prefix y_reflect">
-    <link name="${prefix}_steering_hinge" />
+    
+    <link name="${prefix}_steering_hinge">
+      <xacro:dummy_inertia/> </link>
     <joint name="${prefix}_steering_joint" type="revolute">
       <parent link="base_link"/>
       <child link="${prefix}_steering_hinge"/>
@@ -47,12 +84,12 @@
 
     <link name="${prefix}_front_wheel">
       <visual>
-        <geometry>
-          <cylinder radius="0.05" length="0.04"/>
-        </geometry>
+        <geometry><cylinder radius="0.05" length="0.04"/></geometry>
         <material name="black"/>
       </visual>
-    </link>
+      <collision> <geometry><cylinder radius="0.05" length="0.04"/></geometry>
+      </collision>
+      <xacro:cylinder_inertia m="0.2" r="0.05" h="0.04"/> </link>
     <joint name="${prefix}_front_wheel_joint" type="continuous">
       <parent link="${prefix}_steering_hinge"/>
       <child link="${prefix}_front_wheel"/>
@@ -64,32 +101,23 @@
   <xacro:front_steering prefix="left" y_reflect="1" />
   <xacro:front_steering prefix="right" y_reflect="-1" />
 
-  <link name="lidar_link">
-    <visual>
-      <geometry>
-        <cylinder radius="0.035" length="0.02"/>
-      </geometry>
-      <material name="blue"/>
-    </visual>
-  </link>
-  <joint name="lidar_joint" type="fixed">
-    <parent link="base_link"/>
-    <child link="lidar_link"/>
-    <origin xyz="0.1 0 0.06" rpy="0 0 0"/>
-  </joint>
 
-  <link name="camera_link">
-    <visual>
-      <geometry>
-        <box size="0.02 0.04 0.02"/>
-      </geometry>
-      <material name="red"/>
-    </visual>
-  </link>
-  <joint name="camera_joint" type="fixed">
-    <parent link="base_link"/>
-    <child link="camera_link"/>
-    <origin xyz="0.2 0 0.02" rpy="0 0 0"/>
-  </joint>
-
+  <gazebo>
+    <plugin filename="libignition-gazebo-ackermann-steering-system.so" 
+            name="ignition::gazebo::systems::AckermannSteering">
+      <left_joint>left_rear_wheel_joint</left_joint>
+      <right_joint>right_rear_wheel_joint</right_joint>
+      <left_steering_joint>left_steering_joint</left_steering_joint>
+      <right_steering_joint>right_steering_joint</right_steering_joint>
+      
+      <wheel_base>0.30</wheel_base>
+      <wheel_separation>0.24</wheel_separation>
+      <wheel_radius>0.05</wheel_radius>
+      <steering_limit>0.785</steering_limit> <topic>/cmd_vel</topic>
+      <odom_topic>/odom</odom_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_footprint</child_frame_id>
+      <odom_publish_frequency>50</odom_publish_frequency>
+    </plugin>
+  </gazebo>
 </robot>
