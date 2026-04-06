@@ -6,7 +6,6 @@ const path = require("path");
 const notion = new Client({ auth: process.env.NOTION_TOKEN });
 const n2m = new NotionToMarkdown({ notionClient: notion });
 
-// 페이지 제목 가져오기
 async function getTitle(page) {
   return (
     page.properties?.title?.title?.[0]?.plain_text ||
@@ -15,12 +14,9 @@ async function getTitle(page) {
   );
 }
 
-// 재귀적으로 페이지 + 하위 페이지 동기화
 async function syncPage(pageId, dirPath) {
-  // 폴더 생성
   if (!fs.existsSync(dirPath)) fs.mkdirSync(dirPath, { recursive: true });
 
-  // 현재 페이지 내용 저장
   const page = await notion.pages.retrieve({ page_id: pageId });
   const title = await getTitle(page);
   const mdBlocks = await n2m.pageToMarkdown(pageId);
@@ -31,14 +27,33 @@ async function syncPage(pageId, dirPath) {
   fs.writeFileSync(filePath, `# ${title}\n\n` + mdContent.parent);
   console.log(`✅ 저장: ${filePath}`);
 
-  // 하위 블록 중 child_page 찾기
-  const blocks = await notion.blocks.children.list({ block_id: pageId });
-  for (const block of blocks.results) {
-    if (block.type === "child_page") {
-      const childTitle = block.child_page.title.replace(/[\/\\:*?"<>|]/g, "_");
-      const childDir = path.join(dirPath, childTitle);
-      await syncPage(block.id, childDir);  // 재귀 호출
+  // 하위 블록 전체 가져오기 (페이지 100개까지)
+  let cursor = undefined;
+  while (true) {
+    const response = await notion.blocks.children.list({
+      block_id: pageId,
+      start_cursor: cursor,
+      page_size: 100,
+    });
+
+    for (const block of response.results) {
+      // child_page 타입
+      if (block.type === "child_page") {
+        const childTitle = block.child_page.title.replace(/[\/\\:*?"<>|]/g, "_");
+        const childDir = path.join(dirPath, childTitle);
+        await syncPage(block.id, childDir);
+      }
+      // child_database 타입 (표 형태)
+      else if (block.type === "child_database") {
+        const childTitle = block.child_database.title.replace(/[\/\\:*?"<>|]/g, "_") || "database";
+        const childDir = path.join(dirPath, childTitle);
+        if (!fs.existsSync(childDir)) fs.mkdirSync(childDir, { recursive: true });
+        console.log(`📊 DB 폴더 생성: ${childDir}`);
+      }
     }
+
+    if (!response.has_more) break;
+    cursor = response.next_cursor;
   }
 }
 
