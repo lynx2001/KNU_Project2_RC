@@ -6,7 +6,8 @@ const path = require("path");
 const notion = new Client({ auth: process.env.NOTION_TOKEN });
 const n2m = new NotionToMarkdown({ notionClient: notion });
 
-async function getTitle(page) {
+async function getTitle(pageId) {
+  const page = await notion.pages.retrieve({ page_id: pageId });
   return (
     page.properties?.title?.title?.[0]?.plain_text ||
     page.properties?.Name?.title?.[0]?.plain_text ||
@@ -17,8 +18,7 @@ async function getTitle(page) {
 async function syncPage(pageId, dirPath) {
   if (!fs.existsSync(dirPath)) fs.mkdirSync(dirPath, { recursive: true });
 
-  const page = await notion.pages.retrieve({ page_id: pageId });
-  const title = await getTitle(page);
+  const title = await getTitle(pageId);
   const mdBlocks = await n2m.pageToMarkdown(pageId);
   const mdContent = n2m.toMarkdownString(mdBlocks);
 
@@ -27,7 +27,6 @@ async function syncPage(pageId, dirPath) {
   fs.writeFileSync(filePath, `# ${title}\n\n` + mdContent.parent);
   console.log(`✅ 저장: ${filePath}`);
 
-  // 하위 블록 전체 가져오기 (페이지 100개까지)
   let cursor = undefined;
   while (true) {
     const response = await notion.blocks.children.list({
@@ -37,15 +36,21 @@ async function syncPage(pageId, dirPath) {
     });
 
     for (const block of response.results) {
-      // child_page 타입
       if (block.type === "child_page") {
+        // 직접 포함된 하위 페이지
         const childTitle = block.child_page.title.replace(/[\/\\:*?"<>|]/g, "_");
         const childDir = path.join(dirPath, childTitle);
         await syncPage(block.id, childDir);
-      }
-      // child_database 타입 (표 형태)
-      else if (block.type === "child_database") {
-        const childTitle = block.child_database.title.replace(/[\/\\:*?"<>|]/g, "_") || "database";
+
+      } else if (block.type === "link_to_page" && block.link_to_page?.page_id) {
+        // 링크로 삽입된 페이지 ← 이게 핵심 추가!
+        const linkedPageId = block.link_to_page.page_id;
+        const linkedTitle = (await getTitle(linkedPageId)).replace(/[\/\\:*?"<>|]/g, "_");
+        const childDir = path.join(dirPath, linkedTitle);
+        await syncPage(linkedPageId, childDir);
+
+      } else if (block.type === "child_database") {
+        const childTitle = (block.child_database.title || "database").replace(/[\/\\:*?"<>|]/g, "_");
         const childDir = path.join(dirPath, childTitle);
         if (!fs.existsSync(childDir)) fs.mkdirSync(childDir, { recursive: true });
         console.log(`📊 DB 폴더 생성: ${childDir}`);
