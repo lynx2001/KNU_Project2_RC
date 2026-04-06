@@ -44,8 +44,18 @@ async function processBlocks(blocks, dirPath) {
       const childTitle = (block.child_database.title || "database").replace(/[\/\\:*?"<>|]/g, "_");
       const childDir = path.join(dirPath, childTitle);
       if (!fs.existsSync(childDir)) fs.mkdirSync(childDir, { recursive: true });
-      console.log(`📊 DB 폴더 생성: ${childDir}`);
-
+    
+      // DB 안의 페이지들 가져오기
+      const dbPages = await retry(() => notion.databases.query({ database_id: block.id }));
+      for (const dbPage of dbPages.results) {
+        const dbPageTitle = (
+          dbPage.properties?.Name?.title?.[0]?.plain_text ||
+          dbPage.properties?.title?.title?.[0]?.plain_text ||
+          "untitled"
+        ).replace(/[\/\\:*?"<>|]/g, "_");
+        const dbPageDir = path.join(childDir, dbPageTitle);
+        await syncPage(dbPage.id, dbPageDir);
+      }
     } else if (block.type === "column_list" || block.type === "column") {
       // 컬럼 레이아웃 재귀 탐색
       const children = await retry(() => notion.blocks.children.list({ block_id: block.id }));
