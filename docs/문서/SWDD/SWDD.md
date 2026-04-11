@@ -491,7 +491,7 @@ WSL2 터미널에서 라즈베리 파이에 SSH 접속이 되는지 확인합니
 
 
 ```bash
-ssh ubuntu@192.168.0.15   # 라즈베리 파이 IP로 교체
+ssh ubuntu@192.168.236.18
 ```
 
 
@@ -927,11 +927,7 @@ sudo apt install -y software-properties-common curl
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
   -o /usr/share/keyrings/ros-archive-keyring.gpg
 
-echo "deb [arch=$(dpkg --print-architecture)\
-  signed-by=/usr/share/keyrings/ros-archive-keyring.gpg]\
-  http://packages.ros.org/ros2/ubuntu\
-$(. /etc/os-release && echo $UBUNTU_CODENAME) main" \
-  | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
 sudo apt update
 ```
@@ -3065,7 +3061,7 @@ hostname -I
 	LiDAR 센서는 오직 지형 맵핑에만 집중하며, 복잡한 평행주차 궤적은 하이브리드 A* 알고리즘 노드가 전담하도록 설계하여 시스템 연산 효율 극대화
 
 
-	![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/cb5df3d6-5097-4d01-b668-27d53bd33b05/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466URI6227B%2F20260410%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260410T213546Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGwaCXVzLXdlc3QtMiJHMEUCIHZ2iFbUWmVReGt2tQw%2FNsG9J1iQ63Fs8oG7%2Fmt6zhGHAiEA00SsazW6Vol0OPQ5K%2FxPpVT04LrpSPgJOrDSRKFR5FEq%2FwMINRAAGgw2Mzc0MjMxODM4MDUiDIMTLsRr2qrB6r2mISrcA5%2BSfHmQWNtqUMFw0Giu4Gk20vuY1LMqbaDlItHopY0gODLkeks3qtqibQVq8yMs5H0XVeNpgR0%2B%2BmtAmWGde%2FMrLjekeGKetLO3M3qKRrTNM3nxiy%2FXPONy2eklkUgKUHo6xWfCmLLr1ZIiSQlelG%2FBQPsHBgja4HY5svXxHPrpy0zMYkw5XRM%2FPBSbOYstvihCLk6kccd44KlbCEMY5P5ZbE4LraGw3RHaHhnpFz%2FjhNLIrSnbisZefNQ78C6CXL0fmhqGuMdqouIJeqZ%2B7sjWCiX1oxuqMhIpn81Xl%2F9kS2Tv9uHsinoN4QCkTZzXuP9XaEYDeakqI3UXqi1XZ2M0xhckTcDLILZOxlhH9hp%2Fz%2B0GEc7odVHHnj4JDBnFKciLANxw7MNWL6Ytzj4vcuuDZ1gzotMVNMP0DRztJC6n9bkccuE%2FeAVNHNTWGkFtMH9XTHY7DpqDlEJRmyQ%2FZJPbaeR2g1csnpF8peXTCc%2FRXCms6mZWa6V9pffAKOVRmrzOfnJ1ZU6smKRzga3UfBVE0XEdlbU4T7f49%2FKiOekRir1fwiQY8MiWF7zSbi7p9C9K%2BzXWvI9PCGBzR2V7b7LyC3%2F7pWNNulpmMyu%2BgE3j%2Bp4ucbUxf8ED0W2rMMmr5c4GOqUBLUxJeuURyO12OrkDinXNds6GvmYzf4ri99sAPjb98SZBwZX1DAHVNosVA2C8QP4vLqnnIRbf7zlZWwUFixgMA4xI4g8wdVeMsnzpS1iSb%2F9HLkoa6KoqobM9D7DgiZCVU7Hi7csYZ3xOl38OIshpOwczyMZpDiFL3pidVWtMNJlvVsCx%2B7lhhm4D9Fu9DbEZSNpym4hJDam3qPGY%2BcRJWgO%2BS3aL&X-Amz-Signature=61ea1030f77a1526667c6a2501fe41042536e8e30e1edc44d13663c45939be5d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+	![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/cb5df3d6-5097-4d01-b668-27d53bd33b05/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WPAD3EDP%2F20260411%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260411T212905Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCxkdD0gBC2JcI72gLe9UOZD1vLvVeboItiuAk%2Fry34HwIgXdxUfVMpwAJaGnLru%2FbGCOW%2BMzd6LYRRseCh52ApPMEq%2FwMIThAAGgw2Mzc0MjMxODM4MDUiDKP1R%2BJpCCpsljS7gircAyCKzMvQvh%2BpG9BrWHtAsp9v1QG8Cp14Nj1WGs%2BYEPfDHEN3Y5Rq1esTZhcQZAl%2F3lTraRL8oL3oDRYcmC5p7yVIL8nTDb9DNuBr4ds%2Bv3SmW3anv2Y7x3lKcH7oN8hlRDaJTPZsbbSWEqsNhltTGZLEQa1qIVG8dA3ZMC9W%2Bmrzo9QB5D1VoUdPnUCPOl1UNPxjq6IwKI22%2B52GX4Bl5TbrpYLnmrl%2BjBbL%2FSnyimbchJDhtcLgmFFPsINaeGFw5JWI930GyJH9Od02RmVxZP3KaFthWBF8mZh0pN0m8ydrEE05xg6Y06Bv5yKILk%2BSvU8t2f3y9OZ7X%2BD0BhS5dvgCRBdaqvxe1UerYDDfd4%2Fypzqyt0%2BnuT3PuyWiVzkAOgnWO83zwzhaJ4TCCYZbLuQC481pRu8lEvKqgBqphOZ%2B9ZFg4RvKP%2FYs2ksnDbi2wLCnMdLAKnt%2FEDPit8ufunn%2Bxf%2FMKz1suGHs%2FWJ9%2BN4swVjpuBpkUZZ9rFZkSrMcwwMmlx1NjDCHdbrWwVmFVkkyw5c1CKo29o3UCgu0d2A%2BdJldNTslMSd8uC478DW1AgkDHZ2f%2FVQj5TWMAThrc1Qg3aqPJuvrXKykZNuRWoy5YohOQHzrP2xZ4j8iML7x6s4GOqUBkRSHrjhp2HiB9BSHp89P5agjJpJgUJhhuHSttt%2BHarDD8sOuiZjVJvUSojaWRF4BaplDMhfrZ562hV6H9lHNRcNskJEC4p2f8f4sFtTAHF62dR3JVQp32Mn%2FicVVtKao78WL79%2FFz9W3uqL9tutBkI7InH4W9EbsnN7%2F8kBO8zD%2BROA8fVZdLYqHLGtzk5d4t4YgPvbt%2Fpk8pIr%2Fr1EpPBobjFXa&X-Amz-Signature=3ddd269615c0b9629b88807312d21ac659dd5b4d859aa4164d9bd216f2cf9282&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 
 - Pi Camera v2
 - 초음파 센서

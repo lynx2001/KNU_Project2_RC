@@ -257,7 +257,7 @@ WSL2 터미널에서 라즈베리 파이에 SSH 접속이 되는지 확인합니
 
 
 ```bash
-ssh ubuntu@192.168.0.15   # 라즈베리 파이 IP로 교체
+ssh ubuntu@192.168.236.18
 ```
 
 
@@ -693,11 +693,7 @@ sudo apt install -y software-properties-common curl
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
   -o /usr/share/keyrings/ros-archive-keyring.gpg
 
-echo "deb [arch=$(dpkg --print-architecture)\
-  signed-by=/usr/share/keyrings/ros-archive-keyring.gpg]\
-  http://packages.ros.org/ros2/ubuntu\
-$(. /etc/os-release && echo $UBUNTU_CODENAME) main" \
-  | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
 sudo apt update
 ```
