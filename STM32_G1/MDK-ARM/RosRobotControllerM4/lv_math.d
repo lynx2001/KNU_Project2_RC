@@ -1,0 +1,9 @@
+rosrobotcontrollerm4\lv_math.o: ..\Third_Party\LVGL\src\lv_misc\lv_math.c
+rosrobotcontrollerm4\lv_math.o: ..\Third_Party\LVGL\src\lv_misc\lv_math.h
+rosrobotcontrollerm4\lv_math.o: ..\Third_Party\LVGL\src\lv_misc\../lv_conf_internal.h
+rosrobotcontrollerm4\lv_math.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+rosrobotcontrollerm4\lv_math.o: ..\Third_Party\LVGL\src\lv_misc\../lv_conf_kconfig.h
+rosrobotcontrollerm4\lv_math.o: ../Third_Party/LVGL/lv_conf.h
+rosrobotcontrollerm4\lv_math.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+rosrobotcontrollerm4\lv_math.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+rosrobotcontrollerm4\lv_math.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

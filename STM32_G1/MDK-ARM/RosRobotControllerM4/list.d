@@ -1,0 +1,12 @@
+rosrobotcontrollerm4\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/list.c
+rosrobotcontrollerm4\list.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+rosrobotcontrollerm4\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+rosrobotcontrollerm4\list.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+rosrobotcontrollerm4\list.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+rosrobotcontrollerm4\list.o: ../Core/Inc/FreeRTOSConfig.h
+rosrobotcontrollerm4\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+rosrobotcontrollerm4\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+rosrobotcontrollerm4\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+rosrobotcontrollerm4\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+rosrobotcontrollerm4\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+rosrobotcontrollerm4\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

@@ -1,0 +1,5 @@
+../Third_Party/lvgl/src/lv_hal/../lv_misc/lv_color.h:583:26:lv_color_make	16	static
+../Third_Party/lvgl/src/lv_hal/../lv_misc/lv_color.h:588:26:lv_color_hex	16	static
+../Third_Party/lvgl/src/lv_core/lv_disp.h:181:20:lv_scr_load	16	static
+../Hiwonder/LVGL_UI/gui_guider.c:11:6:init_scr_del_flag	16	static
+../Hiwonder/LVGL_UI/gui_guider.c:20:6:setup_ui	40	static

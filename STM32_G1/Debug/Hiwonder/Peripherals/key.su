@@ -1,0 +1,3 @@
+../Hiwonder/Peripherals/key.c:5:13:default_callback	16	static
+../Hiwonder/Peripherals/key.c:20:6:key_refresh	24	static
+../Hiwonder/Peripherals/key.c:94:6:key_obj_init	16	static

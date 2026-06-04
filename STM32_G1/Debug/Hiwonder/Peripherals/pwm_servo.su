@@ -1,0 +1,4 @@
+../Hiwonder/Peripherals/pwm_servo.c:15:6:pwm_servo_duty_compare	16	static
+../Hiwonder/Peripherals/pwm_servo.c:43:6:pwm_servo_set_position	24	static
+../Hiwonder/Peripherals/pwm_servo.c:52:6:pwm_servo_set_offset	16	static
+../Hiwonder/Peripherals/pwm_servo.c:58:6:pwm_servo_object_init	16	static

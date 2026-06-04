@@ -1,0 +1,7 @@
+../Hiwonder/Chassis/mecanum_chassis.c:8:21:linear_speed_to_rps	16	static
+../Hiwonder/Chassis/mecanum_chassis.c:13:6:mecanum_chassis_set_velocity	56	static
+../Hiwonder/Chassis/mecanum_chassis.c:42:6:mecanum_chassis_set_xy	48	static
+../Hiwonder/Chassis/mecanum_chassis.c:68:13:stop	16	static
+../Hiwonder/Chassis/mecanum_chassis.c:73:13:set_velocity	24	static
+../Hiwonder/Chassis/mecanum_chassis.c:78:13:set_velocity_radius	32	static
+../Hiwonder/Chassis/mecanum_chassis.c:90:6:mecanum_chassis_object_init	16	static

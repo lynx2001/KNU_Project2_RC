@@ -1,0 +1,4 @@
+Third_Party/U8g2/u8g2_ll_hvline.o: ../Third_Party/U8g2/u8g2_ll_hvline.c \
+ ../Third_Party/U8g2/u8g2.h ../Third_Party/U8g2/u8x8.h
+../Third_Party/U8g2/u8g2.h:
+../Third_Party/U8g2/u8x8.h:

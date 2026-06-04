@@ -1,0 +1,4 @@
+../Third_Party/LVGL/src/../src/lv_hal/../lv_misc/lv_color.h:583:26:lv_color_make	16	static
+../Third_Party/LVGL/src/../src/lv_core/lv_obj_style_dec.h:113:1:lv_style_set_bg_color	16	static
+../Third_Party/LVGL/src/../src/lv_core/lv_obj_style_dec.h:115:1:lv_style_set_bg_opa	16	static
+../Hiwonder/LVGL_UI/setup_scr_screen_empty.c:13:6:setup_scr_screen_empty	16	static

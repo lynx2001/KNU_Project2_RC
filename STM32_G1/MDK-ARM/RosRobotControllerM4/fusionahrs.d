@@ -1,0 +1,9 @@
+rosrobotcontrollerm4\fusionahrs.o: ..\Third_Party\Fusion\Fusion\FusionAhrs.c
+rosrobotcontrollerm4\fusionahrs.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+rosrobotcontrollerm4\fusionahrs.o: ..\Third_Party\Fusion\Fusion\FusionAhrs.h
+rosrobotcontrollerm4\fusionahrs.o: ..\Third_Party\Fusion\Fusion\FusionConvention.h
+rosrobotcontrollerm4\fusionahrs.o: ..\Third_Party\Fusion\Fusion\FusionMath.h
+rosrobotcontrollerm4\fusionahrs.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+rosrobotcontrollerm4\fusionahrs.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+rosrobotcontrollerm4\fusionahrs.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+rosrobotcontrollerm4\fusionahrs.o: ..\Third_Party\Fusion\Fusion\FusionCompass.h

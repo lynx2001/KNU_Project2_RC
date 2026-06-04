@@ -1,0 +1,7 @@
+../Hiwonder/USB_HOST/usbh_hiwonder_hid.c:37:27:USBH_HID_InterfaceInit	56	static
+../Hiwonder/USB_HOST/usbh_hiwonder_hid.c:137:27:USBH_HID_InterfaceDeInit	24	static
+../Hiwonder/USB_HOST/usbh_hiwonder_hid.c:168:27:USBH_HID_ClassRequest	24	static
+../Hiwonder/USB_HOST/usbh_hiwonder_hid.c:246:27:USBH_HID_Process	40	static
+../Hiwonder/USB_HOST/usbh_hiwonder_hid.c:362:27:USBH_HID_SOFProcess	24	static
+../Hiwonder/USB_HOST/usbh_hiwonder_hid.c:391:14:USBH_HID_ParseHIDDesc	24	static
+../Hiwonder/USB_HOST/usbh_hiwonder_hid.c:428:17:HIWONDER_USBH_HID_GetDeviceType	24	static

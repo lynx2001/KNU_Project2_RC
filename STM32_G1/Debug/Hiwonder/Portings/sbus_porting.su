@@ -1,0 +1,2 @@
+../Hiwonder/Portings/sbus_porting.c:46:6:sbus_init	8	static
+../Hiwonder/Portings/sbus_porting.c:75:13:sbus_dma_receive_event_callback	24	static

@@ -1,0 +1,17 @@
+../Third_Party/Fusion/Fusion/FusionMath.h:136:21:FusionRadiansToDegrees	16	static
+../Third_Party/Fusion/Fusion/FusionMath.h:148:21:FusionAsin	16	static
+../Third_Party/Fusion/Fusion/FusionMath.h:456:27:FusionQuaternionToEuler	72	static
+../Hiwonder/Peripherals/imu_mpu6050.c:33:5:mpu6050_set_gyro_fsr	16	static
+../Hiwonder/Peripherals/imu_mpu6050.c:65:5:mpu6050_set_accel_fsr	16	static
+../Hiwonder/Peripherals/imu_mpu6050.c:93:5:mpu6050_set_lpf	24	static
+../Hiwonder/Peripherals/imu_mpu6050.c:119:5:mpu6050_set_rate	24	static
+../Hiwonder/Peripherals/imu_mpu6050.c:147:5:mpu6050_get_temperature	32	static
+../Hiwonder/Peripherals/imu_mpu6050.c:169:5:mpu6050_get_accel	48	static
+../Hiwonder/Peripherals/imu_mpu6050.c:193:5:mpu6050_get_gyro	48	static
+../Hiwonder/Peripherals/imu_mpu6050.c:217:5:mpu6050_get_all	48	static
+../Hiwonder/Peripherals/imu_mpu6050.c:249:13:export_mpu6050_reset	24	static
+../Hiwonder/Peripherals/imu_mpu6050.c:277:5:mpu6050_enable_int	16	static
+../Hiwonder/Peripherals/imu_mpu6050.c:298:12:export_mpu6050_update	72	static
+../Hiwonder/Peripherals/imu_mpu6050.c:323:5:export_mpu6050_get_euler	16	static
+../Hiwonder/Peripherals/imu_mpu6050.c:330:5:export_mpu6050_get_quat	16	static
+../Hiwonder/Peripherals/imu_mpu6050.c:343:6:mpu6050_object_init	16	static

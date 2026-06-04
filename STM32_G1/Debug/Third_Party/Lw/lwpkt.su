@@ -1,0 +1,9 @@
+../Third_Party/Lw/lwpkt.c:76:1:prv_crc_in	40	static
+../Third_Party/Lw/lwpkt.c:102:1:prv_crc_init	16	static
+../Third_Party/Lw/lwpkt.c:116:1:lwpkt_init	24	static
+../Third_Party/Lw/lwpkt.c:139:1:lwpkt_set_addr	16	static
+../Third_Party/Lw/lwpkt.c:156:1:lwpkt_read	24	static
+../Third_Party/Lw/lwpkt.c:290:1:lwpkt_process	24	static
+../Third_Party/Lw/lwpkt.c:324:1:lwpkt_write	48	static
+../Third_Party/Lw/lwpkt.c:463:1:lwpkt_reset	16	static
+../Third_Party/Lw/lwpkt.c:480:1:lwpkt_set_evt_fn	16	static

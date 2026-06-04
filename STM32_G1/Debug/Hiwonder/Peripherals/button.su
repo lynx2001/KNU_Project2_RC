@@ -1,0 +1,4 @@
+../Hiwonder/Peripherals/button.c:14:6:button_task_handler	24	static
+../Hiwonder/Peripherals/button.c:89:6:button_register_callback	16	static
+../Hiwonder/Peripherals/button.c:97:6:button_defalut_event_callback	16	static
+../Hiwonder/Peripherals/button.c:101:6:button_object_init	16	static
