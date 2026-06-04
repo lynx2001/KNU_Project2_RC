@@ -1,0 +1,131 @@
+//PDW
+#include <SimpleKalmanFilter.h>
+
+// ─── 핀 설정 ─────────────────────────────────────────────────
+const int trigPins[4]  = {22, 24, 26, 28};  // 전, 후, 좌, 우
+const int echoPins[4]  = {23, 25, 27, 29};
+const int BUZZER_PIN   = 11;
+
+// ─── SimpleKalmanFilter(e_mea, e_est, q) ─────────────────────
+// e_mea : 측정 노이즈 공분산
+// e_est : 추정 오차 초기값
+// q     : 프로세스 노이즈 (낮을수록 부드러움)
+SimpleKalmanFilter filters[4] = {
+  SimpleKalmanFilter(0.1, 0.1, 0.01),
+  SimpleKalmanFilter(0.1, 0.1, 0.01),
+  SimpleKalmanFilter(0.1, 0.1, 0.01),
+  SimpleKalmanFilter(0.1, 0.1, 0.01)
+};
+
+// ─── 경계 및 채터링 방지 마진 ────────────────────────────────
+const float MARGIN     = 0.3;   // 히스테리시스 마진 (cm)
+const float BOUNDARY_1 = 2.0;  
+const float BOUNDARY_2 = 5.0;  
+const float BOUNDARY_3 = 8.0;  
+const float BOUNDARY_4 = 11.0;
+
+// 현재 PDW 단계 (0=안전, 1=주의, 2=경고, 3=위험)
+int pdwState = 0;
+
+// ─── 초음파 거리 측정 ────────────────────────────────────────
+float getDistance(int id) {
+  digitalWrite(trigPins[id], LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPins[id], HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPins[id], LOW);
+
+  long duration = pulseIn(echoPins[id], HIGH, 20000);
+  if (duration == 0) return 400.0;
+  return duration * 0.0343 / 2.0;
+}
+
+// ─── 히스테리시스 적용 PDW 상태 전환 ────────────────────────
+// 현재 단계에서 벗어나려면 경계 ± MARGIN을 완전히 넘어야 전환
+// 예) 단계2(경고)→단계1(주의) 전환 조건: minDist > BOUNDARY_2 + MARGIN
+//     단계1(주의)→단계2(경고) 전환 조건: minDist < BOUNDARY_2 - MARGIN
+int getNextState(float minDist, int currentState) {
+  switch (currentState) {
+
+    case 0:  // 안전 → 주의 전환 조건
+      if (minDist < BOUNDARY_4) return 1;
+      return 0;
+
+    case 1:  // 주의
+      if (minDist < BOUNDARY_3) return 2;  // 주의 → 경고
+      if (minDist > BOUNDARY_4 + MARGIN) return 0;  // 주의 → 안전
+      return 1;
+
+    case 2:  // 경고
+      if (minDist < BOUNDARY_2) return 3;  // 경고 → 위험
+      if (minDist > BOUNDARY_3 + MARGIN) return 1;  // 경고 → 주의
+      return 2;
+    
+    case 3:  // 위험
+      if (minDist < BOUNDARY_1) return 4;  // 경고 → 위험
+      if (minDist > BOUNDARY_2 + MARGIN) return 2;  // 경고 → 주의
+      return 3;
+
+    case 4:  // 제동
+      if (minDist > BOUNDARY_1 + MARGIN) return 3;  // 위험 → 경고
+      return 4;
+      
+
+    default:
+      return 0;
+  }
+}
+
+// ─── PDW 부저 출력 ───────────────────────────────────────────
+void updatePDW(float minDist) {
+  pdwState = getNextState(minDist, pdwState);
+
+  switch (pdwState) {
+    case 4:  // 제동 (2cm 미만): 지속음
+      digitalWrite(BUZZER_PIN, HIGH);
+      break;
+    case 3:  // 위험 (5cm 미만): 빠른 단속음 200ms 주기
+      digitalWrite(BUZZER_PIN, HIGH);
+      break;
+    case 2:  // 경고 (8cm 미만)
+      digitalWrite(BUZZER_PIN, (millis() % 200 < 100));
+      break;
+    case 1:  // 주의 (11cm 미만): 느린 단속음 600ms 주기
+      digitalWrite(BUZZER_PIN, (millis() % 600 < 100));
+      break;
+    case 0:  // 안전: 무음
+    default:
+      digitalWrite(BUZZER_PIN, LOW);
+      break;
+  }
+}
+
+// ─── Setup ───────────────────────────────────────────────────
+void setup() {
+  Serial.begin(115200);
+  for (int i = 0; i < 4; i++) {
+    pinMode(trigPins[i], OUTPUT);
+    pinMode(echoPins[i], INPUT);
+  }
+  pinMode(BUZZER_PIN, OUTPUT);
+}
+
+// ─── Loop ────────────────────────────────────────────────────
+void loop() {
+  float minD = 400.0;
+
+  Serial.print("S");
+  for (int i = 0; i < 4; i++) {
+    float raw = getDistance(i);
+    float filtered = filters[i].updateEstimate(raw);
+
+    if (filtered < minD) minD = filtered;
+
+    Serial.print(",");
+    Serial.print(filtered, 1);
+  }
+  Serial.println(",E");
+
+  updatePDW(minD);
+  delay(50);
+}
