@@ -1,0 +1,3 @@
+../USB_HOST/App/usbh_hid_gamepad.c:26:20:USBH_HID_GamepadInit	24	static
+../USB_HOST/App/usbh_hid_gamepad.c:57:27:USBH_HID_GetGamepadInfo	16	static
+../USB_HOST/App/usbh_hid_gamepad.c:72:27:USBH_HID_GamepadDecode	24	static

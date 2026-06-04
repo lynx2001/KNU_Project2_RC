@@ -1,0 +1,7 @@
+../USB_HOST/App/usbh_hiwonder_hid.c:37:27:USBH_HID_InterfaceInit	10
+../USB_HOST/App/usbh_hiwonder_hid.c:133:27:USBH_HID_InterfaceDeInit	4
+../USB_HOST/App/usbh_hiwonder_hid.c:164:27:USBH_HID_ClassRequest	11
+../USB_HOST/App/usbh_hiwonder_hid.c:242:27:USBH_HID_Process	15
+../USB_HOST/App/usbh_hiwonder_hid.c:358:27:USBH_HID_SOFProcess	3
+../USB_HOST/App/usbh_hiwonder_hid.c:387:14:USBH_HID_ParseHIDDesc	4
+../USB_HOST/App/usbh_hiwonder_hid.c:424:17:HIWONDER_USBH_HID_GetDeviceType	4
