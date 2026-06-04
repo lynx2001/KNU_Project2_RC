@@ -1,3 +1,0 @@
-../USB_HOST/App/usb_host.c:49:6:USBH_Process_Task	16	static
-../USB_HOST/App/usb_host.c:75:6:MX_USB_HOST_Init	48	static
-../USB_HOST/App/usb_host.c:124:13:USBH_UserProcess	16	static

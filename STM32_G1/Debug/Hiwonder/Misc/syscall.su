@@ -1,3 +1,0 @@
-../Hiwonder/Misc/syscall.c:29:6:_sys_exit	16	static
-../Hiwonder/Misc/syscall.c:33:6:_ttywrch	16	static
-../Hiwonder/Misc/syscall.c:43:1:__io_putchar	16	static

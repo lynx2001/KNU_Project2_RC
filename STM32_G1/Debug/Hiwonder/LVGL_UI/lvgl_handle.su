@@ -1,3 +1,0 @@
-../Third_Party/lvgl/src/lv_core/lv_disp.h:158:26:lv_scr_act	8	static
-../Hiwonder/LVGL_UI/lvgl_handle.c:24:6:update_sbus_view	8	static
-../Hiwonder/LVGL_UI/lvgl_handle.c:42:6:lvgl_update_task_entry	32	static

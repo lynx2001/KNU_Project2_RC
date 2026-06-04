@@ -1,2 +1,0 @@
-../Third_Party/LVGL/src/lv_misc/lv_async.c:43:10:lv_async_call	24	static
-../Third_Party/LVGL/src/lv_misc/lv_async.c:71:13:lv_async_task_cb	24	static

@@ -1,9 +1,0 @@
-rosrobotcontrollerm4\lv_hal_tick.o: ..\Third_Party\LVGL\src\lv_hal\lv_hal_tick.c
-rosrobotcontrollerm4\lv_hal_tick.o: ..\Third_Party\LVGL\src\lv_hal\lv_hal_tick.h
-rosrobotcontrollerm4\lv_hal_tick.o: ..\Third_Party\LVGL\src\lv_hal\../lv_conf_internal.h
-rosrobotcontrollerm4\lv_hal_tick.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-rosrobotcontrollerm4\lv_hal_tick.o: ..\Third_Party\LVGL\src\lv_hal\../lv_conf_kconfig.h
-rosrobotcontrollerm4\lv_hal_tick.o: ../Third_Party/LVGL/lv_conf.h
-rosrobotcontrollerm4\lv_hal_tick.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-rosrobotcontrollerm4\lv_hal_tick.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-rosrobotcontrollerm4\lv_hal_tick.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h

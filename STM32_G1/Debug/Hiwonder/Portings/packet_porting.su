@@ -1,7 +1,0 @@
-../Hiwonder/Portings/packet_porting.c:40:6:packet_init	8	static
-../Hiwonder/Portings/packet_porting.c:72:12:send_packet	16	static
-../Hiwonder/Portings/packet_porting.c:81:6:packet_start_recv	8	static
-../Hiwonder/Portings/packet_porting.c:96:13:packet_dma_receive_event_callback	24	static
-../Hiwonder/Portings/packet_porting.c:116:6:packet_rx_task_entry1	16	static
-../Hiwonder/Portings/packet_porting.c:135:6:packet_tx_task_entry1	24	static
-../Hiwonder/Portings/packet_porting.c:153:13:packet_dma_transmit_finished	24	static

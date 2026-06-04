@@ -1,4 +1,0 @@
-../Hiwonder/System/app.c:41:6:button_event_callback	40	static,ignoring_inline_asm
-../Hiwonder/System/app.c:89:6:app_task_entry	24	static
-../Hiwonder/System/app.c:180:6:jetacker_control	8	static
-../Hiwonder/System/app.c:230:6:minacker_control	8	static

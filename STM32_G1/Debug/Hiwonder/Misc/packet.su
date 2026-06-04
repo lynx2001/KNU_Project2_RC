@@ -1,4 +1,0 @@
-../Hiwonder/Misc/packet.c:15:6:packet_register_callback	24	static
-../Hiwonder/Misc/packet.c:32:6:packet_recv	96	static
-../Hiwonder/Misc/packet.c:88:24:packet_serialize	32	static
-../Hiwonder/Misc/packet.c:104:5:packet_transmit	32	static

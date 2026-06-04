@@ -1,3 +1,0 @@
-../Hiwonder/USB_HOST/usbh_hid_gamepad.c:26:20:USBH_HID_GamepadInit	24	static
-../Hiwonder/USB_HOST/usbh_hid_gamepad.c:57:27:USBH_HID_GetGamepadInfo	16	static
-../Hiwonder/USB_HOST/usbh_hid_gamepad.c:72:27:USBH_HID_GamepadDecode	24	static
