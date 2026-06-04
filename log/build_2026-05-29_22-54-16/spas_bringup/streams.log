@@ -1,0 +1,22 @@
+[0.417s] Invoking command in '/home/ubuntu/spas_ws/build/spas_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/spas_ws/build/spas_bringup -- -j4 -l4
+[4.988s] Invoked command in '/home/ubuntu/spas_ws/build/spas_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/spas_ws/build/spas_bringup -- -j4 -l4
+[5.149s] Invoking command in '/home/ubuntu/spas_ws/build/spas_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/spas_ws/build/spas_bringup
+[5.210s] -- Install configuration: ""
+[5.221s] -- Execute custom install script
+[5.226s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/launch/spas_bringup_launch.py
+[5.230s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/ament_index/resource_index/package_run_dependencies/spas_bringup
+[5.230s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/ament_index/resource_index/parent_prefix_path/spas_bringup
+[5.232s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/environment/ament_prefix_path.sh
+[5.233s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/environment/ament_prefix_path.dsv
+[5.264s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/environment/path.sh
+[5.272s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/environment/path.dsv
+[5.278s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/local_setup.bash
+[5.293s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/local_setup.sh
+[5.302s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/local_setup.zsh
+[5.308s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/local_setup.dsv
+[5.323s] -- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/package.dsv
+[5.326s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/ament_index/resource_index/packages/spas_bringup
+[5.329s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/cmake/spas_bringupConfig.cmake
+[5.333s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/cmake/spas_bringupConfig-version.cmake
+[5.342s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/package.xml
+[5.352s] Invoked command in '/home/ubuntu/spas_ws/build/spas_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/spas_ws/build/spas_bringup

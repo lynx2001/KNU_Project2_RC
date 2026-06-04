@@ -1,0 +1,457 @@
+[0.701s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.701s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa2f12230>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa30b35e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa30b35e0>>)
+[2.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.225s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/spas_ws'
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.226s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.226s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.227s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.227s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.229s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.331s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.331s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.332s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.333s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.333s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.334s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.335s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.336s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.336s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.337s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['ignore', 'ignore_ament_install']
+[2.338s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ignore'
+[2.338s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ignore_ament_install'
+[2.339s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['colcon_pkg']
+[2.339s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'colcon_pkg'
+[2.339s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['colcon_meta']
+[2.340s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'colcon_meta'
+[2.340s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['ros']
+[2.340s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ros'
+[2.341s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['cmake', 'python']
+[2.341s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'cmake'
+[2.342s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'python'
+[2.342s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['python_setup_py']
+[2.343s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'python_setup_py'
+[2.343s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.344s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.346s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.346s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.346s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.349s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['ignore', 'ignore_ament_install']
+[2.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'ignore'
+[2.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'ignore_ament_install'
+[2.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['colcon_pkg']
+[2.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'colcon_pkg'
+[2.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['colcon_meta']
+[2.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'colcon_meta'
+[2.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['ros']
+[2.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'ros'
+[2.370s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam_toolbox' with type 'ros.ament_cmake' and name 'slam_toolbox'
+[2.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[2.372s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore'
+[2.373s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore_ament_install'
+[2.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_pkg']
+[2.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_pkg'
+[2.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_meta']
+[2.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_meta'
+[2.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ros']
+[2.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ros'
+[2.379s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sllidar_ros2' with type 'ros.ament_cmake' and name 'sllidar_ros2'
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_bringup) by extensions ['ignore', 'ignore_ament_install']
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_bringup) by extension 'ignore'
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_bringup) by extension 'ignore_ament_install'
+[2.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_bringup) by extensions ['colcon_pkg']
+[2.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_bringup) by extension 'colcon_pkg'
+[2.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_bringup) by extensions ['colcon_meta']
+[2.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_bringup) by extension 'colcon_meta'
+[2.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_bringup) by extensions ['ros']
+[2.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_bringup) by extension 'ros'
+[2.386s] DEBUG:colcon.colcon_core.package_identification:Package 'src/spas_bringup' with type 'ros.ament_cmake' and name 'spas_bringup'
+[2.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_control) by extensions ['ignore', 'ignore_ament_install']
+[2.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_control) by extension 'ignore'
+[2.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_control) by extension 'ignore_ament_install'
+[2.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_control) by extensions ['colcon_pkg']
+[2.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_control) by extension 'colcon_pkg'
+[2.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_control) by extensions ['colcon_meta']
+[2.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_control) by extension 'colcon_meta'
+[2.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_control) by extensions ['ros']
+[2.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_control) by extension 'ros'
+[2.394s] DEBUG:colcon.colcon_core.package_identification:Package 'src/spas_control' with type 'ros.ament_python' and name 'spas_control'
+[2.395s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_perception) by extensions ['ignore', 'ignore_ament_install']
+[2.395s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_perception) by extension 'ignore'
+[2.396s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_perception) by extension 'ignore_ament_install'
+[2.396s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_perception) by extensions ['colcon_pkg']
+[2.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_perception) by extension 'colcon_pkg'
+[2.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_perception) by extensions ['colcon_meta']
+[2.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_perception) by extension 'colcon_meta'
+[2.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_perception) by extensions ['ros']
+[2.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_perception) by extension 'ros'
+[2.401s] DEBUG:colcon.colcon_core.package_identification:Package 'src/spas_perception' with type 'ros.ament_python' and name 'spas_perception'
+[2.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_planning) by extensions ['ignore', 'ignore_ament_install']
+[2.402s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_planning) by extension 'ignore'
+[2.403s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_planning) by extension 'ignore_ament_install'
+[2.403s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_planning) by extensions ['colcon_pkg']
+[2.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_planning) by extension 'colcon_pkg'
+[2.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_planning) by extensions ['colcon_meta']
+[2.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_planning) by extension 'colcon_meta'
+[2.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_planning) by extensions ['ros']
+[2.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/spas_planning) by extension 'ros'
+[2.408s] DEBUG:colcon.colcon_core.package_identification:Package 'src/spas_planning' with type 'ros.ament_python' and name 'spas_planning'
+[2.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.409s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.409s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.409s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.409s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.518s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.531s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/ubuntu/spas_ws/install
+[2.544s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 372 installed packages in /opt/ros/humble
+[2.558s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.084s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'slam_toolbox' is in: /home/ubuntu/spas_ws/install/slam_toolbox, /opt/ros/humble
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding slam_toolbox
+
+This may be promoted to an error in a future release of colcon-override-check.
+[3.090s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_args' from command line to 'None'
+[3.091s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_target' from command line to 'None'
+[3.092s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.093s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_clean_cache' from command line to 'False'
+[3.093s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_clean_first' from command line to 'False'
+[3.094s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_force_configure' from command line to 'False'
+[3.094s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'ament_cmake_args' from command line to 'None'
+[3.095s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'catkin_cmake_args' from command line to 'None'
+[3.095s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.095s] DEBUG:colcon.colcon_core.verb:Building package 'slam_toolbox' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/spas_ws/build/slam_toolbox', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/spas_ws/install/slam_toolbox', 'merge_install': False, 'path': '/home/ubuntu/spas_ws/src/slam_toolbox', 'symlink_install': True, 'test_result_base': None}
+[3.098s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_args' from command line to 'None'
+[3.098s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target' from command line to 'None'
+[3.099s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.099s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[3.099s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[3.100s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[3.100s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[3.100s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[3.100s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.101s] DEBUG:colcon.colcon_core.verb:Building package 'sllidar_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/spas_ws/build/sllidar_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/spas_ws/install/sllidar_ros2', 'merge_install': False, 'path': '/home/ubuntu/spas_ws/src/sllidar_ros2', 'symlink_install': True, 'test_result_base': None}
+[3.103s] Level 5:colcon.colcon_core.verb:set package 'spas_bringup' build argument 'cmake_args' from command line to 'None'
+[3.103s] Level 5:colcon.colcon_core.verb:set package 'spas_bringup' build argument 'cmake_target' from command line to 'None'
+[3.104s] Level 5:colcon.colcon_core.verb:set package 'spas_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.104s] Level 5:colcon.colcon_core.verb:set package 'spas_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[3.104s] Level 5:colcon.colcon_core.verb:set package 'spas_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[3.104s] Level 5:colcon.colcon_core.verb:set package 'spas_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[3.105s] Level 5:colcon.colcon_core.verb:set package 'spas_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[3.105s] Level 5:colcon.colcon_core.verb:set package 'spas_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[3.105s] Level 5:colcon.colcon_core.verb:set package 'spas_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.105s] DEBUG:colcon.colcon_core.verb:Building package 'spas_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/spas_ws/build/spas_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/spas_ws/install/spas_bringup', 'merge_install': False, 'path': '/home/ubuntu/spas_ws/src/spas_bringup', 'symlink_install': True, 'test_result_base': None}
+[3.107s] Level 5:colcon.colcon_core.verb:set package 'spas_control' build argument 'cmake_args' from command line to 'None'
+[3.108s] Level 5:colcon.colcon_core.verb:set package 'spas_control' build argument 'cmake_target' from command line to 'None'
+[3.108s] Level 5:colcon.colcon_core.verb:set package 'spas_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.108s] Level 5:colcon.colcon_core.verb:set package 'spas_control' build argument 'cmake_clean_cache' from command line to 'False'
+[3.108s] Level 5:colcon.colcon_core.verb:set package 'spas_control' build argument 'cmake_clean_first' from command line to 'False'
+[3.109s] Level 5:colcon.colcon_core.verb:set package 'spas_control' build argument 'cmake_force_configure' from command line to 'False'
+[3.109s] Level 5:colcon.colcon_core.verb:set package 'spas_control' build argument 'ament_cmake_args' from command line to 'None'
+[3.109s] Level 5:colcon.colcon_core.verb:set package 'spas_control' build argument 'catkin_cmake_args' from command line to 'None'
+[3.109s] Level 5:colcon.colcon_core.verb:set package 'spas_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.110s] DEBUG:colcon.colcon_core.verb:Building package 'spas_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/spas_ws/build/spas_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/spas_ws/install/spas_control', 'merge_install': False, 'path': '/home/ubuntu/spas_ws/src/spas_control', 'symlink_install': True, 'test_result_base': None}
+[3.112s] Level 5:colcon.colcon_core.verb:set package 'spas_perception' build argument 'cmake_args' from command line to 'None'
+[3.112s] Level 5:colcon.colcon_core.verb:set package 'spas_perception' build argument 'cmake_target' from command line to 'None'
+[3.112s] Level 5:colcon.colcon_core.verb:set package 'spas_perception' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.113s] Level 5:colcon.colcon_core.verb:set package 'spas_perception' build argument 'cmake_clean_cache' from command line to 'False'
+[3.113s] Level 5:colcon.colcon_core.verb:set package 'spas_perception' build argument 'cmake_clean_first' from command line to 'False'
+[3.113s] Level 5:colcon.colcon_core.verb:set package 'spas_perception' build argument 'cmake_force_configure' from command line to 'False'
+[3.114s] Level 5:colcon.colcon_core.verb:set package 'spas_perception' build argument 'ament_cmake_args' from command line to 'None'
+[3.114s] Level 5:colcon.colcon_core.verb:set package 'spas_perception' build argument 'catkin_cmake_args' from command line to 'None'
+[3.114s] Level 5:colcon.colcon_core.verb:set package 'spas_perception' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.115s] DEBUG:colcon.colcon_core.verb:Building package 'spas_perception' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/spas_ws/build/spas_perception', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/spas_ws/install/spas_perception', 'merge_install': False, 'path': '/home/ubuntu/spas_ws/src/spas_perception', 'symlink_install': True, 'test_result_base': None}
+[3.117s] Level 5:colcon.colcon_core.verb:set package 'spas_planning' build argument 'cmake_args' from command line to 'None'
+[3.117s] Level 5:colcon.colcon_core.verb:set package 'spas_planning' build argument 'cmake_target' from command line to 'None'
+[3.118s] Level 5:colcon.colcon_core.verb:set package 'spas_planning' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.118s] Level 5:colcon.colcon_core.verb:set package 'spas_planning' build argument 'cmake_clean_cache' from command line to 'False'
+[3.119s] Level 5:colcon.colcon_core.verb:set package 'spas_planning' build argument 'cmake_clean_first' from command line to 'False'
+[3.119s] Level 5:colcon.colcon_core.verb:set package 'spas_planning' build argument 'cmake_force_configure' from command line to 'False'
+[3.119s] Level 5:colcon.colcon_core.verb:set package 'spas_planning' build argument 'ament_cmake_args' from command line to 'None'
+[3.120s] Level 5:colcon.colcon_core.verb:set package 'spas_planning' build argument 'catkin_cmake_args' from command line to 'None'
+[3.120s] Level 5:colcon.colcon_core.verb:set package 'spas_planning' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.120s] DEBUG:colcon.colcon_core.verb:Building package 'spas_planning' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/spas_ws/build/spas_planning', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/spas_ws/install/spas_planning', 'merge_install': False, 'path': '/home/ubuntu/spas_ws/src/spas_planning', 'symlink_install': True, 'test_result_base': None}
+[3.121s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.125s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.127s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/spas_ws/src/slam_toolbox' with build type 'ament_cmake'
+[3.128s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/spas_ws/src/slam_toolbox'
+[3.152s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.153s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.154s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.188s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/spas_ws/src/sllidar_ros2' with build type 'ament_cmake'
+[3.190s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/spas_ws/src/sllidar_ros2'
+[3.192s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.193s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.232s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/spas_ws/src/spas_bringup' with build type 'ament_cmake'
+[3.236s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/spas_ws/src/spas_bringup'
+[3.238s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.238s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.274s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/spas_ws/src/spas_control' with build type 'ament_python'
+[3.275s] Level 1:colcon.colcon_core.shell:create_environment_hook('spas_control', 'ament_prefix_path')
+[3.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/spas_control/share/spas_control/hook/ament_prefix_path.ps1'
+[3.283s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/install/spas_control/share/spas_control/hook/ament_prefix_path.dsv'
+[3.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/spas_control/share/spas_control/hook/ament_prefix_path.sh'
+[3.295s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.296s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/spas_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/spas_ws/build/slam_toolbox -- -j4 -l4
+[3.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/spas_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/spas_ws/build/sllidar_ros2 -- -j4 -l4
+[3.458s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/spas_ws/build/spas_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/spas_ws/build/spas_bringup -- -j4 -l4
+[6.849s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/spas_ws/src/spas_control'
+[6.850s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.851s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.888s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/spas_ws/build/spas_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/spas_ws/build/spas_bringup -- -j4 -l4
+[6.929s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/spas_ws/build/spas_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/spas_ws/build/spas_bringup
+[6.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/spas_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/spas_ws/build/sllidar_ros2 -- -j4 -l4
+[6.941s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/spas_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/spas_ws/build/sllidar_ros2
+[7.108s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[7.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/spas_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/spas_ws/build/sllidar_ros2
+[7.189s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/sllidar_ros2' for CMake module files
+[7.193s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/sllidar_ros2' for CMake config files
+[7.207s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[7.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[7.212s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[7.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[7.230s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/sllidar_ros2/lib'
+[7.232s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/sllidar_ros2/bin'
+[7.233s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[7.236s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/sllidar_ros2/lib/python3.10/site-packages'
+[7.239s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/sllidar_ros2/bin'
+[7.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[7.250s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[7.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[7.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[7.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[7.301s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/spas_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[7.305s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[7.307s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/sllidar_ros2' for CMake module files
+[7.311s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/sllidar_ros2' for CMake config files
+[7.326s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[7.328s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[7.331s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[7.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[7.353s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/sllidar_ros2/lib'
+[7.354s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/sllidar_ros2/bin'
+[7.354s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[7.356s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/sllidar_ros2/lib/python3.10/site-packages'
+[7.359s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/sllidar_ros2/bin'
+[7.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[7.382s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[7.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[7.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[7.415s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[7.418s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/spas_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[7.424s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/spas_ws/src/spas_perception' with build type 'ament_python'
+[7.426s] Level 1:colcon.colcon_core.shell:create_environment_hook('spas_perception', 'ament_prefix_path')
+[7.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/spas_perception/share/spas_perception/hook/ament_prefix_path.ps1'
+[7.431s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/install/spas_perception/share/spas_perception/hook/ament_prefix_path.dsv'
+[7.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/spas_perception/share/spas_perception/hook/ament_prefix_path.sh'
+[7.440s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.440s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.491s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spas_bringup)
+[7.495s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/spas_ws/build/spas_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/spas_ws/build/spas_bringup
+[7.500s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_bringup' for CMake module files
+[7.505s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_bringup' for CMake config files
+[7.508s] Level 1:colcon.colcon_core.shell:create_environment_hook('spas_bringup', 'cmake_prefix_path')
+[7.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/hook/cmake_prefix_path.ps1'
+[7.515s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/hook/cmake_prefix_path.dsv'
+[7.521s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/hook/cmake_prefix_path.sh'
+[7.528s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_bringup/bin'
+[7.529s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_bringup/lib/pkgconfig/spas_bringup.pc'
+[7.531s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_bringup/lib/python3.10/site-packages'
+[7.534s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_bringup/bin'
+[7.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/package.ps1'
+[7.544s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/package.dsv'
+[7.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/package.sh'
+[7.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/package.bash'
+[7.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/package.zsh'
+[7.566s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/spas_ws/install/spas_bringup/share/colcon-core/packages/spas_bringup)
+[7.572s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spas_bringup)
+[7.575s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_bringup' for CMake module files
+[7.579s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_bringup' for CMake config files
+[7.582s] Level 1:colcon.colcon_core.shell:create_environment_hook('spas_bringup', 'cmake_prefix_path')
+[7.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/hook/cmake_prefix_path.ps1'
+[7.589s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/hook/cmake_prefix_path.dsv'
+[7.593s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/hook/cmake_prefix_path.sh'
+[7.600s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_bringup/bin'
+[7.601s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_bringup/lib/pkgconfig/spas_bringup.pc'
+[7.603s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_bringup/lib/python3.10/site-packages'
+[7.606s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_bringup/bin'
+[7.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/package.ps1'
+[7.615s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/package.dsv'
+[7.620s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/package.sh'
+[7.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/package.bash'
+[7.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/package.zsh'
+[7.638s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/spas_ws/install/spas_bringup/share/colcon-core/packages/spas_bringup)
+[7.647s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/spas_ws/src/spas_planning' with build type 'ament_python'
+[7.652s] Level 1:colcon.colcon_core.shell:create_environment_hook('spas_planning', 'ament_prefix_path')
+[7.654s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/spas_planning/share/spas_planning/hook/ament_prefix_path.ps1'
+[7.664s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/install/spas_planning/share/spas_planning/hook/ament_prefix_path.dsv'
+[7.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/spas_planning/share/spas_planning/hook/ament_prefix_path.sh'
+[7.677s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.678s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.345s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/spas_ws/src/spas_perception'
+[10.347s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.347s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.058s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/spas_ws/src/spas_planning'
+[13.060s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.060s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.098s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/spas_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/spas_ws/build/slam_toolbox -- -j4 -l4
+[13.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/spas_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/spas_ws/build/slam_toolbox
+[13.136s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/spas_ws/build/spas_control': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_control/build --no-deps symlink_data
+[14.962s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_toolbox)
+[14.964s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/slam_toolbox' for CMake module files
+[14.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/spas_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/spas_ws/build/slam_toolbox
+[14.984s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/slam_toolbox' for CMake config files
+[15.001s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'cmake_prefix_path')
+[15.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.ps1'
+[15.020s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.dsv'
+[15.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.sh'
+[15.043s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/slam_toolbox/lib'
+[15.044s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'ld_library_path_lib')
+[15.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.ps1'
+[15.049s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.dsv'
+[15.054s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.sh'
+[15.057s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/slam_toolbox/bin'
+[15.058s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/slam_toolbox/lib/pkgconfig/slam_toolbox.pc'
+[15.060s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/slam_toolbox/lib/python3.10/site-packages'
+[15.063s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/slam_toolbox/bin'
+[15.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/package.ps1'
+[15.069s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/package.dsv'
+[15.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/package.sh'
+[15.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/package.bash'
+[15.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/package.zsh'
+[15.083s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/spas_ws/install/slam_toolbox/share/colcon-core/packages/slam_toolbox)
+[15.091s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_toolbox)
+[15.092s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/slam_toolbox' for CMake module files
+[15.103s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/slam_toolbox' for CMake config files
+[15.116s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'cmake_prefix_path')
+[15.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.ps1'
+[15.122s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.dsv'
+[15.125s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.sh'
+[15.130s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/slam_toolbox/lib'
+[15.131s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'ld_library_path_lib')
+[15.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.ps1'
+[15.135s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.dsv'
+[15.138s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.sh'
+[15.142s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/slam_toolbox/bin'
+[15.142s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/slam_toolbox/lib/pkgconfig/slam_toolbox.pc'
+[15.144s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/slam_toolbox/lib/python3.10/site-packages'
+[15.146s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/slam_toolbox/bin'
+[15.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/package.ps1'
+[15.153s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/package.dsv'
+[15.158s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/package.sh'
+[15.162s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/package.bash'
+[15.165s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/package.zsh'
+[15.169s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/spas_ws/install/slam_toolbox/share/colcon-core/packages/slam_toolbox)
+[16.346s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/spas_ws/build/spas_planning': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_planning/build --no-deps symlink_data
+[16.737s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/spas_ws/build/spas_perception': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_perception/build --no-deps symlink_data
+[18.227s] Level 1:colcon.colcon_core.shell:create_environment_hook('spas_control', 'pythonpath_develop')
+[18.228s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/build/spas_control/share/spas_control/hook/pythonpath_develop.ps1'
+[18.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/spas_ws/build/spas_control' returned '0': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_control/build --no-deps symlink_data
+[18.232s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/build/spas_control/share/spas_control/hook/pythonpath_develop.dsv'
+[18.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/build/spas_control/share/spas_control/hook/pythonpath_develop.sh'
+[18.239s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_control' for CMake module files
+[18.242s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_control' for CMake config files
+[18.246s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_control/lib'
+[18.247s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_control/bin'
+[18.247s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_control/lib/pkgconfig/spas_control.pc'
+[18.249s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages'
+[18.249s] Level 1:colcon.colcon_core.shell:create_environment_hook('spas_control', 'pythonpath')
+[18.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/spas_control/share/spas_control/hook/pythonpath.ps1'
+[18.254s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/install/spas_control/share/spas_control/hook/pythonpath.dsv'
+[18.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/spas_control/share/spas_control/hook/pythonpath.sh'
+[18.261s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_control/bin'
+[18.262s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spas_control)
+[18.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_control/share/spas_control/package.ps1'
+[18.268s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/spas_ws/install/spas_control/share/spas_control/package.dsv'
+[18.272s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_control/share/spas_control/package.sh'
+[18.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_control/share/spas_control/package.bash'
+[18.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_control/share/spas_control/package.zsh'
+[18.281s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/spas_ws/install/spas_control/share/colcon-core/packages/spas_control)
+[19.892s] Level 1:colcon.colcon_core.shell:create_environment_hook('spas_planning', 'pythonpath_develop')
+[19.894s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/build/spas_planning/share/spas_planning/hook/pythonpath_develop.ps1'
+[19.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/spas_ws/build/spas_planning' returned '0': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_planning/build --no-deps symlink_data
+[19.897s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/build/spas_planning/share/spas_planning/hook/pythonpath_develop.dsv'
+[19.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/build/spas_planning/share/spas_planning/hook/pythonpath_develop.sh'
+[19.903s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_planning' for CMake module files
+[19.906s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_planning' for CMake config files
+[19.910s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_planning/lib'
+[19.910s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_planning/bin'
+[19.911s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_planning/lib/pkgconfig/spas_planning.pc'
+[19.912s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages'
+[19.912s] Level 1:colcon.colcon_core.shell:create_environment_hook('spas_planning', 'pythonpath')
+[19.914s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/spas_planning/share/spas_planning/hook/pythonpath.ps1'
+[19.916s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/install/spas_planning/share/spas_planning/hook/pythonpath.dsv'
+[19.918s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/spas_planning/share/spas_planning/hook/pythonpath.sh'
+[19.922s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_planning/bin'
+[19.922s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spas_planning)
+[19.924s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_planning/share/spas_planning/package.ps1'
+[19.928s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/spas_ws/install/spas_planning/share/spas_planning/package.dsv'
+[19.932s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_planning/share/spas_planning/package.sh'
+[19.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_planning/share/spas_planning/package.bash'
+[19.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_planning/share/spas_planning/package.zsh'
+[19.939s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/spas_ws/install/spas_planning/share/colcon-core/packages/spas_planning)
+[20.237s] Level 1:colcon.colcon_core.shell:create_environment_hook('spas_perception', 'pythonpath_develop')
+[20.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/build/spas_perception/share/spas_perception/hook/pythonpath_develop.ps1'
+[20.240s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/spas_ws/build/spas_perception' returned '0': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_perception/build --no-deps symlink_data
+[20.242s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/build/spas_perception/share/spas_perception/hook/pythonpath_develop.dsv'
+[20.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/build/spas_perception/share/spas_perception/hook/pythonpath_develop.sh'
+[20.249s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_perception' for CMake module files
+[20.253s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_perception' for CMake config files
+[20.257s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_perception/lib'
+[20.258s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_perception/bin'
+[20.259s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_perception/lib/pkgconfig/spas_perception.pc'
+[20.260s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages'
+[20.261s] Level 1:colcon.colcon_core.shell:create_environment_hook('spas_perception', 'pythonpath')
+[20.262s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/spas_perception/share/spas_perception/hook/pythonpath.ps1'
+[20.266s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/spas_ws/install/spas_perception/share/spas_perception/hook/pythonpath.dsv'
+[20.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/spas_ws/install/spas_perception/share/spas_perception/hook/pythonpath.sh'
+[20.272s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/spas_ws/install/spas_perception/bin'
+[20.272s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spas_perception)
+[20.274s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_perception/share/spas_perception/package.ps1'
+[20.278s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/spas_ws/install/spas_perception/share/spas_perception/package.dsv'
+[20.281s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_perception/share/spas_perception/package.sh'
+[20.284s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_perception/share/spas_perception/package.bash'
+[20.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/spas_ws/install/spas_perception/share/spas_perception/package.zsh'
+[20.288s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/spas_ws/install/spas_perception/share/colcon-core/packages/spas_perception)
+[20.290s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[20.292s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[20.293s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[20.293s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[20.296s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[20.297s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/spas_ws/install/local_setup.ps1'
+[20.302s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/spas_ws/install/_local_setup_util_ps1.py'
+[20.309s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/spas_ws/install/setup.ps1'
+[20.316s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/spas_ws/install/local_setup.sh'
+[20.319s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/spas_ws/install/_local_setup_util_sh.py'
+[20.322s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/spas_ws/install/setup.sh'
+[20.329s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/spas_ws/install/local_setup.bash'
+[20.331s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/spas_ws/install/setup.bash'
+[20.337s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/spas_ws/install/local_setup.zsh'
+[20.339s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/spas_ws/install/setup.zsh'

@@ -1,0 +1,750 @@
+[0.000000] (-) TimerEvent: {}
+[0.002588] (slam_toolbox) JobQueued: {'identifier': 'slam_toolbox', 'dependencies': OrderedDict()}
+[0.003996] (sllidar_ros2) JobQueued: {'identifier': 'sllidar_ros2', 'dependencies': OrderedDict()}
+[0.004315] (spas_bringup) JobQueued: {'identifier': 'spas_bringup', 'dependencies': OrderedDict()}
+[0.004464] (spas_control) JobQueued: {'identifier': 'spas_control', 'dependencies': OrderedDict()}
+[0.004566] (spas_perception) JobQueued: {'identifier': 'spas_perception', 'dependencies': OrderedDict()}
+[0.004680] (spas_planning) JobQueued: {'identifier': 'spas_planning', 'dependencies': OrderedDict()}
+[0.004917] (slam_toolbox) JobStarted: {'identifier': 'slam_toolbox'}
+[0.089960] (sllidar_ros2) JobStarted: {'identifier': 'sllidar_ros2'}
+[0.097671] (-) TimerEvent: {}
+[0.165685] (spas_bringup) JobStarted: {'identifier': 'spas_bringup'}
+[0.197838] (-) TimerEvent: {}
+[0.210695] (spas_control) JobStarted: {'identifier': 'spas_control'}
+[0.298834] (-) TimerEvent: {}
+[0.303984] (slam_toolbox) JobProgress: {'identifier': 'slam_toolbox', 'progress': 'cmake'}
+[0.313748] (slam_toolbox) JobProgress: {'identifier': 'slam_toolbox', 'progress': 'build'}
+[0.320110] (slam_toolbox) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/spas_ws/build/slam_toolbox', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/spas_ws/build/slam_toolbox', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.57.146 63610 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/spas_ws/install/slam_toolbox/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/spas_ws'), ('TERM_PROGRAM_VERSION', '1.121.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-66117358-bfcd-482e-a748-93f21919b54f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ubuntu/spas_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin:/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/scripts/noConfigScripts:/usr/local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/.noConfigDebugAdapterEndpoints/endpoint-41ddc2ee152a93b8.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/ubuntu/.vscode-server/data/User/workspaceStorage/e032697359c870186215dbcd294e7172/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c858e614bc.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/spas_ws/build/slam_toolbox'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.57.146 63610 192.168.57.18 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/spas_ws/build/spas_planning:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_perception:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_control:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3/dist-packages:/usr/local/lib/python3/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble')]), 'shell': False}
+[0.350863] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'cmake'}
+[0.359712] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'build'}
+[0.361437] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/spas_ws/build/sllidar_ros2', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/spas_ws/build/sllidar_ros2', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.57.146 63610 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/spas_ws/install/slam_toolbox/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/spas_ws'), ('TERM_PROGRAM_VERSION', '1.121.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-66117358-bfcd-482e-a748-93f21919b54f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ubuntu/spas_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin:/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/scripts/noConfigScripts:/usr/local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/.noConfigDebugAdapterEndpoints/endpoint-41ddc2ee152a93b8.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/ubuntu/.vscode-server/data/User/workspaceStorage/e032697359c870186215dbcd294e7172/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c858e614bc.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/spas_ws/build/sllidar_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.57.146 63610 192.168.57.18 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/spas_ws/build/spas_planning:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_perception:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_control:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3/dist-packages:/usr/local/lib/python3/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble')]), 'shell': False}
+[0.403460] (-) TimerEvent: {}
+[0.425648] (spas_bringup) JobProgress: {'identifier': 'spas_bringup', 'progress': 'cmake'}
+[0.428430] (spas_bringup) JobProgress: {'identifier': 'spas_bringup', 'progress': 'build'}
+[0.430008] (spas_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/spas_ws/build/spas_bringup', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/spas_ws/build/spas_bringup', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.57.146 63610 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/spas_ws/install/slam_toolbox/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/spas_ws'), ('TERM_PROGRAM_VERSION', '1.121.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-66117358-bfcd-482e-a748-93f21919b54f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ubuntu/spas_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin:/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/scripts/noConfigScripts:/usr/local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/.noConfigDebugAdapterEndpoints/endpoint-41ddc2ee152a93b8.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/ubuntu/.vscode-server/data/User/workspaceStorage/e032697359c870186215dbcd294e7172/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c858e614bc.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/spas_ws/build/spas_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.57.146 63610 192.168.57.18 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/spas_ws/build/spas_planning:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_perception:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_control:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3/dist-packages:/usr/local/lib/python3/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble')]), 'shell': False}
+[0.503670] (-) TimerEvent: {}
+[0.604907] (-) TimerEvent: {}
+[0.706164] (-) TimerEvent: {}
+[0.713480] (slam_toolbox) StdoutLine: {'line': b'[  0%] Built target slam_toolbox__rs\n'}
+[0.806465] (-) TimerEvent: {}
+[0.832450] (sllidar_ros2) StdoutLine: {'line': b'[ 90%] Built target sllidar_node\n'}
+[0.847504] (slam_toolbox) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_symlink_slam_toolbox\n'}
+[0.906829] (-) TimerEvent: {}
+[0.968465] (sllidar_ros2) StdoutLine: {'line': b'[100%] Built target sllidar_client\n'}
+[1.006955] (-) TimerEvent: {}
+[1.052822] (slam_toolbox) StdoutLine: {'line': b'[  2%] Built target kartoSlamToolbox\n'}
+[1.107172] (-) TimerEvent: {}
+[1.208399] (-) TimerEvent: {}
+[1.309287] (-) TimerEvent: {}
+[1.410406] (-) TimerEvent: {}
+[1.511256] (-) TimerEvent: {}
+[1.612194] (-) TimerEvent: {}
+[1.713174] (-) TimerEvent: {}
+[1.814400] (-) TimerEvent: {}
+[1.915609] (-) TimerEvent: {}
+[2.016466] (-) TimerEvent: {}
+[2.117320] (-) TimerEvent: {}
+[2.218950] (-) TimerEvent: {}
+[2.321026] (-) TimerEvent: {}
+[2.422649] (-) TimerEvent: {}
+[2.524286] (-) TimerEvent: {}
+[2.545429] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[2.554733] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'install'}
+[2.605835] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/spas_ws/build/sllidar_ros2'], 'cwd': '/home/ubuntu/spas_ws/build/sllidar_ros2', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.57.146 63610 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/spas_ws/install/slam_toolbox/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/spas_ws'), ('TERM_PROGRAM_VERSION', '1.121.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-66117358-bfcd-482e-a748-93f21919b54f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ubuntu/spas_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin:/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/scripts/noConfigScripts:/usr/local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/.noConfigDebugAdapterEndpoints/endpoint-41ddc2ee152a93b8.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/ubuntu/.vscode-server/data/User/workspaceStorage/e032697359c870186215dbcd294e7172/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c858e614bc.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/spas_ws/build/sllidar_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.57.146 63610 192.168.57.18 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/spas_ws/build/spas_planning:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_perception:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_control:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3/dist-packages:/usr/local/lib/python3/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble')]), 'shell': False}
+[2.624497] (-) TimerEvent: {}
+[2.632360] (spas_bringup) CommandEnded: {'returncode': 0}
+[2.634562] (spas_bringup) JobProgress: {'identifier': 'spas_bringup', 'progress': 'install'}
+[2.634933] (spas_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/spas_ws/build/spas_bringup'], 'cwd': '/home/ubuntu/spas_ws/build/spas_bringup', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.57.146 63610 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/spas_ws/install/slam_toolbox/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/spas_ws'), ('TERM_PROGRAM_VERSION', '1.121.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-66117358-bfcd-482e-a748-93f21919b54f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ubuntu/spas_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin:/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/scripts/noConfigScripts:/usr/local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/.noConfigDebugAdapterEndpoints/endpoint-41ddc2ee152a93b8.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/ubuntu/.vscode-server/data/User/workspaceStorage/e032697359c870186215dbcd294e7172/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c858e614bc.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/spas_ws/build/spas_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.57.146 63610 192.168.57.18 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/spas_ws/build/spas_planning:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_perception:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_control:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3/dist-packages:/usr/local/lib/python3/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble')]), 'shell': False}
+[2.681560] (sllidar_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.682439] (sllidar_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.683848] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a1_launch.py\n'}
+[2.708950] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m12_launch .py\n'}
+[2.710065] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m7_launch.py\n'}
+[2.710668] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m8_launch.py\n'}
+[2.711203] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a3_launch.py\n'}
+[2.711726] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_c1_launch.py\n'}
+[2.712241] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_launch.py\n'}
+[2.712881] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_tcp_launch.py\n'}
+[2.713742] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2_launch.py\n'}
+[2.714412] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2e_launch.py\n'}
+[2.715155] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s3_launch.py\n'}
+[2.715872] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_t1_launch.py\n'}
+[2.716701] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a1_launch.py\n'}
+[2.717472] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m12_launch.py\n'}
+[2.721893] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m7_launch.py\n'}
+[2.729345] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m8_launch.py\n'}
+[2.730165] (-) TimerEvent: {}
+[2.732180] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a3_launch.py\n'}
+[2.749811] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_c1_launch.py\n'}
+[2.751623] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_launch.py\n'}
+[2.753394] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_tcp_launch.py\n'}
+[2.755033] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2_launch.py\n'}
+[2.756631] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2e_launch.py\n'}
+[2.758326] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s3_launch.py\n'}
+[2.760418] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_t1_launch.py\n'}
+[2.768774] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz\n'}
+[2.774264] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node\n'}
+[2.776326] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client\n'}
+[2.780331] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2\n'}
+[2.782887] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2\n'}
+[2.785184] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh\n'}
+[2.787620] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv\n'}
+[2.789896] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh\n'}
+[2.792616] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv\n'}
+[2.795411] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash\n'}
+[2.800924] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh\n'}
+[2.802201] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh\n'}
+[2.803349] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv\n'}
+[2.805471] (sllidar_ros2) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv\n'}
+[2.819219] (spas_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.830381] (-) TimerEvent: {}
+[2.832937] (spas_bringup) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.840649] (spas_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/launch/spas_bringup_launch.py\n'}
+[2.843837] (spas_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/ament_index/resource_index/package_run_dependencies/spas_bringup\n'}
+[2.854219] (spas_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/ament_index/resource_index/parent_prefix_path/spas_bringup\n'}
+[2.855774] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2\n'}
+[2.856936] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.858169] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.859335] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake\n'}
+[2.860275] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake\n'}
+[2.861468] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/package.xml\n'}
+[2.862862] (spas_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/environment/ament_prefix_path.sh\n'}
+[2.865461] (spas_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/environment/ament_prefix_path.dsv\n'}
+[2.867943] (spas_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/environment/path.sh\n'}
+[2.871038] (spas_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/environment/path.dsv\n'}
+[2.880288] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[2.886839] (spas_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/local_setup.bash\n'}
+[2.892910] (spas_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/local_setup.sh\n'}
+[2.896966] (spas_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/local_setup.zsh\n'}
+[2.899050] (spas_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/local_setup.dsv\n'}
+[2.902858] (spas_bringup) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/package.dsv\n'}
+[2.930670] (-) TimerEvent: {}
+[2.959545] (spas_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/ament_index/resource_index/packages/spas_bringup\n'}
+[2.960271] (spas_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/cmake/spas_bringupConfig.cmake\n'}
+[2.960777] (spas_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/cmake/spas_bringupConfig-version.cmake\n'}
+[2.967497] (spas_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/package.xml\n'}
+[3.030884] (-) TimerEvent: {}
+[3.143228] (-) TimerEvent: {}
+[3.198622] (slam_toolbox) StdoutLine: {'line': b'running egg_info\n'}
+[3.206439] (slam_toolbox) StdoutLine: {'line': b'writing slam_toolbox.egg-info/PKG-INFO\n'}
+[3.207513] (slam_toolbox) StdoutLine: {'line': b'writing dependency_links to slam_toolbox.egg-info/dependency_links.txt\n'}
+[3.209406] (slam_toolbox) StdoutLine: {'line': b'writing top-level names to slam_toolbox.egg-info/top_level.txt\n'}
+[3.223260] (slam_toolbox) StdoutLine: {'line': b"reading manifest file 'slam_toolbox.egg-info/SOURCES.txt'\n"}
+[3.233528] (slam_toolbox) StdoutLine: {'line': b"writing manifest file 'slam_toolbox.egg-info/SOURCES.txt'\n"}
+[3.248144] (-) TimerEvent: {}
+[3.317605] (sllidar_ros2) JobEnded: {'identifier': 'sllidar_ros2', 'rc': 0}
+[3.322566] (spas_perception) JobStarted: {'identifier': 'spas_perception'}
+[3.348780] (-) TimerEvent: {}
+[3.401858] (spas_bringup) CommandEnded: {'returncode': 0}
+[3.449186] (-) TimerEvent: {}
+[3.451248] (slam_toolbox) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_slam_toolbox_egg\n'}
+[3.513626] (spas_bringup) JobEnded: {'identifier': 'spas_bringup', 'rc': 0}
+[3.518221] (spas_planning) JobStarted: {'identifier': 'spas_planning'}
+[3.549417] (-) TimerEvent: {}
+[3.627572] (slam_toolbox) StdoutLine: {'line': b'[  2%] Built target slam_toolbox__cpp\n'}
+[3.649576] (-) TimerEvent: {}
+[3.751351] (-) TimerEvent: {}
+[3.854058] (-) TimerEvent: {}
+[3.965773] (-) TimerEvent: {}
+[3.995841] (slam_toolbox) StdoutLine: {'line': b'[ 11%] Built target slam_toolbox__rosidl_generator_c\n'}
+[4.065946] (-) TimerEvent: {}
+[4.167682] (-) TimerEvent: {}
+[4.182242] (slam_toolbox) StdoutLine: {'line': b'[ 20%] Built target slam_toolbox__rosidl_typesupport_cpp\n'}
+[4.267877] (-) TimerEvent: {}
+[4.369824] (-) TimerEvent: {}
+[4.465080] (slam_toolbox) StdoutLine: {'line': b'[ 28%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c\n'}
+[4.470476] (-) TimerEvent: {}
+[4.571524] (-) TimerEvent: {}
+[4.672658] (-) TimerEvent: {}
+[4.678362] (slam_toolbox) StdoutLine: {'line': b'[ 37%] Built target slam_toolbox__rosidl_typesupport_introspection_c\n'}
+[4.772875] (-) TimerEvent: {}
+[4.839358] (slam_toolbox) StdoutLine: {'line': b'[ 46%] Built target slam_toolbox__rosidl_typesupport_c\n'}
+[4.873109] (-) TimerEvent: {}
+[4.974274] (-) TimerEvent: {}
+[5.075282] (-) TimerEvent: {}
+[5.167689] (slam_toolbox) StdoutLine: {'line': b'[ 48%] Built target SlamToolboxPlugin\n'}
+[5.175461] (-) TimerEvent: {}
+[5.276392] (-) TimerEvent: {}
+[5.377453] (-) TimerEvent: {}
+[5.478342] (-) TimerEvent: {}
+[5.525207] (slam_toolbox) StdoutLine: {'line': b'[ 50%] Built target ceres_solver_plugin\n'}
+[5.578550] (-) TimerEvent: {}
+[5.679549] (-) TimerEvent: {}
+[5.781007] (-) TimerEvent: {}
+[5.882123] (-) TimerEvent: {}
+[5.983150] (-) TimerEvent: {}
+[6.083779] (slam_toolbox) StdoutLine: {'line': b'[ 55%] Built target toolbox_common\n'}
+[6.084484] (-) TimerEvent: {}
+[6.185483] (-) TimerEvent: {}
+[6.285818] (slam_toolbox) StdoutLine: {'line': b'[ 64%] Built target slam_toolbox__rosidl_typesupport_introspection_cpp\n'}
+[6.287177] (-) TimerEvent: {}
+[6.388322] (-) TimerEvent: {}
+[6.489413] (-) TimerEvent: {}
+[6.590640] (-) TimerEvent: {}
+[6.692052] (-) TimerEvent: {}
+[6.794720] (-) TimerEvent: {}
+[6.797453] (slam_toolbox) StdoutLine: {'line': b'[ 66%] Built target sync_slam_toolbox\n'}
+[6.895165] (-) TimerEvent: {}
+[6.996464] (-) TimerEvent: {}
+[7.097971] (-) TimerEvent: {}
+[7.193513] (slam_toolbox) StdoutLine: {'line': b'[ 67%] Built target localization_slam_toolbox\n'}
+[7.198251] (-) TimerEvent: {}
+[7.299628] (-) TimerEvent: {}
+[7.402027] (-) TimerEvent: {}
+[7.507758] (-) TimerEvent: {}
+[7.520225] (slam_toolbox) StdoutLine: {'line': b'[ 68%] Built target lifelong_slam_toolbox\n'}
+[7.608299] (-) TimerEvent: {}
+[7.710084] (-) TimerEvent: {}
+[7.812830] (-) TimerEvent: {}
+[7.829153] (slam_toolbox) StdoutLine: {'line': b'[ 70%] Built target merge_maps_kinematic\n'}
+[7.912992] (-) TimerEvent: {}
+[8.014011] (-) TimerEvent: {}
+[8.086565] (slam_toolbox) StdoutLine: {'line': b'[ 71%] Built target sync_slam_toolbox_node\n'}
+[8.114161] (-) TimerEvent: {}
+[8.215301] (-) TimerEvent: {}
+[8.317208] (-) TimerEvent: {}
+[8.418724] (-) TimerEvent: {}
+[8.466229] (slam_toolbox) StdoutLine: {'line': b'[ 72%] Built target localization_slam_toolbox_node\n'}
+[8.519141] (-) TimerEvent: {}
+[8.620646] (-) TimerEvent: {}
+[8.721619] (-) TimerEvent: {}
+[8.804813] (slam_toolbox) StdoutLine: {'line': b'[ 74%] Built target lifelong_slam_toolbox_node\n'}
+[8.821893] (-) TimerEvent: {}
+[8.923312] (-) TimerEvent: {}
+[9.024328] (-) TimerEvent: {}
+[9.117031] (slam_toolbox) StdoutLine: {'line': b'[ 76%] Built target map_and_localization_slam_toolbox\n'}
+[9.124516] (-) TimerEvent: {}
+[9.225599] (-) TimerEvent: {}
+[9.327572] (-) TimerEvent: {}
+[9.428502] (-) TimerEvent: {}
+[9.435459] (slam_toolbox) StdoutLine: {'line': b'[ 78%] Built target async_slam_toolbox\n'}
+[9.529074] (-) TimerEvent: {}
+[9.630669] (-) TimerEvent: {}
+[9.699557] (slam_toolbox) StdoutLine: {'line': b'[ 79%] Built target map_and_localization_slam_toolbox_node\n'}
+[9.730831] (-) TimerEvent: {}
+[9.832480] (-) TimerEvent: {}
+[9.935406] (-) TimerEvent: {}
+[9.974907] (slam_toolbox) StdoutLine: {'line': b'[ 80%] Built target async_slam_toolbox_node\n'}
+[10.036035] (-) TimerEvent: {}
+[10.140179] (-) TimerEvent: {}
+[10.186897] (slam_toolbox) StdoutLine: {'line': b'[ 88%] Built target slam_toolbox__rosidl_typesupport_fastrtps_cpp\n'}
+[10.240539] (-) TimerEvent: {}
+[10.343038] (-) TimerEvent: {}
+[10.412304] (spas_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/ubuntu/spas_ws/build/spas_control/build', '--no-deps', 'symlink_data'], 'cwd': '/home/ubuntu/spas_ws/build/spas_control', 'env': {'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.57.146 63610 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/spas_ws/install/slam_toolbox/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/spas_ws', 'TERM_PROGRAM_VERSION': '1.121.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-66117358-bfcd-482e-a748-93f21919b54f.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/spas_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin:/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/scripts/noConfigScripts:/usr/local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/.noConfigDebugAdapterEndpoints/endpoint-41ddc2ee152a93b8.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/ubuntu/.vscode-server/data/User/workspaceStorage/e032697359c870186215dbcd294e7172/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c858e614bc.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/spas_ws/build/spas_control', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.57.146 63610 192.168.57.18 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/spas_ws/build/spas_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_planning:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_perception:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_control:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3/dist-packages:/usr/local/lib/python3/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox'}, 'shell': False}
+[10.422248] (slam_toolbox) StdoutLine: {'line': b'[ 88%] Built target slam_toolbox\n'}
+[10.443222] (-) TimerEvent: {}
+[10.545563] (-) TimerEvent: {}
+[10.646508] (-) TimerEvent: {}
+[10.748853] (-) TimerEvent: {}
+[10.828989] (slam_toolbox) StdoutLine: {'line': b'[ 89%] Built target slam_toolbox__py\n'}
+[10.849107] (-) TimerEvent: {}
+[10.950265] (-) TimerEvent: {}
+[11.012583] (slam_toolbox) StdoutLine: {'line': b'[ 96%] Built target slam_toolbox__rosidl_generator_py\n'}
+[11.050507] (-) TimerEvent: {}
+[11.151528] (-) TimerEvent: {}
+[11.252450] (-) TimerEvent: {}
+[11.306657] (slam_toolbox) StdoutLine: {'line': b'[ 98%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c__pyext\n'}
+[11.352852] (-) TimerEvent: {}
+[11.455546] (-) TimerEvent: {}
+[11.557970] (-) TimerEvent: {}
+[11.660563] (-) TimerEvent: {}
+[11.671702] (slam_toolbox) StdoutLine: {'line': b'[ 99%] Built target slam_toolbox__rosidl_typesupport_c__pyext\n'}
+[11.760792] (-) TimerEvent: {}
+[11.876099] (-) TimerEvent: {}
+[11.913575] (slam_toolbox) StdoutLine: {'line': b'[100%] Built target slam_toolbox__rosidl_typesupport_introspection_c__pyext\n'}
+[11.976328] (-) TimerEvent: {}
+[12.079447] (-) TimerEvent: {}
+[12.149507] (slam_toolbox) CommandEnded: {'returncode': 0}
+[12.151332] (slam_toolbox) JobProgress: {'identifier': 'slam_toolbox', 'progress': 'install'}
+[12.153885] (slam_toolbox) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/spas_ws/build/slam_toolbox'], 'cwd': '/home/ubuntu/spas_ws/build/slam_toolbox', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.57.146 63610 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/spas_ws/install/slam_toolbox/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/spas_ws'), ('TERM_PROGRAM_VERSION', '1.121.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-66117358-bfcd-482e-a748-93f21919b54f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ubuntu/spas_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin:/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/scripts/noConfigScripts:/usr/local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/.noConfigDebugAdapterEndpoints/endpoint-41ddc2ee152a93b8.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/ubuntu/.vscode-server/data/User/workspaceStorage/e032697359c870186215dbcd294e7172/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c858e614bc.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/spas_ws/build/slam_toolbox'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.57.146 63610 192.168.57.18 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/spas_ws/build/spas_planning:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_perception:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_control:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3/dist-packages:/usr/local/lib/python3/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble')]), 'shell': False}
+[12.181807] (-) TimerEvent: {}
+[12.282782] (-) TimerEvent: {}
+[12.294704] (slam_toolbox) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[12.304725] (slam_toolbox) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[12.312689] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include//karto_sdk/Karto.h\n'}
+[12.334353] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include//karto_sdk/Macros.h\n'}
+[12.353957] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include//karto_sdk/Mapper.h\n'}
+[12.355660] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include//karto_sdk/Math.h\n'}
+[12.357353] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include//karto_sdk/Types.h\n'}
+[12.359080] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include//karto_sdk/nanoflann.hpp\n'}
+[12.360804] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include//karto_sdk/nanoflann_adaptors.h\n'}
+[12.364202] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/ament_index/resource_index/rosidl_interfaces/slam_toolbox\n'}
+[12.383031] (-) TimerEvent: {}
+[12.414726] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_generator_c__visibility_control.h\n'}
+[12.416377] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/add_submap.h\n'}
+[12.426236] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/clear.h\n'}
+[12.428139] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/clear_queue.h\n'}
+[12.430446] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/deserialize_pose_graph.h\n'}
+[12.432310] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__functions.h\n'}
+[12.438515] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__struct.h\n'}
+[12.440040] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__type_support.h\n'}
+[12.441454] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__functions.h\n'}
+[12.443157] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__struct.h\n'}
+[12.443744] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__type_support.h\n'}
+[12.446652] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__functions.h\n'}
+[12.449183] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__struct.h\n'}
+[12.450023] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__type_support.h\n'}
+[12.450860] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__functions.h\n'}
+[12.451900] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__struct.h\n'}
+[12.458307] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.h\n'}
+[12.461333] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__functions.h\n'}
+[12.463654] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__struct.h\n'}
+[12.473740] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__type_support.h\n'}
+[12.483389] (-) TimerEvent: {}
+[12.490460] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__functions.h\n'}
+[12.523705] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__struct.h\n'}
+[12.538066] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__type_support.h\n'}
+[12.546139] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__functions.h\n'}
+[12.551721] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__struct.h\n'}
+[12.559117] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__type_support.h\n'}
+[12.565196] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__functions.h\n'}
+[12.569715] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__struct.h\n'}
+[12.577990] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__type_support.h\n'}
+[12.591516] (-) TimerEvent: {}
+[12.608028] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__functions.h\n'}
+[12.615938] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__struct.h\n'}
+[12.623797] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__type_support.h\n'}
+[12.649813] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__functions.h\n'}
+[12.657909] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__struct.h\n'}
+[12.659255] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__type_support.h\n'}
+[12.660026] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/loop_closure.h\n'}
+[12.660526] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/merge_maps.h\n'}
+[12.666353] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/pause.h\n'}
+[12.667187] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/save_map.h\n'}
+[12.668077] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/serialize_pose_graph.h\n'}
+[12.668799] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/toggle_interactive.h\n'}
+[12.669514] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/environment/library_path.sh\n'}
+[12.670244] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/environment/library_path.dsv\n'}
+[12.676260] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[12.677008] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_fastrtps_c.h\n'}
+[12.677641] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__rosidl_typesupport_fastrtps_c.h\n'}
+[12.678075] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_fastrtps_c.h\n'}
+[12.678461] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_fastrtps_c.h\n'}
+[12.678856] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_fastrtps_c.h\n'}
+[12.679221] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_fastrtps_c.h\n'}
+[12.679571] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__rosidl_typesupport_fastrtps_c.h\n'}
+[12.679914] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__rosidl_typesupport_fastrtps_c.h\n'}
+[12.680246] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_fastrtps_c.h\n'}
+[12.680601] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_fastrtps_c.h\n'}
+[12.681045] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[12.701915] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/add_submap.hpp\n'}
+[12.705565] (-) TimerEvent: {}
+[12.706555] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/clear.hpp\n'}
+[12.707566] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/clear_queue.hpp\n'}
+[12.708296] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/deserialize_pose_graph.hpp\n'}
+[12.715005] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__builder.hpp\n'}
+[12.715976] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__struct.hpp\n'}
+[12.716596] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__traits.hpp\n'}
+[12.733620] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__type_support.hpp\n'}
+[12.737874] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__builder.hpp\n'}
+[12.739038] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__struct.hpp\n'}
+[12.741729] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__traits.hpp\n'}
+[12.750484] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__type_support.hpp\n'}
+[12.756877] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__builder.hpp\n'}
+[12.757956] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__struct.hpp\n'}
+[12.759157] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__traits.hpp\n'}
+[12.759688] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__type_support.hpp\n'}
+[12.760672] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__builder.hpp\n'}
+[12.764224] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__struct.hpp\n'}
+[12.770830] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__traits.hpp\n'}
+[12.776515] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.hpp\n'}
+[12.777584] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__builder.hpp\n'}
+[12.778487] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__struct.hpp\n'}
+[12.784574] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__traits.hpp\n'}
+[12.785275] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__type_support.hpp\n'}
+[12.787302] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__builder.hpp\n'}
+[12.793617] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__struct.hpp\n'}
+[12.794480] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__traits.hpp\n'}
+[12.795233] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__type_support.hpp\n'}
+[12.795812] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__builder.hpp\n'}
+[12.802290] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__struct.hpp\n'}
+[12.803196] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__traits.hpp\n'}
+[12.808661] (-) TimerEvent: {}
+[12.809288] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__type_support.hpp\n'}
+[12.810994] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__builder.hpp\n'}
+[12.818311] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__struct.hpp\n'}
+[12.821485] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__traits.hpp\n'}
+[12.822530] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__type_support.hpp\n'}
+[12.825670] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__builder.hpp\n'}
+[12.826388] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__struct.hpp\n'}
+[12.832660] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__traits.hpp\n'}
+[12.833295] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__type_support.hpp\n'}
+[12.854836] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__builder.hpp\n'}
+[12.855502] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__struct.hpp\n'}
+[12.856989] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__traits.hpp\n'}
+[12.857723] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__type_support.hpp\n'}
+[12.858480] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/loop_closure.hpp\n'}
+[12.859037] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/merge_maps.hpp\n'}
+[12.862142] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/pause.hpp\n'}
+[12.862865] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/save_map.hpp\n'}
+[12.863421] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/serialize_pose_graph.hpp\n'}
+[12.866013] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/toggle_interactive.hpp\n'}
+[12.866595] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[12.867047] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.867452] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.868053] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.868738] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.869189] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.869616] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.870072] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.870543] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.870936] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.871401] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.871871] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[12.872255] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_introspection_c.h\n'}
+[12.872731] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__rosidl_typesupport_introspection_c.h\n'}
+[12.873159] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_introspection_c.h\n'}
+[12.890256] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_introspection_c.h\n'}
+[12.891259] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_introspection_c.h\n'}
+[12.892204] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_introspection_c.h\n'}
+[12.893131] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__rosidl_typesupport_introspection_c.h\n'}
+[12.893846] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__rosidl_typesupport_introspection_c.h\n'}
+[12.894518] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_introspection_c.h\n'}
+[12.895073] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_introspection_c.h\n'}
+[12.896009] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.896902] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.911182] (-) TimerEvent: {}
+[12.929978] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.930705] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.931445] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.932004] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.932623] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.933238] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.934011] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.934663] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.935197] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/environment/pythonpath.sh\n'}
+[12.938524] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/environment/pythonpath.dsv\n'}
+[12.939174] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.6.10-py3.10.egg-info/PKG-INFO\n'}
+[12.939677] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.6.10-py3.10.egg-info/SOURCES.txt\n'}
+[12.940172] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.6.10-py3.10.egg-info/dependency_links.txt\n'}
+[12.940625] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.6.10-py3.10.egg-info/top_level.txt\n'}
+[12.950140] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/__init__.py\n'}
+[12.950693] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_c.c\n'}
+[12.954435] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[12.954930] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[12.955476] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/libslam_toolbox__rosidl_generator_py.so\n'}
+[12.956179] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[12.956738] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[12.957154] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[12.957618] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/__init__.py\n'}
+[12.958072] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_add_submap.py\n'}
+[12.958437] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_add_submap_s.c\n'}
+[12.958934] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear.py\n'}
+[12.959466] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear_queue.py\n'}
+[12.960315] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear_queue_s.c\n'}
+[12.961190] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear_s.c\n'}
+[12.978197] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_deserialize_pose_graph.py\n'}
+[12.978857] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_deserialize_pose_graph_s.c\n'}
+[12.979420] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_loop_closure.py\n'}
+[12.979896] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_loop_closure_s.c\n'}
+[12.990149] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_merge_maps.py\n'}
+[12.990837] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_merge_maps_s.c\n'}
+[12.991591] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_pause.py\n'}
+[12.992329] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_pause_s.c\n'}
+[12.992896] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_save_map.py\n'}
+[12.993351] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_save_map_s.c\n'}
+[12.993823] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_serialize_pose_graph.py\n'}
+[12.994182] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_serialize_pose_graph_s.c\n'}
+[12.994556] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_toggle_interactive.py\n'}
+[12.995035] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_toggle_interactive_s.c\n'}
+[12.995665] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[12.996206] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[12.996698] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[12.997160] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/ament_index/resource_index/rust_packages/slam_toolbox\n'}
+[13.014200] (-) TimerEvent: {}
+[13.015471] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/rust/Cargo.toml\n'}
+[13.016340] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/rust/build.rs\n'}
+[13.017011] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/rust/src/lib.rs\n'}
+[13.017574] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/rust/src/srv.rs\n'}
+[13.018024] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/rust/src/srv/rmw.rs\n'}
+[13.018446] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/Pause.idl\n'}
+[13.018905] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/ClearQueue.idl\n'}
+[13.019375] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/ToggleInteractive.idl\n'}
+[13.019774] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/Clear.idl\n'}
+[13.020382] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/SaveMap.idl\n'}
+[13.021088] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/LoopClosure.idl\n'}
+[13.042024] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/MergeMaps.idl\n'}
+[13.042611] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/AddSubmap.idl\n'}
+[13.043068] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/DeserializePoseGraph.idl\n'}
+[13.043588] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/SerializePoseGraph.idl\n'}
+[13.044082] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/Pause.srv\n'}
+[13.044593] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/Pause_Request.msg\n'}
+[13.045067] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/Pause_Response.msg\n'}
+[13.045638] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/ClearQueue.srv\n'}
+[13.046363] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/ClearQueue_Request.msg\n'}
+[13.046979] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/ClearQueue_Response.msg\n'}
+[13.047490] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/ToggleInteractive.srv\n'}
+[13.056857] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/ToggleInteractive_Request.msg\n'}
+[13.057502] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/ToggleInteractive_Response.msg\n'}
+[13.058056] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/Clear.srv\n'}
+[13.058601] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/Clear_Request.msg\n'}
+[13.059161] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/Clear_Response.msg\n'}
+[13.059608] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/SaveMap.srv\n'}
+[13.060279] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/SaveMap_Request.msg\n'}
+[13.060945] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/SaveMap_Response.msg\n'}
+[13.061751] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/LoopClosure.srv\n'}
+[13.062253] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/LoopClosure_Request.msg\n'}
+[13.062682] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/LoopClosure_Response.msg\n'}
+[13.063089] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/MergeMaps.srv\n'}
+[13.063511] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/MergeMaps_Request.msg\n'}
+[13.063994] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/MergeMaps_Response.msg\n'}
+[13.064449] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/AddSubmap.srv\n'}
+[13.064821] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/AddSubmap_Request.msg\n'}
+[13.065166] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/AddSubmap_Response.msg\n'}
+[13.121261] (-) TimerEvent: {}
+[13.122876] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/DeserializePoseGraph.srv\n'}
+[13.124801] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/DeserializePoseGraph_Request.msg\n'}
+[13.126637] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/DeserializePoseGraph_Response.msg\n'}
+[13.133305] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/SerializePoseGraph.srv\n'}
+[13.135592] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/SerializePoseGraph_Request.msg\n'}
+[13.137907] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/SerializePoseGraph_Response.msg\n'}
+[13.161613] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox//rviz_plugins.xml\n'}
+[13.163960] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox//solver_plugins.xml\n'}
+[13.169802] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/slam_toolbox/async_slam_toolbox_node\n'}
+[13.174767] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/slam_toolbox/sync_slam_toolbox_node\n'}
+[13.177658] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/slam_toolbox/localization_slam_toolbox_node\n'}
+[13.182034] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/slam_toolbox/map_and_localization_slam_toolbox_node\n'}
+[13.209571] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/slam_toolbox/merge_maps_kinematic\n'}
+[13.228889] (-) TimerEvent: {}
+[13.232168] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libtoolbox_common.so\n'}
+[13.235213] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libSlamToolboxPlugin.so\n'}
+[13.248331] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libceres_solver_plugin.so\n'}
+[13.250144] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libasync_slam_toolbox.so\n'}
+[13.252409] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libsync_slam_toolbox.so\n'}
+[13.255752] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/liblocalization_slam_toolbox.so\n'}
+[13.257886] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/liblifelong_slam_toolbox.so\n'}
+[13.262659] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libmap_and_localization_slam_toolbox.so\n'}
+[13.269188] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libkartoSlamToolbox.so\n'}
+[13.278651] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/experimental/slam_toolbox_lifelong.hpp\n'}
+[13.283464] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/experimental/slam_toolbox_map_and_localization.hpp\n'}
+[13.286602] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/get_pose_helper.hpp\n'}
+[13.296757] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/laser_utils.hpp\n'}
+[13.298682] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/loop_closure_assistant.hpp\n'}
+[13.300124] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/map_saver.hpp\n'}
+[13.310677] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/merge_maps_kinematic.hpp\n'}
+[13.311683] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/serialization.hpp\n'}
+[13.312331] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_mapper.hpp\n'}
+[13.312978] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_async.hpp\n'}
+[13.314298] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_common.hpp\n'}
+[13.315274] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_localization.hpp\n'}
+[13.316162] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_sync.hpp\n'}
+[13.317077] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/snap_utils.hpp\n'}
+[13.319021] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/toolbox_msgs.hpp\n'}
+[13.320421] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/toolbox_types.hpp\n'}
+[13.333830] (-) TimerEvent: {}
+[13.335791] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/visualization_utils.hpp\n'}
+[13.336603] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/launch/localization_launch.py\n'}
+[13.337176] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/launch/merge_maps_kinematic_launch.py\n'}
+[13.338064] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/launch/offline_launch.py\n'}
+[13.338556] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/launch/online_async_launch.py\n'}
+[13.339005] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/launch/online_sync_launch.py\n'}
+[13.344327] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_lifelong.yaml\n'}
+[13.345211] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_localization.yaml\n'}
+[13.346594] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_offline.yaml\n'}
+[13.347974] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_online_async.yaml\n'}
+[13.357001] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_online_sync.yaml\n'}
+[13.361874] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/config/slam_toolbox_default.rviz\n'}
+[13.366590] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/solver_plugins.xml\n'}
+[13.368469] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/rviz_plugins.xml\n'}
+[13.373034] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/ament_index/resource_index/package_run_dependencies/slam_toolbox\n'}
+[13.374131] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/ament_index/resource_index/parent_prefix_path/slam_toolbox\n'}
+[13.374887] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/environment/ament_prefix_path.sh\n'}
+[13.375497] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/environment/ament_prefix_path.dsv\n'}
+[13.376195] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/environment/path.sh\n'}
+[13.376908] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/environment/path.dsv\n'}
+[13.377617] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/local_setup.bash\n'}
+[13.378318] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/local_setup.sh\n'}
+[13.381578] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/local_setup.zsh\n'}
+[13.382578] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/local_setup.dsv\n'}
+[13.394400] (slam_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/package.dsv\n'}
+[13.400837] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/ament_index/resource_index/packages/slam_toolbox\n'}
+[13.406993] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/ament_index/resource_index/rclcpp_components/slam_toolbox\n'}
+[13.429978] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/ament_index/resource_index/rviz_common__pluginlib__plugin/slam_toolbox\n'}
+[13.430593] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/ament_index/resource_index/slam_toolbox__pluginlib__plugin/slam_toolbox\n'}
+[13.433131] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake-extras.cmake\n'}
+[13.434711] (-) TimerEvent: {}
+[13.437614] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.438597] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.440749] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[13.443536] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[13.447389] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[13.448354] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[13.449906] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolboxConfig.cmake\n'}
+[13.454583] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolboxConfig-version.cmake\n'}
+[13.457102] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/package.xml\n'}
+[13.459613] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_generator_c.so\n'}
+[13.461074] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_c.so\n'}
+[13.483155] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_cpp.so\n'}
+[13.483997] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_c.so\n'}
+[13.485072] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_c.so\n'}
+[13.486011] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_cpp.so\n'}
+[13.486828] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_cpp.so\n'}
+[13.487663] (slam_toolbox) StdoutLine: {'line': b"Listing '/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox'...\n"}
+[13.488637] (slam_toolbox) StdoutLine: {'line': b"Listing '/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv'...\n"}
+[13.489202] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_generator_py.so\n'}
+[13.489962] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_cExport.cmake\n'}
+[13.492757] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_cExport-release.cmake\n'}
+[13.494255] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[13.495032] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[13.505732] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_cppExport.cmake\n'}
+[13.506695] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[13.507410] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[13.507932] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cExport.cmake\n'}
+[13.508373] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[13.508810] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cExport.cmake\n'}
+[13.509428] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cExport-release.cmake\n'}
+[13.510033] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[13.510488] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[13.510911] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cppExport.cmake\n'}
+[13.511326] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cppExport-release.cmake\n'}
+[13.511729] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_pyExport.cmake\n'}
+[13.512305] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_pyExport-release.cmake\n'}
+[13.512975] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/SlamToolboxPluginExport.cmake\n'}
+[13.514248] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/SlamToolboxPluginExport-release.cmake\n'}
+[13.514839] (slam_toolbox) CommandEnded: {'returncode': 0}
+[13.535847] (-) TimerEvent: {}
+[13.636709] (-) TimerEvent: {}
+[13.738546] (-) TimerEvent: {}
+[13.744470] (slam_toolbox) JobEnded: {'identifier': 'slam_toolbox', 'rc': 0}
+[13.838806] (-) TimerEvent: {}
+[13.940032] (-) TimerEvent: {}
+[14.041992] (-) TimerEvent: {}
+[14.143402] (-) TimerEvent: {}
+[14.168043] (spas_control) StdoutLine: {'line': b'running develop\n'}
+[14.243596] (-) TimerEvent: {}
+[14.345330] (-) TimerEvent: {}
+[14.447454] (-) TimerEvent: {}
+[14.549107] (-) TimerEvent: {}
+[14.650642] (-) TimerEvent: {}
+[14.753606] (-) TimerEvent: {}
+[14.854599] (-) TimerEvent: {}
+[14.956184] (-) TimerEvent: {}
+[15.058164] (-) TimerEvent: {}
+[15.160105] (-) TimerEvent: {}
+[15.265527] (-) TimerEvent: {}
+[15.367243] (-) TimerEvent: {}
+[15.468528] (-) TimerEvent: {}
+[15.570507] (-) TimerEvent: {}
+[15.673984] (-) TimerEvent: {}
+[15.776363] (-) TimerEvent: {}
+[15.878416] (-) TimerEvent: {}
+[15.991348] (-) TimerEvent: {}
+[16.082428] (spas_planning) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/ubuntu/spas_ws/build/spas_planning/build', '--no-deps', 'symlink_data'], 'cwd': '/home/ubuntu/spas_ws/build/spas_planning', 'env': {'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.57.146 63610 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/spas_ws/install/slam_toolbox/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/spas_ws', 'TERM_PROGRAM_VERSION': '1.121.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-66117358-bfcd-482e-a748-93f21919b54f.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/spas_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin:/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/scripts/noConfigScripts:/usr/local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/.noConfigDebugAdapterEndpoints/endpoint-41ddc2ee152a93b8.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/ubuntu/.vscode-server/data/User/workspaceStorage/e032697359c870186215dbcd294e7172/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c858e614bc.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/spas_ws/build/spas_planning', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.57.146 63610 192.168.57.18 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/spas_ws/build/spas_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_planning:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_perception:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_control:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3/dist-packages:/usr/local/lib/python3/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox'}, 'shell': False}
+[16.098486] (-) TimerEvent: {}
+[16.200960] (-) TimerEvent: {}
+[16.304454] (-) TimerEvent: {}
+[16.409024] (-) TimerEvent: {}
+[16.471414] (spas_perception) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/ubuntu/spas_ws/build/spas_perception/build', '--no-deps', 'symlink_data'], 'cwd': '/home/ubuntu/spas_ws/build/spas_perception', 'env': {'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.57.146 63610 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/spas_ws/install/slam_toolbox/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/spas_ws', 'TERM_PROGRAM_VERSION': '1.121.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-66117358-bfcd-482e-a748-93f21919b54f.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/spas_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.vscode-server/cli/servers/Stable-f6cfa2ea2403534de03f069bdf160d06451ed282/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin:/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/scripts/noConfigScripts:/usr/local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/.noConfigDebugAdapterEndpoints/endpoint-41ddc2ee152a93b8.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/ubuntu/.vscode-server/data/User/workspaceStorage/e032697359c870186215dbcd294e7172/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c858e614bc.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/spas_ws/build/spas_perception', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.57.146 63610 192.168.57.18 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/spas_ws/build/spas_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_planning:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_perception:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_control:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3/dist-packages:/usr/local/lib/python3/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox'}, 'shell': False}
+[16.514154] (-) TimerEvent: {}
+[16.615579] (-) TimerEvent: {}
+[16.652401] (spas_control) StdoutLine: {'line': b'running egg_info\n'}
+[16.653283] (spas_control) StdoutLine: {'line': b'writing spas_control.egg-info/PKG-INFO\n'}
+[16.655245] (spas_control) StdoutLine: {'line': b'writing dependency_links to spas_control.egg-info/dependency_links.txt\n'}
+[16.656535] (spas_control) StdoutLine: {'line': b'writing entry points to spas_control.egg-info/entry_points.txt\n'}
+[16.657893] (spas_control) StdoutLine: {'line': b'writing requirements to spas_control.egg-info/requires.txt\n'}
+[16.658708] (spas_control) StdoutLine: {'line': b'writing top-level names to spas_control.egg-info/top_level.txt\n'}
+[16.671243] (spas_control) StdoutLine: {'line': b"reading manifest file 'spas_control.egg-info/SOURCES.txt'\n"}
+[16.675029] (spas_control) StdoutLine: {'line': b"writing manifest file 'spas_control.egg-info/SOURCES.txt'\n"}
+[16.683469] (spas_control) StdoutLine: {'line': b'running build_ext\n'}
+[16.684529] (spas_control) StdoutLine: {'line': b'Creating /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas-control.egg-link (link to .)\n'}
+[16.690308] (spas_control) StdoutLine: {'line': b'Installing stm32_bridge_node script to /home/ubuntu/spas_ws/install/spas_control/lib/spas_control\n'}
+[16.692472] (spas_control) StdoutLine: {'line': b'\n'}
+[16.693180] (spas_control) StdoutLine: {'line': b'Installed /home/ubuntu/spas_ws/build/spas_control\n'}
+[16.694413] (spas_control) StdoutLine: {'line': b'running symlink_data\n'}
+[16.715930] (-) TimerEvent: {}
+[16.818816] (-) TimerEvent: {}
+[16.922323] (-) TimerEvent: {}
+[16.998201] (spas_control) CommandEnded: {'returncode': 0}
+[17.022736] (-) TimerEvent: {}
+[17.097067] (spas_control) JobEnded: {'identifier': 'spas_control', 'rc': 0}
+[17.122996] (-) TimerEvent: {}
+[17.224009] (-) TimerEvent: {}
+[17.324856] (-) TimerEvent: {}
+[17.426395] (-) TimerEvent: {}
+[17.542813] (-) TimerEvent: {}
+[17.644562] (-) TimerEvent: {}
+[17.746324] (-) TimerEvent: {}
+[17.847989] (-) TimerEvent: {}
+[17.953731] (-) TimerEvent: {}
+[18.055837] (-) TimerEvent: {}
+[18.161129] (-) TimerEvent: {}
+[18.263344] (-) TimerEvent: {}
+[18.364939] (-) TimerEvent: {}
+[18.466713] (-) TimerEvent: {}
+[18.569488] (-) TimerEvent: {}
+[18.671863] (-) TimerEvent: {}
+[18.774687] (-) TimerEvent: {}
+[18.877397] (-) TimerEvent: {}
+[18.981188] (-) TimerEvent: {}
+[19.083978] (-) TimerEvent: {}
+[19.185830] (-) TimerEvent: {}
+[19.287797] (-) TimerEvent: {}
+[19.377728] (spas_planning) StdoutLine: {'line': b'running develop\n'}
+[19.388088] (-) TimerEvent: {}
+[19.490679] (-) TimerEvent: {}
+[19.592195] (-) TimerEvent: {}
+[19.694577] (-) TimerEvent: {}
+[19.731810] (spas_perception) StdoutLine: {'line': b'running develop\n'}
+[19.801644] (-) TimerEvent: {}
+[19.903515] (-) TimerEvent: {}
+[20.004884] (-) TimerEvent: {}
+[20.106921] (-) TimerEvent: {}
+[20.209181] (-) TimerEvent: {}
+[20.310856] (-) TimerEvent: {}
+[20.415967] (-) TimerEvent: {}
+[20.517147] (-) TimerEvent: {}
+[20.619207] (-) TimerEvent: {}
+[20.721350] (-) TimerEvent: {}
+[20.824869] (-) TimerEvent: {}
+[20.927156] (-) TimerEvent: {}
+[21.040233] (-) TimerEvent: {}
+[21.142907] (-) TimerEvent: {}
+[21.245106] (-) TimerEvent: {}
+[21.348601] (-) TimerEvent: {}
+[21.450247] (-) TimerEvent: {}
+[21.522812] (spas_planning) StdoutLine: {'line': b'running egg_info\n'}
+[21.523738] (spas_planning) StdoutLine: {'line': b'writing spas_planning.egg-info/PKG-INFO\n'}
+[21.531057] (spas_planning) StdoutLine: {'line': b'writing dependency_links to spas_planning.egg-info/dependency_links.txt\n'}
+[21.532856] (spas_planning) StdoutLine: {'line': b'writing entry points to spas_planning.egg-info/entry_points.txt\n'}
+[21.533608] (spas_planning) StdoutLine: {'line': b'writing requirements to spas_planning.egg-info/requires.txt\n'}
+[21.534522] (spas_planning) StdoutLine: {'line': b'writing top-level names to spas_planning.egg-info/top_level.txt\n'}
+[21.546620] (spas_planning) StdoutLine: {'line': b"reading manifest file 'spas_planning.egg-info/SOURCES.txt'\n"}
+[21.547361] (spas_planning) StdoutLine: {'line': b"writing manifest file 'spas_planning.egg-info/SOURCES.txt'\n"}
+[21.550451] (-) TimerEvent: {}
+[21.554181] (spas_planning) StdoutLine: {'line': b'running build_ext\n'}
+[21.567086] (spas_planning) StdoutLine: {'line': b'Creating /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas-planning.egg-link (link to .)\n'}
+[21.571745] (spas_planning) StdoutLine: {'line': b'Installing hybrid_A_star_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning\n'}
+[21.578225] (spas_planning) StdoutLine: {'line': b'Installing parking_space_detector script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning\n'}
+[21.584703] (spas_planning) StdoutLine: {'line': b'Installing safety_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning\n'}
+[21.589760] (spas_planning) StdoutLine: {'line': b'Installing vehicle_control_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning\n'}
+[21.598386] (spas_planning) StdoutLine: {'line': b'\n'}
+[21.603034] (spas_planning) StdoutLine: {'line': b'Installed /home/ubuntu/spas_ws/build/spas_planning\n'}
+[21.607353] (spas_planning) StdoutLine: {'line': b'running symlink_data\n'}
+[21.651887] (-) TimerEvent: {}
+[21.755343] (-) TimerEvent: {}
+[21.827884] (spas_planning) CommandEnded: {'returncode': 0}
+[21.855547] (-) TimerEvent: {}
+[21.928047] (spas_planning) JobEnded: {'identifier': 'spas_planning', 'rc': 0}
+[21.955868] (-) TimerEvent: {}
+[22.057840] (-) TimerEvent: {}
+[22.082589] (spas_perception) StdoutLine: {'line': b'running egg_info\n'}
+[22.085534] (spas_perception) StdoutLine: {'line': b'writing spas_perception.egg-info/PKG-INFO\n'}
+[22.090676] (spas_perception) StdoutLine: {'line': b'writing dependency_links to spas_perception.egg-info/dependency_links.txt\n'}
+[22.093807] (spas_perception) StdoutLine: {'line': b'writing entry points to spas_perception.egg-info/entry_points.txt\n'}
+[22.094966] (spas_perception) StdoutLine: {'line': b'writing requirements to spas_perception.egg-info/requires.txt\n'}
+[22.095918] (spas_perception) StdoutLine: {'line': b'writing top-level names to spas_perception.egg-info/top_level.txt\n'}
+[22.103682] (spas_perception) StdoutLine: {'line': b"reading manifest file 'spas_perception.egg-info/SOURCES.txt'\n"}
+[22.108747] (spas_perception) StdoutLine: {'line': b"writing manifest file 'spas_perception.egg-info/SOURCES.txt'\n"}
+[22.119634] (spas_perception) StdoutLine: {'line': b'running build_ext\n'}
+[22.121959] (spas_perception) StdoutLine: {'line': b'Creating /home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages/spas-perception.egg-link (link to .)\n'}
+[22.125637] (spas_perception) StdoutLine: {'line': b'Installing sensor_filter_node script to /home/ubuntu/spas_ws/install/spas_perception/lib/spas_perception\n'}
+[22.127538] (spas_perception) StdoutLine: {'line': b'\n'}
+[22.129126] (spas_perception) StdoutLine: {'line': b'Installed /home/ubuntu/spas_ws/build/spas_perception\n'}
+[22.134327] (spas_perception) StdoutLine: {'line': b'running symlink_data\n'}
+[22.158198] (-) TimerEvent: {}
+[22.263281] (-) TimerEvent: {}
+[22.367921] (-) TimerEvent: {}
+[22.380890] (spas_perception) CommandEnded: {'returncode': 0}
+[22.468260] (-) TimerEvent: {}
+[22.471766] (spas_perception) JobEnded: {'identifier': 'spas_perception', 'rc': 0}
+[22.482358] (-) EventReactorShutdown: {}

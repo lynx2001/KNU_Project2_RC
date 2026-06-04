@@ -1,0 +1,52 @@
+[0.384s] Invoking command in '/home/ubuntu/spas_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/spas_ws/build/sllidar_ros2 -- -j4 -l4
+[1.973s] [ 90%] Built target sllidar_node
+[2.279s] [100%] Built target sllidar_client
+[5.149s] Invoked command in '/home/ubuntu/spas_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/spas_ws/build/sllidar_ros2 -- -j4 -l4
+[5.158s] Invoking command in '/home/ubuntu/spas_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/spas_ws/build/sllidar_ros2
+[5.388s] -- Install configuration: ""
+[5.391s] -- Execute custom install script
+[5.465s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a1_launch.py
+[5.469s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m12_launch .py
+[5.470s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m7_launch.py
+[5.476s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m8_launch.py
+[5.477s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a3_launch.py
+[5.477s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_c1_launch.py
+[5.478s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_launch.py
+[5.478s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_tcp_launch.py
+[5.479s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2_launch.py
+[5.490s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2e_launch.py
+[5.493s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s3_launch.py
+[5.494s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_t1_launch.py
+[5.495s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a1_launch.py
+[5.495s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m12_launch.py
+[5.497s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m7_launch.py
+[5.521s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m8_launch.py
+[5.532s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a3_launch.py
+[5.532s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_c1_launch.py
+[5.533s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_launch.py
+[5.564s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_tcp_launch.py
+[5.572s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2_launch.py
+[5.573s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2e_launch.py
+[5.573s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s3_launch.py
+[5.574s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_t1_launch.py
+[5.588s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz
+[5.603s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node
+[5.604s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client
+[5.605s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2
+[5.606s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2
+[5.607s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh
+[5.608s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv
+[5.632s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh
+[5.634s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv
+[5.637s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash
+[5.638s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh
+[5.638s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh
+[5.644s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv
+[5.658s] -- Symlinking: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv
+[5.699s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2
+[5.700s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.701s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.706s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake
+[5.707s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake
+[5.708s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/sllidar_ros2/share/sllidar_ros2/package.xml
+[6.611s] Invoked command in '/home/ubuntu/spas_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/spas_ws/build/sllidar_ros2

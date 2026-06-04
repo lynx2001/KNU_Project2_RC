@@ -1,0 +1,138 @@
+[0.000000] (-) TimerEvent: {}
+[0.001045] (-) JobUnselected: {'identifier': 'slam_toolbox'}
+[0.002312] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.003187] (-) JobUnselected: {'identifier': 'spas_bringup'}
+[0.003821] (-) JobUnselected: {'identifier': 'spas_control'}
+[0.004130] (-) JobUnselected: {'identifier': 'spas_perception'}
+[0.004542] (spas_planning) JobQueued: {'identifier': 'spas_planning', 'dependencies': OrderedDict()}
+[0.004810] (spas_planning) JobStarted: {'identifier': 'spas_planning'}
+[0.098696] (-) TimerEvent: {}
+[0.199353] (-) TimerEvent: {}
+[0.299857] (-) TimerEvent: {}
+[0.400391] (-) TimerEvent: {}
+[0.501127] (-) TimerEvent: {}
+[0.601658] (-) TimerEvent: {}
+[0.702280] (-) TimerEvent: {}
+[0.802839] (-) TimerEvent: {}
+[0.903431] (-) TimerEvent: {}
+[1.003999] (-) TimerEvent: {}
+[1.104576] (-) TimerEvent: {}
+[1.205449] (-) TimerEvent: {}
+[1.306322] (-) TimerEvent: {}
+[1.406841] (-) TimerEvent: {}
+[1.507297] (-) TimerEvent: {}
+[1.607764] (-) TimerEvent: {}
+[1.708256] (-) TimerEvent: {}
+[1.808703] (-) TimerEvent: {}
+[1.909218] (-) TimerEvent: {}
+[2.009720] (-) TimerEvent: {}
+[2.110267] (-) TimerEvent: {}
+[2.210726] (-) TimerEvent: {}
+[2.311256] (-) TimerEvent: {}
+[2.411818] (-) TimerEvent: {}
+[2.512410] (-) TimerEvent: {}
+[2.613180] (-) TimerEvent: {}
+[2.713878] (-) TimerEvent: {}
+[2.814534] (-) TimerEvent: {}
+[2.915454] (-) TimerEvent: {}
+[3.015973] (-) TimerEvent: {}
+[3.116567] (-) TimerEvent: {}
+[3.217138] (-) TimerEvent: {}
+[3.317756] (-) TimerEvent: {}
+[3.418262] (-) TimerEvent: {}
+[3.518765] (-) TimerEvent: {}
+[3.619377] (-) TimerEvent: {}
+[3.719961] (-) TimerEvent: {}
+[3.820458] (-) TimerEvent: {}
+[3.920890] (-) TimerEvent: {}
+[4.021384] (-) TimerEvent: {}
+[4.123014] (-) TimerEvent: {}
+[4.224199] (-) TimerEvent: {}
+[4.324699] (-) TimerEvent: {}
+[4.425620] (-) TimerEvent: {}
+[4.526386] (-) TimerEvent: {}
+[4.626847] (-) TimerEvent: {}
+[4.727287] (-) TimerEvent: {}
+[4.827725] (-) TimerEvent: {}
+[4.928169] (-) TimerEvent: {}
+[5.028663] (-) TimerEvent: {}
+[5.129347] (-) TimerEvent: {}
+[5.230222] (-) TimerEvent: {}
+[5.331152] (-) TimerEvent: {}
+[5.431647] (-) TimerEvent: {}
+[5.532249] (-) TimerEvent: {}
+[5.632876] (-) TimerEvent: {}
+[5.733340] (-) TimerEvent: {}
+[5.833805] (-) TimerEvent: {}
+[5.934352] (-) TimerEvent: {}
+[6.034840] (-) TimerEvent: {}
+[6.135378] (-) TimerEvent: {}
+[6.236061] (-) TimerEvent: {}
+[6.336598] (-) TimerEvent: {}
+[6.437084] (-) TimerEvent: {}
+[6.537728] (-) TimerEvent: {}
+[6.639454] (-) TimerEvent: {}
+[6.679663] (spas_planning) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/spas_planning', 'build', '--build-base', '/home/ubuntu/spas_ws/build/spas_planning/build', 'install', '--record', '/home/ubuntu/spas_ws/build/spas_planning/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/spas_ws/src/spas_planning', 'env': {'AI_AGENT': 'claude-code_2-1-161_agent', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.57.158 52759 22', 'CLAUDE_CODE_ENTRYPOINT': 'claude-desktop', 'GIT_EDITOR': 'true', 'XDG_SESSION_TYPE': 'tty', 'CLAUDE_AGENT_SDK_VERSION': '0.3.161', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/spas_ws', 'ANTHROPIC_CUSTOM_HEADERS': '', 'ROS_PYTHON_VERSION': '3', 'CLAUDE_SSH_DAEMON_CHILD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'CLAUDE_CODE_SDK_HAS_HOST_AUTH_REFRESH': '1', 'TMPDIR': '/tmp/claude-1000', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'ANTHROPIC_BASE_URL': 'https://api.anthropic.com', 'XDG_SESSION_ID': '3', 'CLAUDE_CODE_ENABLE_ASK_USER_QUESTION_TOOL': 'true', 'TMPPREFIX': '/tmp/claude-1000/zsh', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ubuntu/.claude/remote/plugins/6af37698aa952bfb/bin', 'ANTHROPIC_API_KEY': '', 'CLAUDE_CODE_TMPDIR': '/tmp/claude-1000', 'COREPACK_ENABLE_AUTO_PIN': '0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'CLAUDE_EFFORT': 'high', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'ANTHROPIC_AUTH_TOKEN': '', 'CLAUDE_CODE_EMIT_TOOL_USE_SUMMARIES': 'false', 'CLAUDE_CODE_SESSION_ID': '5cde854e-fe32-4088-8893-18b6272116e4', 'CLAUDE_CODE_DISABLE_CRON': '', 'CLAUDECODE': '1', 'CLAUDE_CODE_SDK_HAS_OAUTH_REFRESH': '1', 'PWD': '/home/ubuntu/spas_ws/build/spas_planning', 'DISABLE_AUTOUPDATER': '1', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.57.158 52759 192.168.57.18 22', 'CLAUDE_CODE_EXECPATH': '/home/ubuntu/.claude/remote/ccd-cli/2.1.161', 'PYTHONPATH': '/home/ubuntu/spas_ws/build/spas_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[6.739688] (-) TimerEvent: {}
+[6.840625] (-) TimerEvent: {}
+[6.941129] (-) TimerEvent: {}
+[7.041612] (-) TimerEvent: {}
+[7.142061] (-) TimerEvent: {}
+[7.243080] (-) TimerEvent: {}
+[7.343606] (-) TimerEvent: {}
+[7.444083] (-) TimerEvent: {}
+[7.544995] (-) TimerEvent: {}
+[7.645559] (-) TimerEvent: {}
+[7.746179] (-) TimerEvent: {}
+[7.846659] (-) TimerEvent: {}
+[7.947153] (-) TimerEvent: {}
+[8.047644] (-) TimerEvent: {}
+[8.148171] (-) TimerEvent: {}
+[8.248703] (-) TimerEvent: {}
+[8.349263] (-) TimerEvent: {}
+[8.449860] (-) TimerEvent: {}
+[8.550345] (-) TimerEvent: {}
+[8.650812] (-) TimerEvent: {}
+[8.751323] (-) TimerEvent: {}
+[8.851824] (-) TimerEvent: {}
+[8.952358] (-) TimerEvent: {}
+[9.052928] (-) TimerEvent: {}
+[9.087395] (spas_planning) StdoutLine: {'line': b'running egg_info\n'}
+[9.099510] (spas_planning) StdoutLine: {'line': b'writing ../../build/spas_planning/spas_planning.egg-info/PKG-INFO\n'}
+[9.105241] (spas_planning) StdoutLine: {'line': b'writing dependency_links to ../../build/spas_planning/spas_planning.egg-info/dependency_links.txt\n'}
+[9.109638] (spas_planning) StdoutLine: {'line': b'writing entry points to ../../build/spas_planning/spas_planning.egg-info/entry_points.txt\n'}
+[9.113908] (spas_planning) StdoutLine: {'line': b'writing requirements to ../../build/spas_planning/spas_planning.egg-info/requires.txt\n'}
+[9.114869] (spas_planning) StdoutLine: {'line': b'writing top-level names to ../../build/spas_planning/spas_planning.egg-info/top_level.txt\n'}
+[9.140785] (spas_planning) StdoutLine: {'line': b"reading manifest file '../../build/spas_planning/spas_planning.egg-info/SOURCES.txt'\n"}
+[9.150465] (spas_planning) StdoutLine: {'line': b"writing manifest file '../../build/spas_planning/spas_planning.egg-info/SOURCES.txt'\n"}
+[9.151704] (spas_planning) StdoutLine: {'line': b'running build\n'}
+[9.154125] (-) TimerEvent: {}
+[9.154602] (spas_planning) StdoutLine: {'line': b'running build_py\n'}
+[9.162226] (spas_planning) StdoutLine: {'line': b'copying spas_planning/parking_space_detector.py -> /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning\n'}
+[9.169473] (spas_planning) StdoutLine: {'line': b'copying spas_planning/hybrid_A_star_node.py -> /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning\n'}
+[9.178177] (spas_planning) StdoutLine: {'line': b'running install\n'}
+[9.181403] (spas_planning) StdoutLine: {'line': b'running install_lib\n'}
+[9.187708] (spas_planning) StdoutLine: {'line': b'copying /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning/parking_space_detector.py -> /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning\n'}
+[9.193152] (spas_planning) StdoutLine: {'line': b'copying /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning/hybrid_A_star_node.py -> /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning\n'}
+[9.200668] (spas_planning) StdoutLine: {'line': b'byte-compiling /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning/parking_space_detector.py to parking_space_detector.cpython-310.pyc\n'}
+[9.220522] (spas_planning) StdoutLine: {'line': b'byte-compiling /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning/hybrid_A_star_node.py to hybrid_A_star_node.cpython-310.pyc\n'}
+[9.254351] (-) TimerEvent: {}
+[9.272128] (spas_planning) StdoutLine: {'line': b'running install_data\n'}
+[9.275053] (spas_planning) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.283614] (spas_planning) StdoutLine: {'line': b"removing '/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[9.288625] (spas_planning) StdoutLine: {'line': b'Copying ../../build/spas_planning/spas_planning.egg-info to /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning-0.0.0-py3.10.egg-info\n'}
+[9.354558] (-) TimerEvent: {}
+[9.367210] (spas_planning) StdoutLine: {'line': b'running install_scripts\n'}
+[9.455228] (-) TimerEvent: {}
+[9.494789] (spas_planning) StdoutLine: {'line': b'Installing hybrid_A_star_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning\n'}
+[9.498067] (spas_planning) StdoutLine: {'line': b'Installing parking_operator script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning\n'}
+[9.501687] (spas_planning) StdoutLine: {'line': b'Installing parking_space_detector script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning\n'}
+[9.504892] (spas_planning) StdoutLine: {'line': b'Installing safety_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning\n'}
+[9.508001] (spas_planning) StdoutLine: {'line': b'Installing vehicle_control_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning\n'}
+[9.512515] (spas_planning) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/spas_ws/build/spas_planning/install.log'\n"}
+[9.555545] (-) TimerEvent: {}
+[9.656238] (-) TimerEvent: {}
+[9.693650] (spas_planning) CommandEnded: {'returncode': 0}
+[9.756392] (-) TimerEvent: {}
+[9.797135] (spas_planning) JobEnded: {'identifier': 'spas_planning', 'rc': 0}
+[9.801355] (-) EventReactorShutdown: {}

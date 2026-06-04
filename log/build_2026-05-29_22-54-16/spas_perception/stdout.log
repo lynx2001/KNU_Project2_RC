@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing spas_perception.egg-info/PKG-INFO
+writing dependency_links to spas_perception.egg-info/dependency_links.txt
+writing entry points to spas_perception.egg-info/entry_points.txt
+writing requirements to spas_perception.egg-info/requires.txt
+writing top-level names to spas_perception.egg-info/top_level.txt
+reading manifest file 'spas_perception.egg-info/SOURCES.txt'
+writing manifest file 'spas_perception.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages/spas-perception.egg-link (link to .)
+Installing sensor_filter_node script to /home/ubuntu/spas_ws/install/spas_perception/lib/spas_perception
+
+Installed /home/ubuntu/spas_ws/build/spas_perception
+running symlink_data

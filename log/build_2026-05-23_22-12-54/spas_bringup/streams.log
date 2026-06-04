@@ -1,0 +1,44 @@
+[0.114s] Invoking command in '/home/ubuntu/spas_ws/build/spas_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/spas_ws/src/spas_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/spas_ws/install/spas_bringup
+[1.768s] -- The C compiler identification is GNU 11.4.0
+[2.975s] -- The CXX compiler identification is GNU 11.4.0
+[3.018s] -- Detecting C compiler ABI info
+[3.600s] -- Detecting C compiler ABI info - done
+[3.693s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.695s] -- Detecting C compile features
+[3.697s] -- Detecting C compile features - done
+[3.722s] -- Detecting CXX compiler ABI info
+[4.375s] -- Detecting CXX compiler ABI info - done
+[4.457s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.459s] -- Detecting CXX compile features
+[4.461s] -- Detecting CXX compile features - done
+[4.499s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.749s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[7.011s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[8.416s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[10.527s] -- Added test 'lint_cmake' to check CMake code style
+[10.558s] -- Added test 'xmllint' to check XML markup files
+[10.590s] -- Configuring done
+[10.655s] -- Generating done
+[10.726s] -- Build files have been written to: /home/ubuntu/spas_ws/build/spas_bringup
+[10.802s] Invoked command in '/home/ubuntu/spas_ws/build/spas_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/spas_ws/src/spas_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/spas_ws/install/spas_bringup
+[10.813s] Invoking command in '/home/ubuntu/spas_ws/build/spas_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/spas_ws/build/spas_bringup -- -j4 -l4
+[11.451s] Invoked command in '/home/ubuntu/spas_ws/build/spas_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/spas_ws/build/spas_bringup -- -j4 -l4
+[11.590s] Invoking command in '/home/ubuntu/spas_ws/build/spas_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/spas_ws/build/spas_bringup
+[11.754s] -- Install configuration: ""
+[11.764s] -- Execute custom install script
+[11.785s] -- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/ament_index/resource_index/package_run_dependencies/spas_bringup
+[11.936s] -- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/ament_index/resource_index/parent_prefix_path/spas_bringup
+[12.096s] -- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/environment/ament_prefix_path.sh
+[12.278s] -- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/environment/ament_prefix_path.dsv
+[12.429s] -- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/environment/path.sh
+[12.568s] -- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/environment/path.dsv
+[12.719s] -- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/local_setup.bash
+[12.836s] -- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/local_setup.sh
+[13.137s] -- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/local_setup.zsh
+[13.215s] -- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/local_setup.dsv
+[13.265s] -- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/package.dsv
+[13.315s] -- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/ament_index/resource_index/packages/spas_bringup
+[13.399s] -- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/cmake/spas_bringupConfig.cmake
+[13.440s] -- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/cmake/spas_bringupConfig-version.cmake
+[13.514s] -- Symlinking: /home/ubuntu/spas_ws/install/spas_bringup/share/spas_bringup/package.xml
+[13.597s] Invoked command in '/home/ubuntu/spas_ws/build/spas_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/spas_ws/build/spas_bringup

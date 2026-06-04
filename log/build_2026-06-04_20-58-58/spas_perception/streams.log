@@ -1,0 +1,17 @@
+[7.738s] Invoking command in '/home/ubuntu/spas_ws/build/spas_perception': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_perception/build --no-deps symlink_data
+[9.610s] running develop
+[11.047s] running egg_info
+[11.048s] writing spas_perception.egg-info/PKG-INFO
+[11.050s] writing dependency_links to spas_perception.egg-info/dependency_links.txt
+[11.051s] writing entry points to spas_perception.egg-info/entry_points.txt
+[11.052s] writing requirements to spas_perception.egg-info/requires.txt
+[11.053s] writing top-level names to spas_perception.egg-info/top_level.txt
+[11.063s] reading manifest file 'spas_perception.egg-info/SOURCES.txt'
+[11.069s] writing manifest file 'spas_perception.egg-info/SOURCES.txt'
+[11.077s] running build_ext
+[11.078s] Creating /home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages/spas-perception.egg-link (link to .)
+[11.082s] Installing sensor_filter_node script to /home/ubuntu/spas_ws/install/spas_perception/lib/spas_perception
+[11.084s] 
+[11.085s] Installed /home/ubuntu/spas_ws/build/spas_perception
+[11.087s] running symlink_data
+[11.341s] Invoked command in '/home/ubuntu/spas_ws/build/spas_perception' returned '0': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_perception/build --no-deps symlink_data

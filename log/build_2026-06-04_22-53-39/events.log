@@ -1,0 +1,170 @@
+[0.000000] (-) TimerEvent: {}
+[0.001738] (-) JobUnselected: {'identifier': 'slam_toolbox'}
+[0.002295] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.002386] (-) JobUnselected: {'identifier': 'spas_bringup'}
+[0.002463] (-) JobUnselected: {'identifier': 'spas_perception'}
+[0.002545] (spas_control) JobQueued: {'identifier': 'spas_control', 'dependencies': OrderedDict()}
+[0.002628] (spas_planning) JobQueued: {'identifier': 'spas_planning', 'dependencies': OrderedDict()}
+[0.002702] (spas_control) JobStarted: {'identifier': 'spas_control'}
+[0.044279] (spas_planning) JobStarted: {'identifier': 'spas_planning'}
+[0.099145] (-) TimerEvent: {}
+[0.199749] (-) TimerEvent: {}
+[0.300448] (-) TimerEvent: {}
+[0.401169] (-) TimerEvent: {}
+[0.501850] (-) TimerEvent: {}
+[0.602615] (-) TimerEvent: {}
+[0.703224] (-) TimerEvent: {}
+[0.803847] (-) TimerEvent: {}
+[0.904439] (-) TimerEvent: {}
+[1.005132] (-) TimerEvent: {}
+[1.105761] (-) TimerEvent: {}
+[1.206401] (-) TimerEvent: {}
+[1.307068] (-) TimerEvent: {}
+[1.407912] (-) TimerEvent: {}
+[1.510333] (-) TimerEvent: {}
+[1.611129] (-) TimerEvent: {}
+[1.711771] (-) TimerEvent: {}
+[1.812459] (-) TimerEvent: {}
+[1.913112] (-) TimerEvent: {}
+[2.013694] (-) TimerEvent: {}
+[2.114290] (-) TimerEvent: {}
+[2.214888] (-) TimerEvent: {}
+[2.315508] (-) TimerEvent: {}
+[2.416103] (-) TimerEvent: {}
+[2.516742] (-) TimerEvent: {}
+[2.617418] (-) TimerEvent: {}
+[2.718058] (-) TimerEvent: {}
+[2.818832] (-) TimerEvent: {}
+[2.919826] (-) TimerEvent: {}
+[3.020537] (-) TimerEvent: {}
+[3.121438] (-) TimerEvent: {}
+[3.222217] (-) TimerEvent: {}
+[3.322948] (-) TimerEvent: {}
+[3.423628] (-) TimerEvent: {}
+[3.524322] (-) TimerEvent: {}
+[3.625100] (-) TimerEvent: {}
+[3.725827] (-) TimerEvent: {}
+[3.826497] (-) TimerEvent: {}
+[3.927146] (-) TimerEvent: {}
+[4.027817] (-) TimerEvent: {}
+[4.128543] (-) TimerEvent: {}
+[4.229459] (-) TimerEvent: {}
+[4.330177] (-) TimerEvent: {}
+[4.430903] (-) TimerEvent: {}
+[4.531641] (-) TimerEvent: {}
+[4.632327] (-) TimerEvent: {}
+[4.733091] (-) TimerEvent: {}
+[4.833769] (-) TimerEvent: {}
+[4.934713] (-) TimerEvent: {}
+[5.036411] (-) TimerEvent: {}
+[5.085577] (spas_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--uninstall', '--editable', '--build-directory', '/home/ubuntu/spas_ws/build/spas_control/build'], 'cwd': '/home/ubuntu/spas_ws/build/spas_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.57.158 56821 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/spas_ws/install/slam_toolbox/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/spas_ws', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/spas_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/ubuntu/spas_ws/build/spas_control', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.57.158 56821 192.168.57.18 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/spas_ws/build/spas_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_planning:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_perception:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_control:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox'}, 'shell': False}
+[5.113903] (spas_planning) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/spas_planning', 'build', '--build-base', '/home/ubuntu/spas_ws/build/spas_planning/build', 'install', '--record', '/home/ubuntu/spas_ws/build/spas_planning/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/spas_ws/src/spas_planning', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.57.158 56821 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/spas_ws/install/slam_toolbox/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/spas_ws', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/spas_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/ubuntu/spas_ws/build/spas_planning', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.57.158 56821 192.168.57.18 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/spas_ws/build/spas_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_planning:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_perception:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_control:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox'}, 'shell': False}
+[5.136565] (-) TimerEvent: {}
+[5.237953] (-) TimerEvent: {}
+[5.338726] (-) TimerEvent: {}
+[5.439527] (-) TimerEvent: {}
+[5.540242] (-) TimerEvent: {}
+[5.641578] (-) TimerEvent: {}
+[5.742326] (-) TimerEvent: {}
+[5.842988] (-) TimerEvent: {}
+[5.943698] (-) TimerEvent: {}
+[6.044390] (-) TimerEvent: {}
+[6.145081] (-) TimerEvent: {}
+[6.245787] (-) TimerEvent: {}
+[6.346484] (-) TimerEvent: {}
+[6.447195] (-) TimerEvent: {}
+[6.547933] (-) TimerEvent: {}
+[6.612675] (spas_planning) StdoutLine: {'line': b'running egg_info\n'}
+[6.615926] (spas_planning) StdoutLine: {'line': b'writing ../../build/spas_planning/spas_planning.egg-info/PKG-INFO\n'}
+[6.617209] (spas_planning) StdoutLine: {'line': b'writing dependency_links to ../../build/spas_planning/spas_planning.egg-info/dependency_links.txt\n'}
+[6.618251] (spas_planning) StdoutLine: {'line': b'writing entry points to ../../build/spas_planning/spas_planning.egg-info/entry_points.txt\n'}
+[6.619261] (spas_planning) StdoutLine: {'line': b'writing requirements to ../../build/spas_planning/spas_planning.egg-info/requires.txt\n'}
+[6.620173] (spas_planning) StdoutLine: {'line': b'writing top-level names to ../../build/spas_planning/spas_planning.egg-info/top_level.txt\n'}
+[6.630767] (spas_planning) StdoutLine: {'line': b"reading manifest file '../../build/spas_planning/spas_planning.egg-info/SOURCES.txt'\n"}
+[6.635361] (spas_planning) StdoutLine: {'line': b"writing manifest file '../../build/spas_planning/spas_planning.egg-info/SOURCES.txt'\n"}
+[6.636029] (spas_planning) StdoutLine: {'line': b'running build\n'}
+[6.636539] (spas_planning) StdoutLine: {'line': b'running build_py\n'}
+[6.639136] (spas_planning) StdoutLine: {'line': b'running install\n'}
+[6.640482] (spas_planning) StdoutLine: {'line': b'running install_lib\n'}
+[6.648123] (-) TimerEvent: {}
+[6.650033] (spas_planning) StdoutLine: {'line': b'running install_data\n'}
+[6.650856] (spas_planning) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.660416] (spas_planning) StdoutLine: {'line': b"removing '/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[6.669093] (spas_planning) StdoutLine: {'line': b'Copying ../../build/spas_planning/spas_planning.egg-info to /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning-0.0.0-py3.10.egg-info\n'}
+[6.676246] (spas_planning) StdoutLine: {'line': b'running install_scripts\n'}
+[6.689273] (spas_control) StdoutLine: {'line': b'running develop\n'}
+[6.748286] (-) TimerEvent: {}
+[6.761128] (spas_planning) StdoutLine: {'line': b'Installing hybrid_A_star_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning\n'}
+[6.762197] (spas_planning) StdoutLine: {'line': b'Installing parking_operator script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning\n'}
+[6.763114] (spas_planning) StdoutLine: {'line': b'Installing parking_space_detector script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning\n'}
+[6.764165] (spas_planning) StdoutLine: {'line': b'Installing safety_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning\n'}
+[6.765233] (spas_planning) StdoutLine: {'line': b'Installing vehicle_control_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning\n'}
+[6.767649] (spas_planning) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/spas_ws/build/spas_planning/install.log'\n"}
+[6.848572] (-) TimerEvent: {}
+[6.909933] (spas_planning) CommandEnded: {'returncode': 0}
+[6.949202] (-) TimerEvent: {}
+[6.963899] (spas_planning) JobEnded: {'identifier': 'spas_planning', 'rc': 0}
+[7.049360] (-) TimerEvent: {}
+[7.149956] (-) TimerEvent: {}
+[7.250556] (-) TimerEvent: {}
+[7.351147] (-) TimerEvent: {}
+[7.451749] (-) TimerEvent: {}
+[7.552447] (-) TimerEvent: {}
+[7.653089] (-) TimerEvent: {}
+[7.730895] (spas_control) StdoutLine: {'line': b'Removing /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas-control.egg-link (link to .)\n'}
+[7.753308] (-) TimerEvent: {}
+[7.854154] (-) TimerEvent: {}
+[7.882471] (spas_control) CommandEnded: {'returncode': 0}
+[7.891654] (spas_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/spas_control', 'build', '--build-base', '/home/ubuntu/spas_ws/build/spas_control/build', 'install', '--record', '/home/ubuntu/spas_ws/build/spas_control/install.log', '--single-version-externally-managed', 'install_data', '--force'], 'cwd': '/home/ubuntu/spas_ws/src/spas_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.57.158 56821 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/spas_ws/install/slam_toolbox/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/spas_ws', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/spas_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/ubuntu/spas_ws/build/spas_control', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.57.158 56821 192.168.57.18 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/spas_ws/build/spas_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_planning:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_perception:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_control:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox'}, 'shell': False}
+[7.954375] (-) TimerEvent: {}
+[8.054994] (-) TimerEvent: {}
+[8.155600] (-) TimerEvent: {}
+[8.256200] (-) TimerEvent: {}
+[8.356806] (-) TimerEvent: {}
+[8.457433] (-) TimerEvent: {}
+[8.558040] (-) TimerEvent: {}
+[8.658645] (-) TimerEvent: {}
+[8.759244] (-) TimerEvent: {}
+[8.859827] (-) TimerEvent: {}
+[8.960437] (-) TimerEvent: {}
+[9.061089] (-) TimerEvent: {}
+[9.161663] (-) TimerEvent: {}
+[9.207506] (spas_control) StdoutLine: {'line': b'running egg_info\n'}
+[9.210165] (spas_control) StdoutLine: {'line': b'writing ../../build/spas_control/spas_control.egg-info/PKG-INFO\n'}
+[9.211131] (spas_control) StdoutLine: {'line': b'writing dependency_links to ../../build/spas_control/spas_control.egg-info/dependency_links.txt\n'}
+[9.211954] (spas_control) StdoutLine: {'line': b'writing entry points to ../../build/spas_control/spas_control.egg-info/entry_points.txt\n'}
+[9.212848] (spas_control) StdoutLine: {'line': b'writing requirements to ../../build/spas_control/spas_control.egg-info/requires.txt\n'}
+[9.213463] (spas_control) StdoutLine: {'line': b'writing top-level names to ../../build/spas_control/spas_control.egg-info/top_level.txt\n'}
+[9.222655] (spas_control) StdoutLine: {'line': b"reading manifest file '../../build/spas_control/spas_control.egg-info/SOURCES.txt'\n"}
+[9.226272] (spas_control) StdoutLine: {'line': b"writing manifest file '../../build/spas_control/spas_control.egg-info/SOURCES.txt'\n"}
+[9.226873] (spas_control) StdoutLine: {'line': b'running build\n'}
+[9.227314] (spas_control) StdoutLine: {'line': b'running build_py\n'}
+[9.227747] (spas_control) StdoutLine: {'line': b'creating /home/ubuntu/spas_ws/build/spas_control/build\n'}
+[9.228306] (spas_control) StdoutLine: {'line': b'creating /home/ubuntu/spas_ws/build/spas_control/build/lib\n'}
+[9.228748] (spas_control) StdoutLine: {'line': b'creating /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control\n'}
+[9.229232] (spas_control) StdoutLine: {'line': b'copying spas_control/ros_robot_controller_sdk.py -> /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control\n'}
+[9.230932] (spas_control) StdoutLine: {'line': b'copying spas_control/__init__.py -> /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control\n'}
+[9.231626] (spas_control) StdoutLine: {'line': b'copying spas_control/stm32_bridge_node.py -> /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control\n'}
+[9.232391] (spas_control) StdoutLine: {'line': b'running install\n'}
+[9.234005] (spas_control) StdoutLine: {'line': b'running install_lib\n'}
+[9.237677] (spas_control) StdoutLine: {'line': b'creating /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control\n'}
+[9.238305] (spas_control) StdoutLine: {'line': b'copying /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control/ros_robot_controller_sdk.py -> /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control\n'}
+[9.239176] (spas_control) StdoutLine: {'line': b'copying /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control/__init__.py -> /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control\n'}
+[9.239841] (spas_control) StdoutLine: {'line': b'copying /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control/stm32_bridge_node.py -> /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control\n'}
+[9.242845] (spas_control) StdoutLine: {'line': b'byte-compiling /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control/ros_robot_controller_sdk.py to ros_robot_controller_sdk.cpython-310.pyc\n'}
+[9.256915] (spas_control) StdoutLine: {'line': b'byte-compiling /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control/__init__.py to __init__.cpython-310.pyc\n'}
+[9.258108] (spas_control) StdoutLine: {'line': b'byte-compiling /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control/stm32_bridge_node.py to stm32_bridge_node.cpython-310.pyc\n'}
+[9.261826] (-) TimerEvent: {}
+[9.262796] (spas_control) StdoutLine: {'line': b'running install_data\n'}
+[9.263369] (spas_control) StdoutLine: {'line': b'copying resource/spas_control -> /home/ubuntu/spas_ws/install/spas_control/share/ament_index/resource_index/packages\n'}
+[9.264067] (spas_control) StdoutLine: {'line': b'copying package.xml -> /home/ubuntu/spas_ws/install/spas_control/share/spas_control\n'}
+[9.264821] (spas_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.271797] (spas_control) StdoutLine: {'line': b'Copying ../../build/spas_control/spas_control.egg-info to /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control-0.0.0-py3.10.egg-info\n'}
+[9.278539] (spas_control) StdoutLine: {'line': b'running install_scripts\n'}
+[9.356109] (spas_control) StdoutLine: {'line': b'Installing stm32_bridge_node script to /home/ubuntu/spas_ws/install/spas_control/lib/spas_control\n'}
+[9.357857] (spas_control) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/spas_ws/build/spas_control/install.log'\n"}
+[9.362160] (-) TimerEvent: {}
+[9.463369] (-) TimerEvent: {}
+[9.487047] (spas_control) CommandEnded: {'returncode': 0}
+[9.519088] (spas_control) JobEnded: {'identifier': 'spas_control', 'rc': 0}
+[9.522167] (-) EventReactorShutdown: {}

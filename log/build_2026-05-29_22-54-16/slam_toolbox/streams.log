@@ -1,0 +1,373 @@
+[0.589s] Invoking command in '/home/ubuntu/spas_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/spas_ws/build/slam_toolbox -- -j4 -l4
+[1.144s] [  0%] Built target slam_toolbox__rs
+[1.316s] [  0%] Built target ament_cmake_python_symlink_slam_toolbox
+[1.650s] [  2%] Built target kartoSlamToolbox
+[6.069s] running egg_info
+[6.070s] writing slam_toolbox.egg-info/PKG-INFO
+[6.070s] writing dependency_links to slam_toolbox.egg-info/dependency_links.txt
+[6.071s] writing top-level names to slam_toolbox.egg-info/top_level.txt
+[6.107s] reading manifest file 'slam_toolbox.egg-info/SOURCES.txt'
+[6.110s] writing manifest file 'slam_toolbox.egg-info/SOURCES.txt'
+[6.180s] [  2%] Built target ament_cmake_python_build_slam_toolbox_egg
+[6.389s] [  2%] Built target slam_toolbox__cpp
+[6.722s] [ 11%] Built target slam_toolbox__rosidl_generator_c
+[7.016s] [ 20%] Built target slam_toolbox__rosidl_typesupport_cpp
+[7.557s] [ 28%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c
+[7.850s] [ 37%] Built target slam_toolbox__rosidl_typesupport_introspection_c
+[8.145s] [ 46%] Built target slam_toolbox__rosidl_typesupport_c
+[8.672s] [ 48%] Built target SlamToolboxPlugin
+[9.218s] [ 50%] Built target ceres_solver_plugin
+[9.836s] [ 55%] Built target toolbox_common
+[10.154s] [ 64%] Built target slam_toolbox__rosidl_typesupport_introspection_cpp
+[10.583s] [ 66%] Built target sync_slam_toolbox
+[11.033s] [ 67%] Built target localization_slam_toolbox
+[11.393s] [ 68%] Built target lifelong_slam_toolbox
+[11.742s] [ 70%] Built target merge_maps_kinematic
+[12.177s] [ 71%] Built target sync_slam_toolbox_node
+[12.906s] [ 72%] Built target localization_slam_toolbox_node
+[13.295s] [ 74%] Built target lifelong_slam_toolbox_node
+[13.647s] [ 76%] Built target map_and_localization_slam_toolbox
+[14.037s] [ 78%] Built target async_slam_toolbox
+[14.399s] [ 79%] Built target map_and_localization_slam_toolbox_node
+[14.729s] [ 80%] Built target async_slam_toolbox_node
+[15.118s] [ 88%] Built target slam_toolbox__rosidl_typesupport_fastrtps_cpp
+[15.315s] [ 88%] Built target slam_toolbox
+[15.536s] [ 89%] Built target slam_toolbox__py
+[15.767s] [ 96%] Built target slam_toolbox__rosidl_generator_py
+[16.020s] [ 98%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c__pyext
+[16.479s] [ 99%] Built target slam_toolbox__rosidl_typesupport_c__pyext
+[17.058s] [100%] Built target slam_toolbox__rosidl_typesupport_introspection_c__pyext
+[17.475s] Invoked command in '/home/ubuntu/spas_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/spas_ws/build/slam_toolbox -- -j4 -l4
+[17.489s] Invoking command in '/home/ubuntu/spas_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/spas_ws/build/slam_toolbox
+[17.715s] -- Install configuration: "Release"
+[17.720s] -- Execute custom install script
+[17.732s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include//karto_sdk/Karto.h
+[17.766s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include//karto_sdk/Macros.h
+[17.771s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include//karto_sdk/Mapper.h
+[17.773s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include//karto_sdk/Math.h
+[17.774s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include//karto_sdk/Types.h
+[17.775s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include//karto_sdk/nanoflann.hpp
+[17.777s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include//karto_sdk/nanoflann_adaptors.h
+[17.778s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/ament_index/resource_index/rosidl_interfaces/slam_toolbox
+[17.786s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_generator_c__visibility_control.h
+[17.791s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/add_submap.h
+[17.794s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/clear.h
+[17.802s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/clear_queue.h
+[17.809s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/deserialize_pose_graph.h
+[17.809s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__functions.h
+[17.816s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__struct.h
+[17.833s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__type_support.h
+[17.835s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__functions.h
+[17.845s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__struct.h
+[17.854s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__type_support.h
+[17.856s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__functions.h
+[17.882s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__struct.h
+[17.883s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__type_support.h
+[17.885s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__functions.h
+[17.905s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__struct.h
+[17.910s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.h
+[17.916s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__functions.h
+[17.918s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__struct.h
+[17.923s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__type_support.h
+[17.932s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__functions.h
+[17.941s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__struct.h
+[17.947s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__type_support.h
+[17.954s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__functions.h
+[17.963s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__struct.h
+[17.965s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__type_support.h
+[17.973s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__functions.h
+[17.978s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__struct.h
+[17.999s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__type_support.h
+[18.006s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__functions.h
+[18.007s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__struct.h
+[18.013s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__type_support.h
+[18.017s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__functions.h
+[18.024s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__struct.h
+[18.029s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__type_support.h
+[18.038s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/loop_closure.h
+[18.049s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/merge_maps.h
+[18.052s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/pause.h
+[18.053s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/save_map.h
+[18.062s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/serialize_pose_graph.h
+[18.070s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/toggle_interactive.h
+[18.079s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/environment/library_path.sh
+[18.085s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/environment/library_path.dsv
+[18.087s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[18.105s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_fastrtps_c.h
+[18.113s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__rosidl_typesupport_fastrtps_c.h
+[18.116s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_fastrtps_c.h
+[18.122s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_fastrtps_c.h
+[18.133s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_fastrtps_c.h
+[18.136s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_fastrtps_c.h
+[18.139s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__rosidl_typesupport_fastrtps_c.h
+[18.160s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__rosidl_typesupport_fastrtps_c.h
+[18.168s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_fastrtps_c.h
+[18.174s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_fastrtps_c.h
+[18.216s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_generator_cpp__visibility_control.hpp
+[18.220s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/add_submap.hpp
+[18.225s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/clear.hpp
+[18.232s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/clear_queue.hpp
+[18.237s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/deserialize_pose_graph.hpp
+[18.247s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__builder.hpp
+[18.252s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__struct.hpp
+[18.257s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__traits.hpp
+[18.282s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__type_support.hpp
+[18.295s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__builder.hpp
+[18.318s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__struct.hpp
+[18.328s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__traits.hpp
+[18.334s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__type_support.hpp
+[18.338s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__builder.hpp
+[18.341s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__struct.hpp
+[18.368s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__traits.hpp
+[18.383s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__type_support.hpp
+[18.392s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__builder.hpp
+[18.400s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__struct.hpp
+[18.413s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__traits.hpp
+[18.424s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.hpp
+[18.435s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__builder.hpp
+[18.457s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__struct.hpp
+[18.458s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__traits.hpp
+[18.461s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__type_support.hpp
+[18.471s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__builder.hpp
+[18.487s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__struct.hpp
+[18.496s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__traits.hpp
+[18.501s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__type_support.hpp
+[18.505s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__builder.hpp
+[18.508s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__struct.hpp
+[18.512s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__traits.hpp
+[18.524s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__type_support.hpp
+[18.527s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__builder.hpp
+[18.537s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__struct.hpp
+[18.538s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__traits.hpp
+[18.542s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__type_support.hpp
+[18.546s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__builder.hpp
+[18.559s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__struct.hpp
+[18.575s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__traits.hpp
+[18.578s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__type_support.hpp
+[18.580s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__builder.hpp
+[18.582s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__struct.hpp
+[18.585s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__traits.hpp
+[18.587s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__type_support.hpp
+[18.599s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/loop_closure.hpp
+[18.602s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/merge_maps.hpp
+[18.604s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/pause.hpp
+[18.607s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/save_map.hpp
+[18.610s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/serialize_pose_graph.hpp
+[18.612s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/toggle_interactive.hpp
+[18.653s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[18.656s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_fastrtps_cpp.hpp
+[18.658s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__rosidl_typesupport_fastrtps_cpp.hpp
+[18.666s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_fastrtps_cpp.hpp
+[18.677s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_fastrtps_cpp.hpp
+[18.680s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_fastrtps_cpp.hpp
+[18.682s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_fastrtps_cpp.hpp
+[18.684s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__rosidl_typesupport_fastrtps_cpp.hpp
+[18.699s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__rosidl_typesupport_fastrtps_cpp.hpp
+[18.701s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_fastrtps_cpp.hpp
+[18.705s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_fastrtps_cpp.hpp
+[18.716s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[18.726s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_introspection_c.h
+[18.728s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__rosidl_typesupport_introspection_c.h
+[18.731s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_introspection_c.h
+[18.738s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_introspection_c.h
+[18.741s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_introspection_c.h
+[18.745s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_introspection_c.h
+[18.751s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__rosidl_typesupport_introspection_c.h
+[18.754s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__rosidl_typesupport_introspection_c.h
+[18.762s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_introspection_c.h
+[18.766s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_introspection_c.h
+[18.780s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_introspection_cpp.hpp
+[18.794s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__rosidl_typesupport_introspection_cpp.hpp
+[18.805s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_introspection_cpp.hpp
+[18.809s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_introspection_cpp.hpp
+[18.815s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_introspection_cpp.hpp
+[18.822s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_introspection_cpp.hpp
+[18.833s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__rosidl_typesupport_introspection_cpp.hpp
+[18.837s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__rosidl_typesupport_introspection_cpp.hpp
+[18.843s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_introspection_cpp.hpp
+[18.855s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_introspection_cpp.hpp
+[18.858s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/environment/pythonpath.sh
+[18.863s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/environment/pythonpath.dsv
+[18.886s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.6.10-py3.10.egg-info/PKG-INFO
+[18.890s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.6.10-py3.10.egg-info/SOURCES.txt
+[18.902s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.6.10-py3.10.egg-info/dependency_links.txt
+[18.902s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.6.10-py3.10.egg-info/top_level.txt
+[18.921s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/__init__.py
+[18.927s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_c.c
+[18.931s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_fastrtps_c.c
+[18.934s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_introspection_c.c
+[18.948s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/libslam_toolbox__rosidl_generator_py.so
+[18.951s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[18.954s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[18.959s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[18.965s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/__init__.py
+[18.968s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_add_submap.py
+[18.975s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_add_submap_s.c
+[18.978s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear.py
+[18.988s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear_queue.py
+[18.991s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear_queue_s.c
+[18.995s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear_s.c
+[18.999s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_deserialize_pose_graph.py
+[19.014s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_deserialize_pose_graph_s.c
+[19.019s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_loop_closure.py
+[19.024s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_loop_closure_s.c
+[19.040s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_merge_maps.py
+[19.043s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_merge_maps_s.c
+[19.046s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_pause.py
+[19.049s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_pause_s.c
+[19.052s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_save_map.py
+[19.054s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_save_map_s.c
+[19.082s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_serialize_pose_graph.py
+[19.088s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_serialize_pose_graph_s.c
+[19.091s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_toggle_interactive.py
+[19.097s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_toggle_interactive_s.c
+[19.126s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[19.131s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[19.135s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[19.139s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/ament_index/resource_index/rust_packages/slam_toolbox
+[19.143s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/rust/Cargo.toml
+[19.145s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/rust/build.rs
+[19.147s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/rust/src/lib.rs
+[19.151s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/rust/src/srv.rs
+[19.174s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/rust/src/srv/rmw.rs
+[19.177s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/Pause.idl
+[19.180s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/ClearQueue.idl
+[19.182s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/ToggleInteractive.idl
+[19.186s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/Clear.idl
+[19.188s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/SaveMap.idl
+[19.191s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/LoopClosure.idl
+[19.195s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/MergeMaps.idl
+[19.200s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/AddSubmap.idl
+[19.202s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/DeserializePoseGraph.idl
+[19.205s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/SerializePoseGraph.idl
+[19.207s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/Pause.srv
+[19.211s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/Pause_Request.msg
+[19.246s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/Pause_Response.msg
+[19.248s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/ClearQueue.srv
+[19.251s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/ClearQueue_Request.msg
+[19.254s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/ClearQueue_Response.msg
+[19.293s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/ToggleInteractive.srv
+[19.297s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/ToggleInteractive_Request.msg
+[19.300s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/ToggleInteractive_Response.msg
+[19.314s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/Clear.srv
+[19.315s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/Clear_Request.msg
+[19.323s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/Clear_Response.msg
+[19.329s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/SaveMap.srv
+[19.331s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/SaveMap_Request.msg
+[19.344s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/SaveMap_Response.msg
+[19.349s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/LoopClosure.srv
+[19.354s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/LoopClosure_Request.msg
+[19.369s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/LoopClosure_Response.msg
+[19.385s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/MergeMaps.srv
+[19.389s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/MergeMaps_Request.msg
+[19.394s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/MergeMaps_Response.msg
+[19.398s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/AddSubmap.srv
+[19.403s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/AddSubmap_Request.msg
+[19.424s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/AddSubmap_Response.msg
+[19.428s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/DeserializePoseGraph.srv
+[19.431s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/DeserializePoseGraph_Request.msg
+[19.436s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/DeserializePoseGraph_Response.msg
+[19.439s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/SerializePoseGraph.srv
+[19.442s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/SerializePoseGraph_Request.msg
+[19.452s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/srv/SerializePoseGraph_Response.msg
+[19.468s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox//rviz_plugins.xml
+[19.486s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox//solver_plugins.xml
+[19.491s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/slam_toolbox/async_slam_toolbox_node
+[19.497s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/slam_toolbox/sync_slam_toolbox_node
+[19.500s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/slam_toolbox/localization_slam_toolbox_node
+[19.519s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/slam_toolbox/map_and_localization_slam_toolbox_node
+[19.523s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/slam_toolbox/merge_maps_kinematic
+[19.528s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libtoolbox_common.so
+[19.532s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libSlamToolboxPlugin.so
+[19.535s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libceres_solver_plugin.so
+[19.539s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libasync_slam_toolbox.so
+[19.542s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libsync_slam_toolbox.so
+[19.560s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/liblocalization_slam_toolbox.so
+[19.564s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/liblifelong_slam_toolbox.so
+[19.572s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libmap_and_localization_slam_toolbox.so
+[19.580s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libkartoSlamToolbox.so
+[19.595s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/experimental/slam_toolbox_lifelong.hpp
+[19.598s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/experimental/slam_toolbox_map_and_localization.hpp
+[19.602s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/get_pose_helper.hpp
+[19.606s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/laser_utils.hpp
+[19.608s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/loop_closure_assistant.hpp
+[19.612s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/map_saver.hpp
+[19.647s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/merge_maps_kinematic.hpp
+[19.651s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/serialization.hpp
+[19.653s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_mapper.hpp
+[19.656s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_async.hpp
+[19.668s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_common.hpp
+[19.677s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_localization.hpp
+[19.680s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_sync.hpp
+[19.684s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/snap_utils.hpp
+[19.690s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/toolbox_msgs.hpp
+[19.693s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/toolbox_types.hpp
+[19.696s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/include/slam_toolbox/visualization_utils.hpp
+[19.723s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/launch/localization_launch.py
+[19.726s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/launch/merge_maps_kinematic_launch.py
+[19.729s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/launch/offline_launch.py
+[19.739s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/launch/online_async_launch.py
+[19.741s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/launch/online_sync_launch.py
+[19.754s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_lifelong.yaml
+[19.756s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_localization.yaml
+[19.767s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_offline.yaml
+[19.771s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_online_async.yaml
+[19.774s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_online_sync.yaml
+[19.777s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/config/slam_toolbox_default.rviz
+[19.780s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/solver_plugins.xml
+[19.800s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/rviz_plugins.xml
+[19.809s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/ament_index/resource_index/package_run_dependencies/slam_toolbox
+[19.816s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/ament_index/resource_index/parent_prefix_path/slam_toolbox
+[19.831s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/environment/ament_prefix_path.sh
+[19.843s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/environment/ament_prefix_path.dsv
+[19.847s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/environment/path.sh
+[19.851s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/environment/path.dsv
+[19.859s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/local_setup.bash
+[19.860s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/local_setup.sh
+[19.864s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/local_setup.zsh
+[19.885s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/local_setup.dsv
+[19.886s] -- Symlinking: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/package.dsv
+[20.056s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/ament_index/resource_index/packages/slam_toolbox
+[20.058s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/ament_index/resource_index/rclcpp_components/slam_toolbox
+[20.059s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/ament_index/resource_index/rviz_common__pluginlib__plugin/slam_toolbox
+[20.063s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/ament_index/resource_index/slam_toolbox__pluginlib__plugin/slam_toolbox
+[20.063s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake-extras.cmake
+[20.065s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_dependencies-extras.cmake
+[20.068s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_include_directories-extras.cmake
+[20.085s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_libraries-extras.cmake
+[20.101s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_targets-extras.cmake
+[20.104s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[20.107s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[20.114s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolboxConfig.cmake
+[20.117s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolboxConfig-version.cmake
+[20.120s] -- Up-to-date symlink: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/package.xml
+[20.123s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_generator_c.so
+[20.126s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_c.so
+[20.168s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_cpp.so
+[20.192s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_c.so
+[20.206s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_c.so
+[20.209s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_cpp.so
+[20.211s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_cpp.so
+[21.097s] Listing '/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox'...
+[21.097s] Listing '/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv'...
+[21.192s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_generator_py.so
+[21.200s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_cExport.cmake
+[21.204s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_cExport-release.cmake
+[21.213s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_typesupport_fastrtps_cExport.cmake
+[21.214s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_typesupport_fastrtps_cExport-release.cmake
+[21.215s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_cppExport.cmake
+[21.219s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_typesupport_fastrtps_cppExport.cmake
+[21.222s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[21.235s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cExport.cmake
+[21.239s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cExport-release.cmake
+[21.243s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cExport.cmake
+[21.249s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cExport-release.cmake
+[21.254s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cppExport.cmake
+[21.257s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cppExport-release.cmake
+[21.261s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cppExport.cmake
+[21.264s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cppExport-release.cmake
+[21.268s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_pyExport.cmake
+[21.272s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_pyExport-release.cmake
+[21.276s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/SlamToolboxPluginExport.cmake
+[21.280s] -- Up-to-date: /home/ubuntu/spas_ws/install/slam_toolbox/share/slam_toolbox/cmake/SlamToolboxPluginExport-release.cmake
+[21.301s] Invoked command in '/home/ubuntu/spas_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/spas_ws/build/slam_toolbox

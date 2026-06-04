@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing spas_planning.egg-info/PKG-INFO
+writing dependency_links to spas_planning.egg-info/dependency_links.txt
+writing entry points to spas_planning.egg-info/entry_points.txt
+writing requirements to spas_planning.egg-info/requires.txt
+writing top-level names to spas_planning.egg-info/top_level.txt
+reading manifest file 'spas_planning.egg-info/SOURCES.txt'
+writing manifest file 'spas_planning.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas-planning.egg-link (link to .)
+Installing safety_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+
+Installed /home/ubuntu/spas_ws/build/spas_planning
+running symlink_data

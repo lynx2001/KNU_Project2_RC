@@ -1,0 +1,39 @@
+[5.088s] Invoking command in '/home/ubuntu/spas_ws/build/spas_control': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ubuntu/spas_ws/build/spas_control/build
+[6.687s] running develop
+[7.729s] Removing /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas-control.egg-link (link to .)
+[7.880s] Invoked command in '/home/ubuntu/spas_ws/build/spas_control' returned '0': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ubuntu/spas_ws/build/spas_control/build
+[7.891s] Invoking command in '/home/ubuntu/spas_ws/src/spas_control': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spas_control build --build-base /home/ubuntu/spas_ws/build/spas_control/build install --record /home/ubuntu/spas_ws/build/spas_control/install.log --single-version-externally-managed install_data --force
+[9.205s] running egg_info
+[9.208s] writing ../../build/spas_control/spas_control.egg-info/PKG-INFO
+[9.209s] writing dependency_links to ../../build/spas_control/spas_control.egg-info/dependency_links.txt
+[9.210s] writing entry points to ../../build/spas_control/spas_control.egg-info/entry_points.txt
+[9.210s] writing requirements to ../../build/spas_control/spas_control.egg-info/requires.txt
+[9.211s] writing top-level names to ../../build/spas_control/spas_control.egg-info/top_level.txt
+[9.220s] reading manifest file '../../build/spas_control/spas_control.egg-info/SOURCES.txt'
+[9.224s] writing manifest file '../../build/spas_control/spas_control.egg-info/SOURCES.txt'
+[9.224s] running build
+[9.225s] running build_py
+[9.225s] creating /home/ubuntu/spas_ws/build/spas_control/build
+[9.226s] creating /home/ubuntu/spas_ws/build/spas_control/build/lib
+[9.226s] creating /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control
+[9.227s] copying spas_control/ros_robot_controller_sdk.py -> /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control
+[9.229s] copying spas_control/__init__.py -> /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control
+[9.229s] copying spas_control/stm32_bridge_node.py -> /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control
+[9.230s] running install
+[9.232s] running install_lib
+[9.235s] creating /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control
+[9.236s] copying /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control/ros_robot_controller_sdk.py -> /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control
+[9.237s] copying /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control/__init__.py -> /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control
+[9.237s] copying /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control/stm32_bridge_node.py -> /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control
+[9.241s] byte-compiling /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control/ros_robot_controller_sdk.py to ros_robot_controller_sdk.cpython-310.pyc
+[9.255s] byte-compiling /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control/__init__.py to __init__.cpython-310.pyc
+[9.256s] byte-compiling /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control/stm32_bridge_node.py to stm32_bridge_node.cpython-310.pyc
+[9.260s] running install_data
+[9.261s] copying resource/spas_control -> /home/ubuntu/spas_ws/install/spas_control/share/ament_index/resource_index/packages
+[9.262s] copying package.xml -> /home/ubuntu/spas_ws/install/spas_control/share/spas_control
+[9.262s] running install_egg_info
+[9.269s] Copying ../../build/spas_control/spas_control.egg-info to /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control-0.0.0-py3.10.egg-info
+[9.276s] running install_scripts
+[9.354s] Installing stm32_bridge_node script to /home/ubuntu/spas_ws/install/spas_control/lib/spas_control
+[9.356s] writing list of installed files to '/home/ubuntu/spas_ws/build/spas_control/install.log'
+[9.485s] Invoked command in '/home/ubuntu/spas_ws/src/spas_control' returned '0': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spas_control build --build-base /home/ubuntu/spas_ws/build/spas_control/build install --record /home/ubuntu/spas_ws/build/spas_control/install.log --single-version-externally-managed install_data --force

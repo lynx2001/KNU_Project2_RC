@@ -1,0 +1,3 @@
+[console_scripts]
+sensor_filter_node = spas_perception.sensor_filter_node:main
+

@@ -1,0 +1,1 @@
+/home/ubuntu/spas_ws/build/spas_bringup/ament_cmake_core/spas_bringupConfig-version.cmake

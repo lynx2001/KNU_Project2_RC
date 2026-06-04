@@ -1,0 +1,17 @@
+[8.933s] Invoking command in '/home/ubuntu/spas_ws/build/spas_control': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_control/build --no-deps symlink_data
+[11.487s] running develop
+[12.996s] running egg_info
+[12.996s] writing spas_control.egg-info/PKG-INFO
+[13.005s] writing dependency_links to spas_control.egg-info/dependency_links.txt
+[13.008s] writing entry points to spas_control.egg-info/entry_points.txt
+[13.009s] writing requirements to spas_control.egg-info/requires.txt
+[13.009s] writing top-level names to spas_control.egg-info/top_level.txt
+[13.023s] reading manifest file 'spas_control.egg-info/SOURCES.txt'
+[13.028s] writing manifest file 'spas_control.egg-info/SOURCES.txt'
+[13.033s] running build_ext
+[13.047s] Creating /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas-control.egg-link (link to .)
+[13.052s] Installing stm32_bridge_node script to /home/ubuntu/spas_ws/install/spas_control/lib/spas_control
+[13.058s] 
+[13.063s] Installed /home/ubuntu/spas_ws/build/spas_control
+[13.070s] running symlink_data
+[13.240s] Invoked command in '/home/ubuntu/spas_ws/build/spas_control' returned '0': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_control/build --no-deps symlink_data

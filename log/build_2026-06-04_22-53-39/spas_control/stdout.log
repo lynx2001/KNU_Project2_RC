@@ -1,0 +1,35 @@
+running develop
+Removing /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas-control.egg-link (link to .)
+running egg_info
+writing ../../build/spas_control/spas_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/spas_control/spas_control.egg-info/dependency_links.txt
+writing entry points to ../../build/spas_control/spas_control.egg-info/entry_points.txt
+writing requirements to ../../build/spas_control/spas_control.egg-info/requires.txt
+writing top-level names to ../../build/spas_control/spas_control.egg-info/top_level.txt
+reading manifest file '../../build/spas_control/spas_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/spas_control/spas_control.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/spas_ws/build/spas_control/build
+creating /home/ubuntu/spas_ws/build/spas_control/build/lib
+creating /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control
+copying spas_control/ros_robot_controller_sdk.py -> /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control
+copying spas_control/__init__.py -> /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control
+copying spas_control/stm32_bridge_node.py -> /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control
+running install
+running install_lib
+creating /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control
+copying /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control/ros_robot_controller_sdk.py -> /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control
+copying /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control/__init__.py -> /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control
+copying /home/ubuntu/spas_ws/build/spas_control/build/lib/spas_control/stm32_bridge_node.py -> /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control
+byte-compiling /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control/ros_robot_controller_sdk.py to ros_robot_controller_sdk.cpython-310.pyc
+byte-compiling /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control/stm32_bridge_node.py to stm32_bridge_node.cpython-310.pyc
+running install_data
+copying resource/spas_control -> /home/ubuntu/spas_ws/install/spas_control/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/spas_ws/install/spas_control/share/spas_control
+running install_egg_info
+Copying ../../build/spas_control/spas_control.egg-info to /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas_control-0.0.0-py3.10.egg-info
+running install_scripts
+Installing stm32_bridge_node script to /home/ubuntu/spas_ws/install/spas_control/lib/spas_control
+writing list of installed files to '/home/ubuntu/spas_ws/build/spas_control/install.log'

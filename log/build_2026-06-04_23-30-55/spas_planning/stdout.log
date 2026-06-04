@@ -1,0 +1,29 @@
+running egg_info
+writing ../../build/spas_planning/spas_planning.egg-info/PKG-INFO
+writing dependency_links to ../../build/spas_planning/spas_planning.egg-info/dependency_links.txt
+writing entry points to ../../build/spas_planning/spas_planning.egg-info/entry_points.txt
+writing requirements to ../../build/spas_planning/spas_planning.egg-info/requires.txt
+writing top-level names to ../../build/spas_planning/spas_planning.egg-info/top_level.txt
+reading manifest file '../../build/spas_planning/spas_planning.egg-info/SOURCES.txt'
+writing manifest file '../../build/spas_planning/spas_planning.egg-info/SOURCES.txt'
+running build
+running build_py
+copying spas_planning/parking_space_detector.py -> /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning
+copying spas_planning/hybrid_A_star_node.py -> /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning
+running install
+running install_lib
+copying /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning/parking_space_detector.py -> /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning
+copying /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning/hybrid_A_star_node.py -> /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning
+byte-compiling /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning/parking_space_detector.py to parking_space_detector.cpython-310.pyc
+byte-compiling /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning/hybrid_A_star_node.py to hybrid_A_star_node.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/spas_planning/spas_planning.egg-info to /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning-0.0.0-py3.10.egg-info
+running install_scripts
+Installing hybrid_A_star_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+Installing parking_operator script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+Installing parking_space_detector script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+Installing safety_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+Installing vehicle_control_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+writing list of installed files to '/home/ubuntu/spas_ws/build/spas_planning/install.log'

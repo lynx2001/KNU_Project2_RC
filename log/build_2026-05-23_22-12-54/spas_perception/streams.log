@@ -1,0 +1,23 @@
+[11.717s] Invoking command in '/home/ubuntu/spas_ws/build/spas_perception': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_perception/build --no-deps symlink_data
+[20.706s] running develop
+[26.243s] running egg_info
+[26.245s] creating spas_perception.egg-info
+[26.250s] writing spas_perception.egg-info/PKG-INFO
+[26.257s] writing dependency_links to spas_perception.egg-info/dependency_links.txt
+[26.261s] writing entry points to spas_perception.egg-info/entry_points.txt
+[26.266s] writing requirements to spas_perception.egg-info/requires.txt
+[26.269s] writing top-level names to spas_perception.egg-info/top_level.txt
+[26.274s] writing manifest file 'spas_perception.egg-info/SOURCES.txt'
+[26.288s] reading manifest file 'spas_perception.egg-info/SOURCES.txt'
+[26.293s] writing manifest file 'spas_perception.egg-info/SOURCES.txt'
+[26.330s] running build_ext
+[26.332s] Creating /home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages/spas-perception.egg-link (link to .)
+[26.338s] 
+[26.339s] Installed /home/ubuntu/spas_ws/build/spas_perception
+[26.361s] running symlink_data
+[26.361s] creating /home/ubuntu/spas_ws/install/spas_perception/share/ament_index
+[26.362s] creating /home/ubuntu/spas_ws/install/spas_perception/share/ament_index/resource_index
+[26.362s] creating /home/ubuntu/spas_ws/install/spas_perception/share/ament_index/resource_index/packages
+[26.363s] symbolically linking /home/ubuntu/spas_ws/build/spas_perception/resource/spas_perception -> /home/ubuntu/spas_ws/install/spas_perception/share/ament_index/resource_index/packages
+[26.364s] symbolically linking /home/ubuntu/spas_ws/build/spas_perception/package.xml -> /home/ubuntu/spas_ws/install/spas_perception/share/spas_perception
+[26.906s] Invoked command in '/home/ubuntu/spas_ws/build/spas_perception' returned '0': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_perception/build --no-deps symlink_data

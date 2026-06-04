@@ -1,0 +1,7 @@
+[console_scripts]
+hybrid_A_star_node = spas_planning.hybrid_A_star_node:main
+parking_operator = spas_planning.parking_operator:main
+parking_space_detector = spas_planning.parking_space_detector:main
+safety_node = spas_planning.safety_node:main
+vehicle_control_node = spas_planning.vehicle_control_node:main
+

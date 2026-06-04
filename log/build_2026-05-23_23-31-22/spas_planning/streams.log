@@ -1,0 +1,17 @@
+[25.213s] Invoking command in '/home/ubuntu/spas_ws/build/spas_planning': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_planning/build --no-deps symlink_data
+[29.745s] running develop
+[34.203s] running egg_info
+[34.206s] writing spas_planning.egg-info/PKG-INFO
+[34.209s] writing dependency_links to spas_planning.egg-info/dependency_links.txt
+[34.222s] writing entry points to spas_planning.egg-info/entry_points.txt
+[34.224s] writing requirements to spas_planning.egg-info/requires.txt
+[34.225s] writing top-level names to spas_planning.egg-info/top_level.txt
+[34.239s] reading manifest file 'spas_planning.egg-info/SOURCES.txt'
+[34.243s] writing manifest file 'spas_planning.egg-info/SOURCES.txt'
+[34.251s] running build_ext
+[34.252s] Creating /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas-planning.egg-link (link to .)
+[34.256s] Installing safety_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+[34.258s] 
+[34.259s] Installed /home/ubuntu/spas_ws/build/spas_planning
+[34.260s] running symlink_data
+[34.457s] Invoked command in '/home/ubuntu/spas_ws/build/spas_planning' returned '0': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_planning/build --no-deps symlink_data

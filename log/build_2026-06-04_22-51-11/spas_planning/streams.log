@@ -1,0 +1,52 @@
+[3.205s] Invoking command in '/home/ubuntu/spas_ws/build/spas_planning': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ubuntu/spas_ws/build/spas_planning/build
+[4.536s] running develop
+[5.450s] Removing /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas-planning.egg-link (link to .)
+[5.601s] Invoked command in '/home/ubuntu/spas_ws/build/spas_planning' returned '0': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ubuntu/spas_ws/build/spas_planning/build
+[5.605s] Invoking command in '/home/ubuntu/spas_ws/src/spas_planning': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spas_planning build --build-base /home/ubuntu/spas_ws/build/spas_planning/build install --record /home/ubuntu/spas_ws/build/spas_planning/install.log --single-version-externally-managed install_data --force
+[6.872s] running egg_info
+[6.874s] writing ../../build/spas_planning/spas_planning.egg-info/PKG-INFO
+[6.875s] writing dependency_links to ../../build/spas_planning/spas_planning.egg-info/dependency_links.txt
+[6.877s] writing entry points to ../../build/spas_planning/spas_planning.egg-info/entry_points.txt
+[6.878s] writing requirements to ../../build/spas_planning/spas_planning.egg-info/requires.txt
+[6.879s] writing top-level names to ../../build/spas_planning/spas_planning.egg-info/top_level.txt
+[6.893s] reading manifest file '../../build/spas_planning/spas_planning.egg-info/SOURCES.txt'
+[6.899s] writing manifest file '../../build/spas_planning/spas_planning.egg-info/SOURCES.txt'
+[6.900s] running build
+[6.901s] running build_py
+[6.902s] creating /home/ubuntu/spas_ws/build/spas_planning/build
+[6.903s] creating /home/ubuntu/spas_ws/build/spas_planning/build/lib
+[6.903s] creating /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning
+[6.903s] copying spas_planning/__init__.py -> /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning
+[6.904s] copying spas_planning/parking_operator.py -> /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning
+[6.905s] copying spas_planning/parking_space_detector.py -> /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning
+[6.905s] copying spas_planning/vehicle_control_node.py -> /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning
+[6.906s] copying spas_planning/safety_node.py -> /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning
+[6.906s] copying spas_planning/hybrid_A_star_node.py -> /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning
+[6.907s] running install
+[6.909s] running install_lib
+[6.913s] creating /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning
+[6.914s] copying /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning/__init__.py -> /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning
+[6.915s] copying /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning/parking_operator.py -> /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning
+[6.915s] copying /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning/parking_space_detector.py -> /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning
+[6.916s] copying /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning/vehicle_control_node.py -> /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning
+[6.917s] copying /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning/safety_node.py -> /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning
+[6.918s] copying /home/ubuntu/spas_ws/build/spas_planning/build/lib/spas_planning/hybrid_A_star_node.py -> /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning
+[6.921s] byte-compiling /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning/__init__.py to __init__.cpython-310.pyc
+[6.922s] byte-compiling /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning/parking_operator.py to parking_operator.cpython-310.pyc
+[6.926s] byte-compiling /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning/parking_space_detector.py to parking_space_detector.cpython-310.pyc
+[6.940s] byte-compiling /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning/vehicle_control_node.py to vehicle_control_node.cpython-310.pyc
+[6.943s] byte-compiling /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning/safety_node.py to safety_node.cpython-310.pyc
+[6.946s] byte-compiling /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning/hybrid_A_star_node.py to hybrid_A_star_node.cpython-310.pyc
+[6.972s] running install_data
+[6.973s] copying resource/spas_planning -> /home/ubuntu/spas_ws/install/spas_planning/share/ament_index/resource_index/packages
+[6.974s] copying package.xml -> /home/ubuntu/spas_ws/install/spas_planning/share/spas_planning
+[6.975s] running install_egg_info
+[6.983s] Copying ../../build/spas_planning/spas_planning.egg-info to /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas_planning-0.0.0-py3.10.egg-info
+[6.990s] running install_scripts
+[7.066s] Installing hybrid_A_star_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+[7.067s] Installing parking_operator script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+[7.067s] Installing parking_space_detector script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+[7.068s] Installing safety_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+[7.069s] Installing vehicle_control_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+[7.071s] writing list of installed files to '/home/ubuntu/spas_ws/build/spas_planning/install.log'
+[7.201s] Invoked command in '/home/ubuntu/spas_ws/src/spas_planning' returned '0': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spas_planning build --build-base /home/ubuntu/spas_ws/build/spas_planning/build install --record /home/ubuntu/spas_ws/build/spas_planning/install.log --single-version-externally-managed install_data --force

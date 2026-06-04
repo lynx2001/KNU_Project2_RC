@@ -1,0 +1,21 @@
+running develop
+running egg_info
+creating spas_perception.egg-info
+writing spas_perception.egg-info/PKG-INFO
+writing dependency_links to spas_perception.egg-info/dependency_links.txt
+writing entry points to spas_perception.egg-info/entry_points.txt
+writing requirements to spas_perception.egg-info/requires.txt
+writing top-level names to spas_perception.egg-info/top_level.txt
+writing manifest file 'spas_perception.egg-info/SOURCES.txt'
+reading manifest file 'spas_perception.egg-info/SOURCES.txt'
+writing manifest file 'spas_perception.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages/spas-perception.egg-link (link to .)
+
+Installed /home/ubuntu/spas_ws/build/spas_perception
+running symlink_data
+creating /home/ubuntu/spas_ws/install/spas_perception/share/ament_index
+creating /home/ubuntu/spas_ws/install/spas_perception/share/ament_index/resource_index
+creating /home/ubuntu/spas_ws/install/spas_perception/share/ament_index/resource_index/packages
+symbolically linking /home/ubuntu/spas_ws/build/spas_perception/resource/spas_perception -> /home/ubuntu/spas_ws/install/spas_perception/share/ament_index/resource_index/packages
+symbolically linking /home/ubuntu/spas_ws/build/spas_perception/package.xml -> /home/ubuntu/spas_ws/install/spas_perception/share/spas_perception

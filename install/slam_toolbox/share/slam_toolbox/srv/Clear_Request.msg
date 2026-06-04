@@ -1,0 +1,1 @@
+/home/ubuntu/spas_ws/build/slam_toolbox/rosidl_cmake/srv/Clear_Request.msg

@@ -1,0 +1,20 @@
+[6.108s] Invoking command in '/home/ubuntu/spas_ws/build/spas_planning': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_planning/build --no-deps symlink_data
+[8.053s] running develop
+[9.049s] running egg_info
+[9.050s] writing spas_planning.egg-info/PKG-INFO
+[9.051s] writing dependency_links to spas_planning.egg-info/dependency_links.txt
+[9.052s] writing entry points to spas_planning.egg-info/entry_points.txt
+[9.053s] writing requirements to spas_planning.egg-info/requires.txt
+[9.053s] writing top-level names to spas_planning.egg-info/top_level.txt
+[9.065s] reading manifest file 'spas_planning.egg-info/SOURCES.txt'
+[9.069s] writing manifest file 'spas_planning.egg-info/SOURCES.txt'
+[9.076s] running build_ext
+[9.077s] Creating /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas-planning.egg-link (link to .)
+[9.081s] Installing hybrid_A_star_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+[9.082s] Installing parking_space_detector script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+[9.083s] Installing safety_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+[9.084s] Installing vehicle_control_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+[9.086s] 
+[9.087s] Installed /home/ubuntu/spas_ws/build/spas_planning
+[9.088s] running symlink_data
+[9.243s] Invoked command in '/home/ubuntu/spas_ws/build/spas_planning' returned '0': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_planning/build --no-deps symlink_data

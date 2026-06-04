@@ -1,0 +1,19 @@
+[3.461s] Invoking command in '/home/ubuntu/spas_ws/build/spas_planning': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_planning/build --no-deps symlink_data
+[4.897s] running develop
+[5.858s] running egg_info
+[5.859s] writing spas_planning.egg-info/PKG-INFO
+[5.860s] writing dependency_links to spas_planning.egg-info/dependency_links.txt
+[5.861s] writing entry points to spas_planning.egg-info/entry_points.txt
+[5.862s] writing requirements to spas_planning.egg-info/requires.txt
+[5.863s] writing top-level names to spas_planning.egg-info/top_level.txt
+[5.872s] reading manifest file 'spas_planning.egg-info/SOURCES.txt'
+[5.875s] writing manifest file 'spas_planning.egg-info/SOURCES.txt'
+[5.882s] running build_ext
+[5.883s] Creating /home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages/spas-planning.egg-link (link to .)
+[5.886s] Installing hybrid_A_star_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+[5.887s] Installing parking_space_detector script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+[5.888s] Installing safety_node script to /home/ubuntu/spas_ws/install/spas_planning/lib/spas_planning
+[5.890s] 
+[5.890s] Installed /home/ubuntu/spas_ws/build/spas_planning
+[5.891s] running symlink_data
+[6.047s] Invoked command in '/home/ubuntu/spas_ws/build/spas_planning' returned '0': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_planning/build --no-deps symlink_data

@@ -1,0 +1,17 @@
+[13.153s] Invoking command in '/home/ubuntu/spas_ws/build/spas_perception': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_perception/build --no-deps symlink_data
+[16.410s] running develop
+[18.761s] running egg_info
+[18.763s] writing spas_perception.egg-info/PKG-INFO
+[18.770s] writing dependency_links to spas_perception.egg-info/dependency_links.txt
+[18.772s] writing entry points to spas_perception.egg-info/entry_points.txt
+[18.773s] writing requirements to spas_perception.egg-info/requires.txt
+[18.774s] writing top-level names to spas_perception.egg-info/top_level.txt
+[18.784s] reading manifest file 'spas_perception.egg-info/SOURCES.txt'
+[18.788s] writing manifest file 'spas_perception.egg-info/SOURCES.txt'
+[18.798s] running build_ext
+[18.801s] Creating /home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages/spas-perception.egg-link (link to .)
+[18.803s] Installing sensor_filter_node script to /home/ubuntu/spas_ws/install/spas_perception/lib/spas_perception
+[18.806s] 
+[18.810s] Installed /home/ubuntu/spas_ws/build/spas_perception
+[18.815s] running symlink_data
+[19.060s] Invoked command in '/home/ubuntu/spas_ws/build/spas_perception' returned '0': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_perception/build --no-deps symlink_data

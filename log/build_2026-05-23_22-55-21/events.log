@@ -1,0 +1,93 @@
+[0.000000] (-) TimerEvent: {}
+[0.002190] (-) JobUnselected: {'identifier': 'slam_toolbox'}
+[0.002998] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.003647] (-) JobUnselected: {'identifier': 'spas_bringup'}
+[0.004226] (-) JobUnselected: {'identifier': 'spas_perception'}
+[0.004728] (-) JobUnselected: {'identifier': 'spas_planning'}
+[0.004937] (spas_control) JobQueued: {'identifier': 'spas_control', 'dependencies': OrderedDict()}
+[0.005226] (spas_control) JobStarted: {'identifier': 'spas_control'}
+[0.099008] (-) TimerEvent: {}
+[0.199898] (-) TimerEvent: {}
+[0.300602] (-) TimerEvent: {}
+[0.401456] (-) TimerEvent: {}
+[0.502237] (-) TimerEvent: {}
+[0.602993] (-) TimerEvent: {}
+[0.703885] (-) TimerEvent: {}
+[0.804888] (-) TimerEvent: {}
+[0.905610] (-) TimerEvent: {}
+[1.006364] (-) TimerEvent: {}
+[1.107060] (-) TimerEvent: {}
+[1.207814] (-) TimerEvent: {}
+[1.308508] (-) TimerEvent: {}
+[1.409219] (-) TimerEvent: {}
+[1.510155] (-) TimerEvent: {}
+[1.611092] (-) TimerEvent: {}
+[1.711985] (-) TimerEvent: {}
+[1.812960] (-) TimerEvent: {}
+[1.913825] (-) TimerEvent: {}
+[2.014596] (-) TimerEvent: {}
+[2.115356] (-) TimerEvent: {}
+[2.216197] (-) TimerEvent: {}
+[2.317223] (-) TimerEvent: {}
+[2.417989] (-) TimerEvent: {}
+[2.518710] (-) TimerEvent: {}
+[2.619405] (-) TimerEvent: {}
+[2.720227] (-) TimerEvent: {}
+[2.820953] (-) TimerEvent: {}
+[2.921700] (-) TimerEvent: {}
+[3.022479] (-) TimerEvent: {}
+[3.123248] (-) TimerEvent: {}
+[3.224188] (-) TimerEvent: {}
+[3.325065] (-) TimerEvent: {}
+[3.426160] (-) TimerEvent: {}
+[3.526973] (-) TimerEvent: {}
+[3.628020] (-) TimerEvent: {}
+[3.728829] (-) TimerEvent: {}
+[3.830006] (-) TimerEvent: {}
+[3.931244] (-) TimerEvent: {}
+[3.972838] (spas_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/ubuntu/spas_ws/build/spas_control/build', '--no-deps', 'symlink_data'], 'cwd': '/home/ubuntu/spas_ws/build/spas_control', 'env': {'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.236.158 64914 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-0958016b2af9f09bb4257e0df4a95e2f90590f9f/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/spas_ws/install/slam_toolbox/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-0958016b2af9f09bb4257e0df4a95e2f90590f9f/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/spas_ws/src', 'TERM_PROGRAM_VERSION': '1.120.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-4c52080f-8f54-4af6-b1c5-04354886fdd5.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-0958016b2af9f09bb4257e0df4a95e2f90590f9f/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-0958016b2af9f09bb4257e0df4a95e2f90590f9f/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/spas_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-0958016b2af9f09bb4257e0df4a95e2f90590f9f/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/scripts/noConfigScripts:/usr/local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0/.noConfigDebugAdapterEndpoints/endpoint-00d0b5565ef995a9.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/ubuntu/.vscode-server/data/User/workspaceStorage/f3bef80f69d224608c509b83f13a955a/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-a9f1ef9bc6.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/ubuntu/spas_ws/install/spas_planning:/home/ubuntu/spas_ws/install/spas_perception:/home/ubuntu/spas_ws/install/spas_control:/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/spas_ws/build/spas_control', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.236.158 64914 192.168.236.18 22', 'PYTHONPATH': '/home/ubuntu/spas_ws/build/spas_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_planning:/home/ubuntu/spas_ws/install/spas_planning/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_perception:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:/home/ubuntu/spas_ws/build/spas_control:/home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages:/home/ubuntu/spas_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/spas_ws/install/spas_bringup:/home/ubuntu/spas_ws/install/sllidar_ros2:/home/ubuntu/spas_ws/install/slam_toolbox'}, 'shell': False}
+[4.031436] (-) TimerEvent: {}
+[4.132218] (-) TimerEvent: {}
+[4.233167] (-) TimerEvent: {}
+[4.333975] (-) TimerEvent: {}
+[4.434711] (-) TimerEvent: {}
+[4.535459] (-) TimerEvent: {}
+[4.636159] (-) TimerEvent: {}
+[4.737170] (-) TimerEvent: {}
+[4.837839] (-) TimerEvent: {}
+[4.938614] (-) TimerEvent: {}
+[5.039400] (-) TimerEvent: {}
+[5.140141] (-) TimerEvent: {}
+[5.240875] (-) TimerEvent: {}
+[5.341664] (-) TimerEvent: {}
+[5.429065] (spas_control) StdoutLine: {'line': b'running develop\n'}
+[5.441833] (-) TimerEvent: {}
+[5.542706] (-) TimerEvent: {}
+[5.643988] (-) TimerEvent: {}
+[5.744705] (-) TimerEvent: {}
+[5.845455] (-) TimerEvent: {}
+[5.946201] (-) TimerEvent: {}
+[6.047003] (-) TimerEvent: {}
+[6.147724] (-) TimerEvent: {}
+[6.248419] (-) TimerEvent: {}
+[6.349150] (-) TimerEvent: {}
+[6.418003] (spas_control) StdoutLine: {'line': b'running egg_info\n'}
+[6.418844] (spas_control) StdoutLine: {'line': b'writing spas_control.egg-info/PKG-INFO\n'}
+[6.419951] (spas_control) StdoutLine: {'line': b'writing dependency_links to spas_control.egg-info/dependency_links.txt\n'}
+[6.420929] (spas_control) StdoutLine: {'line': b'writing entry points to spas_control.egg-info/entry_points.txt\n'}
+[6.421968] (spas_control) StdoutLine: {'line': b'writing requirements to spas_control.egg-info/requires.txt\n'}
+[6.422726] (spas_control) StdoutLine: {'line': b'writing top-level names to spas_control.egg-info/top_level.txt\n'}
+[6.430938] (spas_control) StdoutLine: {'line': b"reading manifest file 'spas_control.egg-info/SOURCES.txt'\n"}
+[6.435194] (spas_control) StdoutLine: {'line': b"writing manifest file 'spas_control.egg-info/SOURCES.txt'\n"}
+[6.441822] (spas_control) StdoutLine: {'line': b'running build_ext\n'}
+[6.442859] (spas_control) StdoutLine: {'line': b'Creating /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas-control.egg-link (link to .)\n'}
+[6.446095] (spas_control) StdoutLine: {'line': b'Installing stm32_bridge_node script to /home/ubuntu/spas_ws/install/spas_control/lib/spas_control\n'}
+[6.447550] (spas_control) StdoutLine: {'line': b'\n'}
+[6.448293] (spas_control) StdoutLine: {'line': b'Installed /home/ubuntu/spas_ws/build/spas_control\n'}
+[6.448801] (spas_control) StdoutLine: {'line': b'running symlink_data\n'}
+[6.450047] (-) TimerEvent: {}
+[6.551294] (-) TimerEvent: {}
+[6.607279] (spas_control) CommandEnded: {'returncode': 0}
+[6.651491] (-) TimerEvent: {}
+[6.682214] (spas_control) JobEnded: {'identifier': 'spas_control', 'rc': 0}
+[6.685013] (-) EventReactorShutdown: {}

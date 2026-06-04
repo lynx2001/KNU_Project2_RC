@@ -1,0 +1,21 @@
+running develop
+running egg_info
+creating spas_control.egg-info
+writing spas_control.egg-info/PKG-INFO
+writing dependency_links to spas_control.egg-info/dependency_links.txt
+writing entry points to spas_control.egg-info/entry_points.txt
+writing requirements to spas_control.egg-info/requires.txt
+writing top-level names to spas_control.egg-info/top_level.txt
+writing manifest file 'spas_control.egg-info/SOURCES.txt'
+reading manifest file 'spas_control.egg-info/SOURCES.txt'
+writing manifest file 'spas_control.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ubuntu/spas_ws/install/spas_control/lib/python3.10/site-packages/spas-control.egg-link (link to .)
+
+Installed /home/ubuntu/spas_ws/build/spas_control
+running symlink_data
+creating /home/ubuntu/spas_ws/install/spas_control/share/ament_index
+creating /home/ubuntu/spas_ws/install/spas_control/share/ament_index/resource_index
+creating /home/ubuntu/spas_ws/install/spas_control/share/ament_index/resource_index/packages
+symbolically linking /home/ubuntu/spas_ws/build/spas_control/resource/spas_control -> /home/ubuntu/spas_ws/install/spas_control/share/ament_index/resource_index/packages
+symbolically linking /home/ubuntu/spas_ws/build/spas_control/package.xml -> /home/ubuntu/spas_ws/install/spas_control/share/spas_control

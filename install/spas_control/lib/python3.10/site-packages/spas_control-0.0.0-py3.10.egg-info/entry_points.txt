@@ -1,0 +1,3 @@
+[console_scripts]
+stm32_bridge_node = spas_control.stm32_bridge_node:main
+

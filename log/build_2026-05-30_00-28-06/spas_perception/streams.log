@@ -1,0 +1,17 @@
+[8.193s] Invoking command in '/home/ubuntu/spas_ws/build/spas_perception': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_perception/build --no-deps symlink_data
+[10.278s] running develop
+[11.487s] running egg_info
+[11.489s] writing spas_perception.egg-info/PKG-INFO
+[11.490s] writing dependency_links to spas_perception.egg-info/dependency_links.txt
+[11.491s] writing entry points to spas_perception.egg-info/entry_points.txt
+[11.492s] writing requirements to spas_perception.egg-info/requires.txt
+[11.495s] writing top-level names to spas_perception.egg-info/top_level.txt
+[11.502s] reading manifest file 'spas_perception.egg-info/SOURCES.txt'
+[11.505s] writing manifest file 'spas_perception.egg-info/SOURCES.txt'
+[11.513s] running build_ext
+[11.514s] Creating /home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages/spas-perception.egg-link (link to .)
+[11.521s] Installing sensor_filter_node script to /home/ubuntu/spas_ws/install/spas_perception/lib/spas_perception
+[11.525s] 
+[11.529s] Installed /home/ubuntu/spas_ws/build/spas_perception
+[11.532s] running symlink_data
+[11.696s] Invoked command in '/home/ubuntu/spas_ws/build/spas_perception' returned '0': PYTHONPATH=/home/ubuntu/spas_ws/build/spas_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/spas_ws/install/spas_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/spas_ws/build/spas_perception/build --no-deps symlink_data
