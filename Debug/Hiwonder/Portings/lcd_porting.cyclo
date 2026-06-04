@@ -1,0 +1,7 @@
+../Hiwonder/Portings/lcd_porting.c:17:6:lcds_init	1
+../Hiwonder/Portings/lcd_porting.c:35:13:DelayMs	1
+../Hiwonder/Portings/lcd_porting.c:40:6:tx_complete_callback	1
+../Hiwonder/Portings/lcd_porting.c:47:13:lcd1_spi_write	1
+../Hiwonder/Portings/lcd_porting.c:59:13:lcd1_set_dc_cs	1
+../Hiwonder/Portings/lcd_porting.c:65:13:lcd1_set_res	1
+../Hiwonder/Portings/lcd_porting.c:70:13:lcd1_set_blacklight	1

@@ -1,0 +1,8 @@
+../Hiwonder/Portings/chassis_porting.c:18:13:jetank_set_motors	1
+../Hiwonder/Portings/chassis_porting.c:25:13:tankblack_set_motors	1
+../Hiwonder/Portings/chassis_porting.c:31:13:ti4wd_set_motors	1
+../Hiwonder/Portings/chassis_porting.c:39:13:jetauto_set_motors	1
+../Hiwonder/Portings/chassis_porting.c:47:13:jetacker_set_motors	2
+../Hiwonder/Portings/chassis_porting.c:59:13:minacker_set_motors	2
+../Hiwonder/Portings/chassis_porting.c:73:6:chassis_init	1
+../Hiwonder/Portings/chassis_porting.c:123:6:set_chassis_type	7

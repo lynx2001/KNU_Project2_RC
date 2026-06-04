@@ -1,0 +1,4 @@
+../Third_Party/Lw/lwmem_sys_cmsis_os.c:41:1:lwmem_sys_mutex_create	1
+../Third_Party/Lw/lwmem_sys_cmsis_os.c:49:1:lwmem_sys_mutex_isvalid	1
+../Third_Party/Lw/lwmem_sys_cmsis_os.c:54:1:lwmem_sys_mutex_wait	1
+../Third_Party/Lw/lwmem_sys_cmsis_os.c:59:1:lwmem_sys_mutex_release	1

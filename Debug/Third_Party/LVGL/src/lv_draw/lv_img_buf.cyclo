@@ -1,0 +1,12 @@
+../Third_Party/LVGL/src/lv_draw/../lv_misc/lv_color.h:376:24:lv_color_to32	1
+../Third_Party/LVGL/src/lv_draw/../lv_misc/lv_mem.h:162:22:_lv_memcpy_small	1
+../Third_Party/LVGL/src/lv_draw/../lv_misc/lv_mem.h:183:20:_lv_memset_00	1
+../Third_Party/LVGL/src/lv_draw/lv_img_buf.c:51:12:lv_img_buf_get_px_color	12
+../Third_Party/LVGL/src/lv_draw/lv_img_buf.c:118:10:lv_img_buf_get_px_alpha	7
+../Third_Party/LVGL/src/lv_draw/lv_img_buf.c:181:6:lv_img_buf_set_px_alpha	6
+../Third_Party/LVGL/src/lv_draw/lv_img_buf.c:240:6:lv_img_buf_set_px_color	8
+../Third_Party/LVGL/src/lv_draw/lv_img_buf.c:309:6:lv_img_buf_set_palette	8
+../Third_Party/LVGL/src/lv_draw/lv_img_buf.c:330:16:lv_img_buf_alloc	4
+../Third_Party/LVGL/src/lv_draw/lv_img_buf.c:366:6:lv_img_buf_free	3
+../Third_Party/LVGL/src/lv_draw/lv_img_buf.c:383:10:lv_img_buf_get_img_size	16
+../Third_Party/LVGL/src/lv_draw/lv_img_buf.c:474:6:_lv_img_buf_get_transformed_area	1

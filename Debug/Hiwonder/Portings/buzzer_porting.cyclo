@@ -1,0 +1,5 @@
+../Hiwonder/Portings/buzzer_porting.c:35:6:buzzers_init	1
+../Hiwonder/Portings/buzzer_porting.c:66:6:buzzer_timer_callback	1
+../Hiwonder/Portings/buzzer_porting.c:78:13:buzzer1_set_pwm	4
+../Hiwonder/Portings/buzzer_porting.c:104:12:put_ctrl_block	1
+../Hiwonder/Portings/buzzer_porting.c:115:12:get_ctrl_block	1

@@ -1,0 +1,2 @@
+../Third_Party/LVGL/src/lv_misc/lv_async.c:43:10:lv_async_call	3
+../Third_Party/LVGL/src/lv_misc/lv_async.c:71:13:lv_async_task_cb	1

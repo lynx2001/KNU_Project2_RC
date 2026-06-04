@@ -1,0 +1,4 @@
+../Hiwonder/Peripherals/encoder_motor.c:23:6:encoder_update	1
+../Hiwonder/Peripherals/encoder_motor.c:39:6:encoder_motor_control	5
+../Hiwonder/Peripherals/encoder_motor.c:60:6:encoder_motor_set_speed	3
+../Hiwonder/Peripherals/encoder_motor.c:72:6:encoder_motor_object_init	1

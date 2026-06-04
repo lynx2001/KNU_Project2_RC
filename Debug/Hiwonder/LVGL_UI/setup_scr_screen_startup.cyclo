@@ -1,0 +1,7 @@
+../Third_Party/LVGL/src/../src/lv_hal/../lv_misc/lv_color.h:583:26:lv_color_make	1
+../Third_Party/LVGL/src/../src/lv_core/lv_obj_style_dec.h:113:1:lv_style_set_bg_color	1
+../Third_Party/LVGL/src/../src/lv_core/lv_obj_style_dec.h:115:1:lv_style_set_bg_opa	1
+../Third_Party/LVGL/src/../src/lv_core/lv_obj_style_dec.h:167:1:lv_style_set_image_recolor	1
+../Third_Party/LVGL/src/../src/lv_core/lv_obj_style_dec.h:168:1:lv_style_set_image_opa	1
+../Third_Party/LVGL/src/../src/lv_core/lv_obj_style_dec.h:169:1:lv_style_set_image_recolor_opa	1
+../Hiwonder/LVGL_UI/setup_scr_screen_startup.c:13:6:setup_scr_screen_startup	1

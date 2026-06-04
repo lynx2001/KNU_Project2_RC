@@ -1,0 +1,5 @@
+../Hiwonder/Peripherals/buzzer.c:13:6:buzzer_task_handler	12
+../Hiwonder/Peripherals/buzzer.c:68:5:buzzer_on	1
+../Hiwonder/Peripherals/buzzer.c:79:5:buzzer_off	1
+../Hiwonder/Peripherals/buzzer.c:90:5:buzzer_didi	1
+../Hiwonder/Peripherals/buzzer.c:102:6:buzzer_object_init	1

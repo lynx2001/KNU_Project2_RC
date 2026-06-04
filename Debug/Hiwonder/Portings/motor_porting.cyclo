@@ -1,0 +1,7 @@
+../Hiwonder/Portings/motor_porting.c:15:6:set_motor_param	1
+../Hiwonder/Portings/motor_porting.c:24:6:set_motor_type	5
+../Hiwonder/Portings/motor_porting.c:43:6:motors_init	2
+../Hiwonder/Portings/motor_porting.c:123:13:motor1_set_pulse	3
+../Hiwonder/Portings/motor_porting.c:140:13:motor2_set_pulse	3
+../Hiwonder/Portings/motor_porting.c:156:13:motor3_set_pulse	3
+../Hiwonder/Portings/motor_porting.c:174:13:motor4_set_pulse	3

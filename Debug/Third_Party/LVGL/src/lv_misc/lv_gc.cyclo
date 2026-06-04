@@ -1,0 +1,2 @@
+../Third_Party/LVGL/src/lv_misc/lv_mem.h:183:20:_lv_memset_00	1
+../Third_Party/LVGL/src/lv_misc/lv_gc.c:41:6:_lv_gc_clear_roots	1

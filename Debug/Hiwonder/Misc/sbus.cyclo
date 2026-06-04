@@ -1,0 +1,2 @@
+../Hiwonder/Misc/sbus.c:6:5:sbus_decode_frame	7
+../Hiwonder/Misc/sbus.c:48:6:sbus_print_status	6

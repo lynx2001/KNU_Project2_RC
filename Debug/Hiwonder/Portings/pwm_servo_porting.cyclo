@@ -1,0 +1,5 @@
+../Hiwonder/Portings/pwm_servo_porting.c:8:13:pwm_servo1_write_pin	1
+../Hiwonder/Portings/pwm_servo_porting.c:13:13:pwm_servo2_write_pin	1
+../Hiwonder/Portings/pwm_servo_porting.c:18:13:pwm_servo3_write_pin	1
+../Hiwonder/Portings/pwm_servo_porting.c:23:13:pwm_servo4_write_pin	1
+../Hiwonder/Portings/pwm_servo_porting.c:28:6:pwm_servos_init	2

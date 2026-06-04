@@ -1,0 +1,3 @@
+../Hiwonder/Misc/syscall.c:29:6:_sys_exit	1
+../Hiwonder/Misc/syscall.c:33:6:_ttywrch	1
+../Hiwonder/Misc/syscall.c:43:1:__io_putchar	1

@@ -1,0 +1,4 @@
+../Hiwonder/Portings/FlashSave_porting.c:7:10:STMFLASH_ReadWord	1
+../Hiwonder/Portings/FlashSave_porting.c:12:9:STMFLASH_GetFlashSector	12
+../Hiwonder/Portings/FlashSave_porting.c:30:6:hw_flash_Read	2
+../Hiwonder/Portings/FlashSave_porting.c:42:6:hw_flash_write	10

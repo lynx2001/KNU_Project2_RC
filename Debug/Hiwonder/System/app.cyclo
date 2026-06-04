@@ -1,0 +1,4 @@
+../Hiwonder/System/app.c:41:6:button_event_callback	6
+../Hiwonder/System/app.c:89:6:app_task_entry	7
+../Hiwonder/System/app.c:180:6:jetacker_control	1
+../Hiwonder/System/app.c:230:6:minacker_control	1
