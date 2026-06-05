@@ -6,14 +6,23 @@ const path = require("path");
 const notion = new Client({ auth: process.env.NOTION_TOKEN });
 const n2m = new NotionToMarkdown({ notionClient: notion });
 
-async function retry(fn, retries = 3, delay = 2000) {
+const sleep = (ms) => new Promise(res => setTimeout(res, ms));
+const DELAY = 1000; // ✅ 매 요청마다 1초 대기
+
+async function retry(fn, retries = 5) {
   for (let i = 0; i < retries; i++) {
     try {
+      await sleep(DELAY); // ✅ 매 요청 전 1초 대기
       return await fn();
     } catch (err) {
-      if (i === retries - 1) throw err;
-      console.log(`⚠️ 재시도 중... (${i + 1}/${retries})`);
-      await new Promise(res => setTimeout(res, delay));
+      if (err.status === 429) {
+        console.log(`⏳ Rate Limited! 60초 대기 중... (${i + 1}/${retries})`);
+        await sleep(60000); // ✅ rate limit이면 60초 대기
+      } else {
+        if (i === retries - 1) throw err;
+        console.log(`⚠️ 재시도 중... (${i + 1}/${retries})`);
+        await sleep(10000);
+      }
     }
   }
 }
@@ -33,19 +42,16 @@ async function processBlocks(blocks, dirPath) {
       const childTitle = block.child_page.title.replace(/[\/\\:*?"<>|]/g, "_");
       const childDir = path.join(dirPath, childTitle);
       await syncPage(block.id, childDir);
-
     } else if (block.type === "link_to_page" && block.link_to_page?.page_id) {
       const linkedPageId = block.link_to_page.page_id;
       const linkedTitle = (await getTitle(linkedPageId)).replace(/[\/\\:*?"<>|]/g, "_");
       const childDir = path.join(dirPath, linkedTitle);
       await syncPage(linkedPageId, childDir);
-
     } else if (block.type === "child_database") {
       const childTitle = (block.child_database.title || "database").replace(/[\/\\:*?"<>|]/g, "_");
       const childDir = path.join(dirPath, childTitle);
       if (!fs.existsSync(childDir)) fs.mkdirSync(childDir, { recursive: true });
-    
-      // DB 안의 페이지들 가져오기
+
       const dbPages = await retry(() => notion.databases.query({ database_id: block.id }));
       for (const dbPage of dbPages.results) {
         const dbPageTitle = (
@@ -57,7 +63,6 @@ async function processBlocks(blocks, dirPath) {
         await syncPage(dbPage.id, dbPageDir);
       }
     } else if (block.type === "column_list" || block.type === "column") {
-      // 컬럼 레이아웃 재귀 탐색
       const children = await retry(() => notion.blocks.children.list({ block_id: block.id }));
       await processBlocks(children.results, dirPath);
     }
@@ -83,9 +88,7 @@ async function syncPage(pageId, dirPath) {
       start_cursor: cursor,
       page_size: 100,
     }));
-
     await processBlocks(response.results, dirPath);
-
     if (!response.has_more) break;
     cursor = response.next_cursor;
   }
