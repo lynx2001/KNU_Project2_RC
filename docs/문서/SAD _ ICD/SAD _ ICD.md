@@ -7,43 +7,58 @@
 **시스템 아키텍처 설계서**
 
 
-### Physical Architecture
+## Physical Architecture
 
 
 **[4.0]**
 
 
-[Interface_Control_Document.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/6736ff59-6c24-4b04-b554-f9dbc0e1ca7b/Interface_Control_Document.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YMLMKAUT%2F20260425%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260425T213305Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFKrmXQ6XukUkrLVwDP6AxNIWVuMlYlwezH335CvjlPfAiEAkMCjPid7KgFWfC8%2FAC1DshYrpVNiKn3LbTL%2BriWNeWoqiAQInf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJFAWYmj13HEoJ%2B0dircAwDL7IrTV64LfGJILdshYE%2FJg2tCzpOzr%2BfP23UQGFMZKKLN8P11%2B2iyzOYpyOKOCoXCmna1bISPFPIXxvTsGhMC4aTGORNs3wU3TaxQ6eQHyZBHmxSXmDf2pjeeZKKTIdX8vb7Xap4eqga9IRusSeUf8Df7YgM9%2FC5VCZ%2B8dZEiht1iBsc5IA7TYc%2B3UzdO0Vf1E5IY2rpajCTlTd6zrPBLpjZcjYGfpiVNP%2BbSGOwr9PRdWySjJgCIlpwmSQnQkjWPBe7u5tcqwL7TF22ClodKp%2FviEekEAS0NSZFXKNVjSLDsSrIKtg1yDtkUyrp0T%2FtrSOJwNkxanfGkWmqDZKg1DakajZYnwdj1VH6Ft5Hydo4G%2B3ZdTpLI%2Ba4pA3v3G0k8KVYUN9X%2BtJOOLUzwIcQ%2Fdquvw%2F9zEQwfvWazFwcJ2%2Bn4FG%2FMay5jnpEYUU%2FOp5AZYkdvAILujMkTtpgDNx6Pwh0%2BwJKP5rZfIZ4bskIUNXCtY5oxYnGSuI6VZBX4VTKL2kCQTBBzqHEwYTOe6AvM6ypJf2g5LRA49s%2FV6Z%2BL%2FDLn5X%2FonqajdDpdf3rb4rUvN8phXuXwQrbsr%2BuECJ7KDfYMO1FdiO2hMZxdfedfHWF6M4olFv2lhqbBMIvFtM8GOqUBNS7Cnoz7%2BOajdDVfADO2NDI1IwWvsj%2FOkkfdB%2B3yjdAjUUbW03knHxaOgNPszlfZdstvdIPUViBRWecU3Y7Qxm2gkQxBL2R4LQpNyT748pkrUHyIbb28br5jWNxQoRCKhDiq%2B043gz9UugCR0MCuYhQFWZw9cjSAs%2BNhQ5%2B1uJVwFawPd7gg8JoOXGN4Lbb7w1uZEtdJK1IylfRd5gITmw4CAmtQ&X-Amz-Signature=beed8b61e0b12d128e77769ead9d5ac1a79751fad205d074674df5eca3a18675&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[Interface_Control_Document.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/6736ff59-6c24-4b04-b554-f9dbc0e1ca7b/Interface_Control_Document.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QTEVFONO%2F20260605%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260605T045702Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFCUxq7dD92QRo%2FlQCRnhRUUWbJSwl69qOBe%2Fu9w72ypAiEAw2BdpeGh%2BizY2CZwdkN%2BVED8YBKZhgq7nTsWAr2mfycq%2FwMIZRAAGgw2Mzc0MjMxODM4MDUiDIpFNZ1A3bHeGrY09yrcA2%2FBtgF3%2Fr%2F5ryzRRFDpyxWrlDIOs%2FwibJ7jEJNWiptKaK04ZJPlxhQkw4bzYkQInYvWZ1E%2FGBEJbpC625%2Bti7qaWMSLXThHylFQ7%2BdS9yMs1XYOLCIHotChVuX6qhsZ9OBm%2Fvre9qHTbnnvx2bZ2yL7%2BhiEwoNTjlKK7MJfr2IHYQ8w2Nggdxqnw1GZwsvh8mz74MRmg%2Beg1AXqVS2NdolG167iXJ8KZbFA4Fa9kDWv2JKdybxWeI%2FPuiXAnyUdskRFyLqc%2FCgQPh30W5IKjsESAZgNB0hq7bHXLubHQjWw0D1neAKU8ANdVb5PR%2F3f1SoB0B3N98f2EA1PN0plmI%2FXM7LU6vYkph52UguERuOyBTuPwddWmNvQZhLgWGZ512TC6zcdm3Jpe7kMA9zFGtdiW2jXqOOYpfQYmlNAgC8MSSRPZa03jgzAmmm0eYzvZP%2FW8Hhh1%2Byrm0hn5Di3Iuxn5v%2FbwC8eGd9K9jSbURmvyZsAD0JISYdjHsTOhoGbmtsZEmHwDqKgniZlYfeQH3zFUQg%2FVLieNQBZriZjtZ9PeHtp4Ba4j85AvC4n%2B6XCBTuo2iu0IwgmHJSZ4NtwpChAJ2xwjbVmdxm%2FdGrAfToDSaOPGLKcAxZw4%2BsSMJSOidEGOqUBETsBEoqTs9cDFRJ1PRS05Lfnj73Zw1YH5UAOhPX5Z6USOTr9Ff5jlcMOdDeVPQSH%2FRZJrMEFN%2BuImtbU1%2BvJZZsFl96BIXxfXq2cmscnabAi7hCGaJbHX0s3wEmiStyLS8bD9yvoqfq7ZGiCW0Kx%2BbTdbXT814dtFL%2FK0GSWSMt0Fr0COMZz7lNbtNB8PtqdXqpCl6jS8qaYH9dlgqIVCiR9iwae&X-Amz-Signature=4843de403775d936fe17efc579aca4c0f9adf5e961dc4ae3f12456c82425964a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 
 
 **[3.0]**
 
 
-[Interface_Control_Document.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/ad8b3093-1957-4c32-8623-bdc57577dd6e/Interface_Control_Document.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YMLMKAUT%2F20260425%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260425T213305Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFKrmXQ6XukUkrLVwDP6AxNIWVuMlYlwezH335CvjlPfAiEAkMCjPid7KgFWfC8%2FAC1DshYrpVNiKn3LbTL%2BriWNeWoqiAQInf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJFAWYmj13HEoJ%2B0dircAwDL7IrTV64LfGJILdshYE%2FJg2tCzpOzr%2BfP23UQGFMZKKLN8P11%2B2iyzOYpyOKOCoXCmna1bISPFPIXxvTsGhMC4aTGORNs3wU3TaxQ6eQHyZBHmxSXmDf2pjeeZKKTIdX8vb7Xap4eqga9IRusSeUf8Df7YgM9%2FC5VCZ%2B8dZEiht1iBsc5IA7TYc%2B3UzdO0Vf1E5IY2rpajCTlTd6zrPBLpjZcjYGfpiVNP%2BbSGOwr9PRdWySjJgCIlpwmSQnQkjWPBe7u5tcqwL7TF22ClodKp%2FviEekEAS0NSZFXKNVjSLDsSrIKtg1yDtkUyrp0T%2FtrSOJwNkxanfGkWmqDZKg1DakajZYnwdj1VH6Ft5Hydo4G%2B3ZdTpLI%2Ba4pA3v3G0k8KVYUN9X%2BtJOOLUzwIcQ%2Fdquvw%2F9zEQwfvWazFwcJ2%2Bn4FG%2FMay5jnpEYUU%2FOp5AZYkdvAILujMkTtpgDNx6Pwh0%2BwJKP5rZfIZ4bskIUNXCtY5oxYnGSuI6VZBX4VTKL2kCQTBBzqHEwYTOe6AvM6ypJf2g5LRA49s%2FV6Z%2BL%2FDLn5X%2FonqajdDpdf3rb4rUvN8phXuXwQrbsr%2BuECJ7KDfYMO1FdiO2hMZxdfedfHWF6M4olFv2lhqbBMIvFtM8GOqUBNS7Cnoz7%2BOajdDVfADO2NDI1IwWvsj%2FOkkfdB%2B3yjdAjUUbW03knHxaOgNPszlfZdstvdIPUViBRWecU3Y7Qxm2gkQxBL2R4LQpNyT748pkrUHyIbb28br5jWNxQoRCKhDiq%2B043gz9UugCR0MCuYhQFWZw9cjSAs%2BNhQ5%2B1uJVwFawPd7gg8JoOXGN4Lbb7w1uZEtdJK1IylfRd5gITmw4CAmtQ&X-Amz-Signature=79b0e0e82888e0e71bcbb59ba05ed2b203528fc49213b398952b636b17f3813e&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[Interface_Control_Document.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/ad8b3093-1957-4c32-8623-bdc57577dd6e/Interface_Control_Document.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QTEVFONO%2F20260605%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260605T045702Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFCUxq7dD92QRo%2FlQCRnhRUUWbJSwl69qOBe%2Fu9w72ypAiEAw2BdpeGh%2BizY2CZwdkN%2BVED8YBKZhgq7nTsWAr2mfycq%2FwMIZRAAGgw2Mzc0MjMxODM4MDUiDIpFNZ1A3bHeGrY09yrcA2%2FBtgF3%2Fr%2F5ryzRRFDpyxWrlDIOs%2FwibJ7jEJNWiptKaK04ZJPlxhQkw4bzYkQInYvWZ1E%2FGBEJbpC625%2Bti7qaWMSLXThHylFQ7%2BdS9yMs1XYOLCIHotChVuX6qhsZ9OBm%2Fvre9qHTbnnvx2bZ2yL7%2BhiEwoNTjlKK7MJfr2IHYQ8w2Nggdxqnw1GZwsvh8mz74MRmg%2Beg1AXqVS2NdolG167iXJ8KZbFA4Fa9kDWv2JKdybxWeI%2FPuiXAnyUdskRFyLqc%2FCgQPh30W5IKjsESAZgNB0hq7bHXLubHQjWw0D1neAKU8ANdVb5PR%2F3f1SoB0B3N98f2EA1PN0plmI%2FXM7LU6vYkph52UguERuOyBTuPwddWmNvQZhLgWGZ512TC6zcdm3Jpe7kMA9zFGtdiW2jXqOOYpfQYmlNAgC8MSSRPZa03jgzAmmm0eYzvZP%2FW8Hhh1%2Byrm0hn5Di3Iuxn5v%2FbwC8eGd9K9jSbURmvyZsAD0JISYdjHsTOhoGbmtsZEmHwDqKgniZlYfeQH3zFUQg%2FVLieNQBZriZjtZ9PeHtp4Ba4j85AvC4n%2B6XCBTuo2iu0IwgmHJSZ4NtwpChAJ2xwjbVmdxm%2FdGrAfToDSaOPGLKcAxZw4%2BsSMJSOidEGOqUBETsBEoqTs9cDFRJ1PRS05Lfnj73Zw1YH5UAOhPX5Z6USOTr9Ff5jlcMOdDeVPQSH%2FRZJrMEFN%2BuImtbU1%2BvJZZsFl96BIXxfXq2cmscnabAi7hCGaJbHX0s3wEmiStyLS8bD9yvoqfq7ZGiCW0Kx%2BbTdbXT814dtFL%2FK0GSWSMt0Fr0COMZz7lNbtNB8PtqdXqpCl6jS8qaYH9dlgqIVCiR9iwae&X-Amz-Signature=f0c52adc2e73d78860e942403461508c6a6f78194234a46571b3c42de524954c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 
 
 **[2.0]**
 
 
-[Untitled.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/47cb5423-098f-482e-971e-1d79d5b34f98/Untitled.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YMLMKAUT%2F20260425%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260425T213305Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFKrmXQ6XukUkrLVwDP6AxNIWVuMlYlwezH335CvjlPfAiEAkMCjPid7KgFWfC8%2FAC1DshYrpVNiKn3LbTL%2BriWNeWoqiAQInf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJFAWYmj13HEoJ%2B0dircAwDL7IrTV64LfGJILdshYE%2FJg2tCzpOzr%2BfP23UQGFMZKKLN8P11%2B2iyzOYpyOKOCoXCmna1bISPFPIXxvTsGhMC4aTGORNs3wU3TaxQ6eQHyZBHmxSXmDf2pjeeZKKTIdX8vb7Xap4eqga9IRusSeUf8Df7YgM9%2FC5VCZ%2B8dZEiht1iBsc5IA7TYc%2B3UzdO0Vf1E5IY2rpajCTlTd6zrPBLpjZcjYGfpiVNP%2BbSGOwr9PRdWySjJgCIlpwmSQnQkjWPBe7u5tcqwL7TF22ClodKp%2FviEekEAS0NSZFXKNVjSLDsSrIKtg1yDtkUyrp0T%2FtrSOJwNkxanfGkWmqDZKg1DakajZYnwdj1VH6Ft5Hydo4G%2B3ZdTpLI%2Ba4pA3v3G0k8KVYUN9X%2BtJOOLUzwIcQ%2Fdquvw%2F9zEQwfvWazFwcJ2%2Bn4FG%2FMay5jnpEYUU%2FOp5AZYkdvAILujMkTtpgDNx6Pwh0%2BwJKP5rZfIZ4bskIUNXCtY5oxYnGSuI6VZBX4VTKL2kCQTBBzqHEwYTOe6AvM6ypJf2g5LRA49s%2FV6Z%2BL%2FDLn5X%2FonqajdDpdf3rb4rUvN8phXuXwQrbsr%2BuECJ7KDfYMO1FdiO2hMZxdfedfHWF6M4olFv2lhqbBMIvFtM8GOqUBNS7Cnoz7%2BOajdDVfADO2NDI1IwWvsj%2FOkkfdB%2B3yjdAjUUbW03knHxaOgNPszlfZdstvdIPUViBRWecU3Y7Qxm2gkQxBL2R4LQpNyT748pkrUHyIbb28br5jWNxQoRCKhDiq%2B043gz9UugCR0MCuYhQFWZw9cjSAs%2BNhQ5%2B1uJVwFawPd7gg8JoOXGN4Lbb7w1uZEtdJK1IylfRd5gITmw4CAmtQ&X-Amz-Signature=11b020d6c1f1d6e9f1ceacf39c70a7a4eb0c0933de510ab681bc59d0ef7e305e&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[Untitled.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/47cb5423-098f-482e-971e-1d79d5b34f98/Untitled.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QTEVFONO%2F20260605%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260605T045702Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFCUxq7dD92QRo%2FlQCRnhRUUWbJSwl69qOBe%2Fu9w72ypAiEAw2BdpeGh%2BizY2CZwdkN%2BVED8YBKZhgq7nTsWAr2mfycq%2FwMIZRAAGgw2Mzc0MjMxODM4MDUiDIpFNZ1A3bHeGrY09yrcA2%2FBtgF3%2Fr%2F5ryzRRFDpyxWrlDIOs%2FwibJ7jEJNWiptKaK04ZJPlxhQkw4bzYkQInYvWZ1E%2FGBEJbpC625%2Bti7qaWMSLXThHylFQ7%2BdS9yMs1XYOLCIHotChVuX6qhsZ9OBm%2Fvre9qHTbnnvx2bZ2yL7%2BhiEwoNTjlKK7MJfr2IHYQ8w2Nggdxqnw1GZwsvh8mz74MRmg%2Beg1AXqVS2NdolG167iXJ8KZbFA4Fa9kDWv2JKdybxWeI%2FPuiXAnyUdskRFyLqc%2FCgQPh30W5IKjsESAZgNB0hq7bHXLubHQjWw0D1neAKU8ANdVb5PR%2F3f1SoB0B3N98f2EA1PN0plmI%2FXM7LU6vYkph52UguERuOyBTuPwddWmNvQZhLgWGZ512TC6zcdm3Jpe7kMA9zFGtdiW2jXqOOYpfQYmlNAgC8MSSRPZa03jgzAmmm0eYzvZP%2FW8Hhh1%2Byrm0hn5Di3Iuxn5v%2FbwC8eGd9K9jSbURmvyZsAD0JISYdjHsTOhoGbmtsZEmHwDqKgniZlYfeQH3zFUQg%2FVLieNQBZriZjtZ9PeHtp4Ba4j85AvC4n%2B6XCBTuo2iu0IwgmHJSZ4NtwpChAJ2xwjbVmdxm%2FdGrAfToDSaOPGLKcAxZw4%2BsSMJSOidEGOqUBETsBEoqTs9cDFRJ1PRS05Lfnj73Zw1YH5UAOhPX5Z6USOTr9Ff5jlcMOdDeVPQSH%2FRZJrMEFN%2BuImtbU1%2BvJZZsFl96BIXxfXq2cmscnabAi7hCGaJbHX0s3wEmiStyLS8bD9yvoqfq7ZGiCW0Kx%2BbTdbXT814dtFL%2FK0GSWSMt0Fr0COMZz7lNbtNB8PtqdXqpCl6jS8qaYH9dlgqIVCiR9iwae&X-Amz-Signature=2e3a4703d247043ff1b7703d1d7809f01cd1d123267529a46acf199d49b306ec&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 
 
 **[1.0]**
 
 
-[Untitled_2.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/80e8dcc9-7db0-4de3-8743-c160f15b96ba/Untitled_2.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YMLMKAUT%2F20260425%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260425T213305Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFKrmXQ6XukUkrLVwDP6AxNIWVuMlYlwezH335CvjlPfAiEAkMCjPid7KgFWfC8%2FAC1DshYrpVNiKn3LbTL%2BriWNeWoqiAQInf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJFAWYmj13HEoJ%2B0dircAwDL7IrTV64LfGJILdshYE%2FJg2tCzpOzr%2BfP23UQGFMZKKLN8P11%2B2iyzOYpyOKOCoXCmna1bISPFPIXxvTsGhMC4aTGORNs3wU3TaxQ6eQHyZBHmxSXmDf2pjeeZKKTIdX8vb7Xap4eqga9IRusSeUf8Df7YgM9%2FC5VCZ%2B8dZEiht1iBsc5IA7TYc%2B3UzdO0Vf1E5IY2rpajCTlTd6zrPBLpjZcjYGfpiVNP%2BbSGOwr9PRdWySjJgCIlpwmSQnQkjWPBe7u5tcqwL7TF22ClodKp%2FviEekEAS0NSZFXKNVjSLDsSrIKtg1yDtkUyrp0T%2FtrSOJwNkxanfGkWmqDZKg1DakajZYnwdj1VH6Ft5Hydo4G%2B3ZdTpLI%2Ba4pA3v3G0k8KVYUN9X%2BtJOOLUzwIcQ%2Fdquvw%2F9zEQwfvWazFwcJ2%2Bn4FG%2FMay5jnpEYUU%2FOp5AZYkdvAILujMkTtpgDNx6Pwh0%2BwJKP5rZfIZ4bskIUNXCtY5oxYnGSuI6VZBX4VTKL2kCQTBBzqHEwYTOe6AvM6ypJf2g5LRA49s%2FV6Z%2BL%2FDLn5X%2FonqajdDpdf3rb4rUvN8phXuXwQrbsr%2BuECJ7KDfYMO1FdiO2hMZxdfedfHWF6M4olFv2lhqbBMIvFtM8GOqUBNS7Cnoz7%2BOajdDVfADO2NDI1IwWvsj%2FOkkfdB%2B3yjdAjUUbW03knHxaOgNPszlfZdstvdIPUViBRWecU3Y7Qxm2gkQxBL2R4LQpNyT748pkrUHyIbb28br5jWNxQoRCKhDiq%2B043gz9UugCR0MCuYhQFWZw9cjSAs%2BNhQ5%2B1uJVwFawPd7gg8JoOXGN4Lbb7w1uZEtdJK1IylfRd5gITmw4CAmtQ&X-Amz-Signature=26c487fddce18fd60646d1a672859af20df2176c30b2ce2dfb39d8542adc5ce5&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[Untitled_2.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/80e8dcc9-7db0-4de3-8743-c160f15b96ba/Untitled_2.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QTEVFONO%2F20260605%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260605T045702Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFCUxq7dD92QRo%2FlQCRnhRUUWbJSwl69qOBe%2Fu9w72ypAiEAw2BdpeGh%2BizY2CZwdkN%2BVED8YBKZhgq7nTsWAr2mfycq%2FwMIZRAAGgw2Mzc0MjMxODM4MDUiDIpFNZ1A3bHeGrY09yrcA2%2FBtgF3%2Fr%2F5ryzRRFDpyxWrlDIOs%2FwibJ7jEJNWiptKaK04ZJPlxhQkw4bzYkQInYvWZ1E%2FGBEJbpC625%2Bti7qaWMSLXThHylFQ7%2BdS9yMs1XYOLCIHotChVuX6qhsZ9OBm%2Fvre9qHTbnnvx2bZ2yL7%2BhiEwoNTjlKK7MJfr2IHYQ8w2Nggdxqnw1GZwsvh8mz74MRmg%2Beg1AXqVS2NdolG167iXJ8KZbFA4Fa9kDWv2JKdybxWeI%2FPuiXAnyUdskRFyLqc%2FCgQPh30W5IKjsESAZgNB0hq7bHXLubHQjWw0D1neAKU8ANdVb5PR%2F3f1SoB0B3N98f2EA1PN0plmI%2FXM7LU6vYkph52UguERuOyBTuPwddWmNvQZhLgWGZ512TC6zcdm3Jpe7kMA9zFGtdiW2jXqOOYpfQYmlNAgC8MSSRPZa03jgzAmmm0eYzvZP%2FW8Hhh1%2Byrm0hn5Di3Iuxn5v%2FbwC8eGd9K9jSbURmvyZsAD0JISYdjHsTOhoGbmtsZEmHwDqKgniZlYfeQH3zFUQg%2FVLieNQBZriZjtZ9PeHtp4Ba4j85AvC4n%2B6XCBTuo2iu0IwgmHJSZ4NtwpChAJ2xwjbVmdxm%2FdGrAfToDSaOPGLKcAxZw4%2BsSMJSOidEGOqUBETsBEoqTs9cDFRJ1PRS05Lfnj73Zw1YH5UAOhPX5Z6USOTr9Ff5jlcMOdDeVPQSH%2FRZJrMEFN%2BuImtbU1%2BvJZZsFl96BIXxfXq2cmscnabAi7hCGaJbHX0s3wEmiStyLS8bD9yvoqfq7ZGiCW0Kx%2BbTdbXT814dtFL%2FK0GSWSMt0Fr0COMZz7lNbtNB8PtqdXqpCl6jS8qaYH9dlgqIVCiR9iwae&X-Amz-Signature=04458cd6468f74d775a4229bb5cf67ff5fa6105f6b474c9cb9e47bc43e863c4f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 
 
-[Arduion_Mega_2560.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/13a64686-d858-483b-9a60-a334ae254269/Arduion_Mega_2560.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YMLMKAUT%2F20260425%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260425T213305Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFKrmXQ6XukUkrLVwDP6AxNIWVuMlYlwezH335CvjlPfAiEAkMCjPid7KgFWfC8%2FAC1DshYrpVNiKn3LbTL%2BriWNeWoqiAQInf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJFAWYmj13HEoJ%2B0dircAwDL7IrTV64LfGJILdshYE%2FJg2tCzpOzr%2BfP23UQGFMZKKLN8P11%2B2iyzOYpyOKOCoXCmna1bISPFPIXxvTsGhMC4aTGORNs3wU3TaxQ6eQHyZBHmxSXmDf2pjeeZKKTIdX8vb7Xap4eqga9IRusSeUf8Df7YgM9%2FC5VCZ%2B8dZEiht1iBsc5IA7TYc%2B3UzdO0Vf1E5IY2rpajCTlTd6zrPBLpjZcjYGfpiVNP%2BbSGOwr9PRdWySjJgCIlpwmSQnQkjWPBe7u5tcqwL7TF22ClodKp%2FviEekEAS0NSZFXKNVjSLDsSrIKtg1yDtkUyrp0T%2FtrSOJwNkxanfGkWmqDZKg1DakajZYnwdj1VH6Ft5Hydo4G%2B3ZdTpLI%2Ba4pA3v3G0k8KVYUN9X%2BtJOOLUzwIcQ%2Fdquvw%2F9zEQwfvWazFwcJ2%2Bn4FG%2FMay5jnpEYUU%2FOp5AZYkdvAILujMkTtpgDNx6Pwh0%2BwJKP5rZfIZ4bskIUNXCtY5oxYnGSuI6VZBX4VTKL2kCQTBBzqHEwYTOe6AvM6ypJf2g5LRA49s%2FV6Z%2BL%2FDLn5X%2FonqajdDpdf3rb4rUvN8phXuXwQrbsr%2BuECJ7KDfYMO1FdiO2hMZxdfedfHWF6M4olFv2lhqbBMIvFtM8GOqUBNS7Cnoz7%2BOajdDVfADO2NDI1IwWvsj%2FOkkfdB%2B3yjdAjUUbW03knHxaOgNPszlfZdstvdIPUViBRWecU3Y7Qxm2gkQxBL2R4LQpNyT748pkrUHyIbb28br5jWNxQoRCKhDiq%2B043gz9UugCR0MCuYhQFWZw9cjSAs%2BNhQ5%2B1uJVwFawPd7gg8JoOXGN4Lbb7w1uZEtdJK1IylfRd5gITmw4CAmtQ&X-Amz-Signature=5192641c586e227c03062eb6eebbfa659206d9066217f390d024b5db5ff86ef7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+### Hardware Architecture
 
 
-[Raspberry_Pi_4.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/5cb27376-116a-4fa1-ba2b-41848a930985/Raspberry_Pi_4.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YMLMKAUT%2F20260425%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260425T213305Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFKrmXQ6XukUkrLVwDP6AxNIWVuMlYlwezH335CvjlPfAiEAkMCjPid7KgFWfC8%2FAC1DshYrpVNiKn3LbTL%2BriWNeWoqiAQInf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJFAWYmj13HEoJ%2B0dircAwDL7IrTV64LfGJILdshYE%2FJg2tCzpOzr%2BfP23UQGFMZKKLN8P11%2B2iyzOYpyOKOCoXCmna1bISPFPIXxvTsGhMC4aTGORNs3wU3TaxQ6eQHyZBHmxSXmDf2pjeeZKKTIdX8vb7Xap4eqga9IRusSeUf8Df7YgM9%2FC5VCZ%2B8dZEiht1iBsc5IA7TYc%2B3UzdO0Vf1E5IY2rpajCTlTd6zrPBLpjZcjYGfpiVNP%2BbSGOwr9PRdWySjJgCIlpwmSQnQkjWPBe7u5tcqwL7TF22ClodKp%2FviEekEAS0NSZFXKNVjSLDsSrIKtg1yDtkUyrp0T%2FtrSOJwNkxanfGkWmqDZKg1DakajZYnwdj1VH6Ft5Hydo4G%2B3ZdTpLI%2Ba4pA3v3G0k8KVYUN9X%2BtJOOLUzwIcQ%2Fdquvw%2F9zEQwfvWazFwcJ2%2Bn4FG%2FMay5jnpEYUU%2FOp5AZYkdvAILujMkTtpgDNx6Pwh0%2BwJKP5rZfIZ4bskIUNXCtY5oxYnGSuI6VZBX4VTKL2kCQTBBzqHEwYTOe6AvM6ypJf2g5LRA49s%2FV6Z%2BL%2FDLn5X%2FonqajdDpdf3rb4rUvN8phXuXwQrbsr%2BuECJ7KDfYMO1FdiO2hMZxdfedfHWF6M4olFv2lhqbBMIvFtM8GOqUBNS7Cnoz7%2BOajdDVfADO2NDI1IwWvsj%2FOkkfdB%2B3yjdAjUUbW03knHxaOgNPszlfZdstvdIPUViBRWecU3Y7Qxm2gkQxBL2R4LQpNyT748pkrUHyIbb28br5jWNxQoRCKhDiq%2B043gz9UugCR0MCuYhQFWZw9cjSAs%2BNhQ5%2B1uJVwFawPd7gg8JoOXGN4Lbb7w1uZEtdJK1IylfRd5gITmw4CAmtQ&X-Amz-Signature=9253b05fe5b6e8488a9e15c0dc3a6c79d7b8ac6744900c716b2f76802124eb9f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[System_Architecture.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/5c88e28f-bad0-451e-bfae-e1ff612833cd/System_Architecture.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QTEVFONO%2F20260605%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260605T045702Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFCUxq7dD92QRo%2FlQCRnhRUUWbJSwl69qOBe%2Fu9w72ypAiEAw2BdpeGh%2BizY2CZwdkN%2BVED8YBKZhgq7nTsWAr2mfycq%2FwMIZRAAGgw2Mzc0MjMxODM4MDUiDIpFNZ1A3bHeGrY09yrcA2%2FBtgF3%2Fr%2F5ryzRRFDpyxWrlDIOs%2FwibJ7jEJNWiptKaK04ZJPlxhQkw4bzYkQInYvWZ1E%2FGBEJbpC625%2Bti7qaWMSLXThHylFQ7%2BdS9yMs1XYOLCIHotChVuX6qhsZ9OBm%2Fvre9qHTbnnvx2bZ2yL7%2BhiEwoNTjlKK7MJfr2IHYQ8w2Nggdxqnw1GZwsvh8mz74MRmg%2Beg1AXqVS2NdolG167iXJ8KZbFA4Fa9kDWv2JKdybxWeI%2FPuiXAnyUdskRFyLqc%2FCgQPh30W5IKjsESAZgNB0hq7bHXLubHQjWw0D1neAKU8ANdVb5PR%2F3f1SoB0B3N98f2EA1PN0plmI%2FXM7LU6vYkph52UguERuOyBTuPwddWmNvQZhLgWGZ512TC6zcdm3Jpe7kMA9zFGtdiW2jXqOOYpfQYmlNAgC8MSSRPZa03jgzAmmm0eYzvZP%2FW8Hhh1%2Byrm0hn5Di3Iuxn5v%2FbwC8eGd9K9jSbURmvyZsAD0JISYdjHsTOhoGbmtsZEmHwDqKgniZlYfeQH3zFUQg%2FVLieNQBZriZjtZ9PeHtp4Ba4j85AvC4n%2B6XCBTuo2iu0IwgmHJSZ4NtwpChAJ2xwjbVmdxm%2FdGrAfToDSaOPGLKcAxZw4%2BsSMJSOidEGOqUBETsBEoqTs9cDFRJ1PRS05Lfnj73Zw1YH5UAOhPX5Z6USOTr9Ff5jlcMOdDeVPQSH%2FRZJrMEFN%2BuImtbU1%2BvJZZsFl96BIXxfXq2cmscnabAi7hCGaJbHX0s3wEmiStyLS8bD9yvoqfq7ZGiCW0Kx%2BbTdbXT814dtFL%2FK0GSWSMt0Fr0COMZz7lNbtNB8PtqdXqpCl6jS8qaYH9dlgqIVCiR9iwae&X-Amz-Signature=74bd9d7016e85693e12fd3f9e51361c7d65f39c5df1b72b7a4531edab914a4b7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 
 
-[System_Architecture.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/f1a1362f-7276-4e41-a72e-ff605ecb7913/System_Architecture.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YMLMKAUT%2F20260425%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260425T213305Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFKrmXQ6XukUkrLVwDP6AxNIWVuMlYlwezH335CvjlPfAiEAkMCjPid7KgFWfC8%2FAC1DshYrpVNiKn3LbTL%2BriWNeWoqiAQInf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJFAWYmj13HEoJ%2B0dircAwDL7IrTV64LfGJILdshYE%2FJg2tCzpOzr%2BfP23UQGFMZKKLN8P11%2B2iyzOYpyOKOCoXCmna1bISPFPIXxvTsGhMC4aTGORNs3wU3TaxQ6eQHyZBHmxSXmDf2pjeeZKKTIdX8vb7Xap4eqga9IRusSeUf8Df7YgM9%2FC5VCZ%2B8dZEiht1iBsc5IA7TYc%2B3UzdO0Vf1E5IY2rpajCTlTd6zrPBLpjZcjYGfpiVNP%2BbSGOwr9PRdWySjJgCIlpwmSQnQkjWPBe7u5tcqwL7TF22ClodKp%2FviEekEAS0NSZFXKNVjSLDsSrIKtg1yDtkUyrp0T%2FtrSOJwNkxanfGkWmqDZKg1DakajZYnwdj1VH6Ft5Hydo4G%2B3ZdTpLI%2Ba4pA3v3G0k8KVYUN9X%2BtJOOLUzwIcQ%2Fdquvw%2F9zEQwfvWazFwcJ2%2Bn4FG%2FMay5jnpEYUU%2FOp5AZYkdvAILujMkTtpgDNx6Pwh0%2BwJKP5rZfIZ4bskIUNXCtY5oxYnGSuI6VZBX4VTKL2kCQTBBzqHEwYTOe6AvM6ypJf2g5LRA49s%2FV6Z%2BL%2FDLn5X%2FonqajdDpdf3rb4rUvN8phXuXwQrbsr%2BuECJ7KDfYMO1FdiO2hMZxdfedfHWF6M4olFv2lhqbBMIvFtM8GOqUBNS7Cnoz7%2BOajdDVfADO2NDI1IwWvsj%2FOkkfdB%2B3yjdAjUUbW03knHxaOgNPszlfZdstvdIPUViBRWecU3Y7Qxm2gkQxBL2R4LQpNyT748pkrUHyIbb28br5jWNxQoRCKhDiq%2B043gz9UugCR0MCuYhQFWZw9cjSAs%2BNhQ5%2B1uJVwFawPd7gg8JoOXGN4Lbb7w1uZEtdJK1IylfRd5gITmw4CAmtQ&X-Amz-Signature=a20201e324875adf90234495cec484c30819daf918c0b42de93f0757ffdae798&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[System_Implementation.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/7facaab4-a303-4fae-9ac6-6f607ca752d4/System_Implementation.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QTEVFONO%2F20260605%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260605T045702Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFCUxq7dD92QRo%2FlQCRnhRUUWbJSwl69qOBe%2Fu9w72ypAiEAw2BdpeGh%2BizY2CZwdkN%2BVED8YBKZhgq7nTsWAr2mfycq%2FwMIZRAAGgw2Mzc0MjMxODM4MDUiDIpFNZ1A3bHeGrY09yrcA2%2FBtgF3%2Fr%2F5ryzRRFDpyxWrlDIOs%2FwibJ7jEJNWiptKaK04ZJPlxhQkw4bzYkQInYvWZ1E%2FGBEJbpC625%2Bti7qaWMSLXThHylFQ7%2BdS9yMs1XYOLCIHotChVuX6qhsZ9OBm%2Fvre9qHTbnnvx2bZ2yL7%2BhiEwoNTjlKK7MJfr2IHYQ8w2Nggdxqnw1GZwsvh8mz74MRmg%2Beg1AXqVS2NdolG167iXJ8KZbFA4Fa9kDWv2JKdybxWeI%2FPuiXAnyUdskRFyLqc%2FCgQPh30W5IKjsESAZgNB0hq7bHXLubHQjWw0D1neAKU8ANdVb5PR%2F3f1SoB0B3N98f2EA1PN0plmI%2FXM7LU6vYkph52UguERuOyBTuPwddWmNvQZhLgWGZ512TC6zcdm3Jpe7kMA9zFGtdiW2jXqOOYpfQYmlNAgC8MSSRPZa03jgzAmmm0eYzvZP%2FW8Hhh1%2Byrm0hn5Di3Iuxn5v%2FbwC8eGd9K9jSbURmvyZsAD0JISYdjHsTOhoGbmtsZEmHwDqKgniZlYfeQH3zFUQg%2FVLieNQBZriZjtZ9PeHtp4Ba4j85AvC4n%2B6XCBTuo2iu0IwgmHJSZ4NtwpChAJ2xwjbVmdxm%2FdGrAfToDSaOPGLKcAxZw4%2BsSMJSOidEGOqUBETsBEoqTs9cDFRJ1PRS05Lfnj73Zw1YH5UAOhPX5Z6USOTr9Ff5jlcMOdDeVPQSH%2FRZJrMEFN%2BuImtbU1%2BvJZZsFl96BIXxfXq2cmscnabAi7hCGaJbHX0s3wEmiStyLS8bD9yvoqfq7ZGiCW0Kx%2BbTdbXT814dtFL%2FK0GSWSMt0Fr0COMZz7lNbtNB8PtqdXqpCl6jS8qaYH9dlgqIVCiR9iwae&X-Amz-Signature=b175fb3cc4cd70c4949734412a3d88a0c4d0fcaaaf9e29cdcc897a96bf15ee58&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 
 
-하드웨어 컴포넌트 간의 물리적인 연결과 전원, 데이터의 흐름을 정의
+[Arduion_Mega_2560.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/13a64686-d858-483b-9a60-a334ae254269/Arduion_Mega_2560.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QTEVFONO%2F20260605%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260605T045702Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFCUxq7dD92QRo%2FlQCRnhRUUWbJSwl69qOBe%2Fu9w72ypAiEAw2BdpeGh%2BizY2CZwdkN%2BVED8YBKZhgq7nTsWAr2mfycq%2FwMIZRAAGgw2Mzc0MjMxODM4MDUiDIpFNZ1A3bHeGrY09yrcA2%2FBtgF3%2Fr%2F5ryzRRFDpyxWrlDIOs%2FwibJ7jEJNWiptKaK04ZJPlxhQkw4bzYkQInYvWZ1E%2FGBEJbpC625%2Bti7qaWMSLXThHylFQ7%2BdS9yMs1XYOLCIHotChVuX6qhsZ9OBm%2Fvre9qHTbnnvx2bZ2yL7%2BhiEwoNTjlKK7MJfr2IHYQ8w2Nggdxqnw1GZwsvh8mz74MRmg%2Beg1AXqVS2NdolG167iXJ8KZbFA4Fa9kDWv2JKdybxWeI%2FPuiXAnyUdskRFyLqc%2FCgQPh30W5IKjsESAZgNB0hq7bHXLubHQjWw0D1neAKU8ANdVb5PR%2F3f1SoB0B3N98f2EA1PN0plmI%2FXM7LU6vYkph52UguERuOyBTuPwddWmNvQZhLgWGZ512TC6zcdm3Jpe7kMA9zFGtdiW2jXqOOYpfQYmlNAgC8MSSRPZa03jgzAmmm0eYzvZP%2FW8Hhh1%2Byrm0hn5Di3Iuxn5v%2FbwC8eGd9K9jSbURmvyZsAD0JISYdjHsTOhoGbmtsZEmHwDqKgniZlYfeQH3zFUQg%2FVLieNQBZriZjtZ9PeHtp4Ba4j85AvC4n%2B6XCBTuo2iu0IwgmHJSZ4NtwpChAJ2xwjbVmdxm%2FdGrAfToDSaOPGLKcAxZw4%2BsSMJSOidEGOqUBETsBEoqTs9cDFRJ1PRS05Lfnj73Zw1YH5UAOhPX5Z6USOTr9Ff5jlcMOdDeVPQSH%2FRZJrMEFN%2BuImtbU1%2BvJZZsFl96BIXxfXq2cmscnabAi7hCGaJbHX0s3wEmiStyLS8bD9yvoqfq7ZGiCW0Kx%2BbTdbXT814dtFL%2FK0GSWSMt0Fr0COMZz7lNbtNB8PtqdXqpCl6jS8qaYH9dlgqIVCiR9iwae&X-Amz-Signature=019c63e9b389c7887998422658d68c10ca726117bca2b461e3dc405dd8cbab67&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+
+
+[Raspberry_Pi_4.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/5cb27376-116a-4fa1-ba2b-41848a930985/Raspberry_Pi_4.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QTEVFONO%2F20260605%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260605T045702Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFCUxq7dD92QRo%2FlQCRnhRUUWbJSwl69qOBe%2Fu9w72ypAiEAw2BdpeGh%2BizY2CZwdkN%2BVED8YBKZhgq7nTsWAr2mfycq%2FwMIZRAAGgw2Mzc0MjMxODM4MDUiDIpFNZ1A3bHeGrY09yrcA2%2FBtgF3%2Fr%2F5ryzRRFDpyxWrlDIOs%2FwibJ7jEJNWiptKaK04ZJPlxhQkw4bzYkQInYvWZ1E%2FGBEJbpC625%2Bti7qaWMSLXThHylFQ7%2BdS9yMs1XYOLCIHotChVuX6qhsZ9OBm%2Fvre9qHTbnnvx2bZ2yL7%2BhiEwoNTjlKK7MJfr2IHYQ8w2Nggdxqnw1GZwsvh8mz74MRmg%2Beg1AXqVS2NdolG167iXJ8KZbFA4Fa9kDWv2JKdybxWeI%2FPuiXAnyUdskRFyLqc%2FCgQPh30W5IKjsESAZgNB0hq7bHXLubHQjWw0D1neAKU8ANdVb5PR%2F3f1SoB0B3N98f2EA1PN0plmI%2FXM7LU6vYkph52UguERuOyBTuPwddWmNvQZhLgWGZ512TC6zcdm3Jpe7kMA9zFGtdiW2jXqOOYpfQYmlNAgC8MSSRPZa03jgzAmmm0eYzvZP%2FW8Hhh1%2Byrm0hn5Di3Iuxn5v%2FbwC8eGd9K9jSbURmvyZsAD0JISYdjHsTOhoGbmtsZEmHwDqKgniZlYfeQH3zFUQg%2FVLieNQBZriZjtZ9PeHtp4Ba4j85AvC4n%2B6XCBTuo2iu0IwgmHJSZ4NtwpChAJ2xwjbVmdxm%2FdGrAfToDSaOPGLKcAxZw4%2BsSMJSOidEGOqUBETsBEoqTs9cDFRJ1PRS05Lfnj73Zw1YH5UAOhPX5Z6USOTr9Ff5jlcMOdDeVPQSH%2FRZJrMEFN%2BuImtbU1%2BvJZZsFl96BIXxfXq2cmscnabAi7hCGaJbHX0s3wEmiStyLS8bD9yvoqfq7ZGiCW0Kx%2BbTdbXT814dtFL%2FK0GSWSMt0Fr0COMZz7lNbtNB8PtqdXqpCl6jS8qaYH9dlgqIVCiR9iwae&X-Amz-Signature=a014234c99705874b89551d2e9c169abb3be1ad1bab07d4d3b4e3ab3d1c3baee&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+
+
+[System_Architecture.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/f1a1362f-7276-4e41-a72e-ff605ecb7913/System_Architecture.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QTEVFONO%2F20260605%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260605T045702Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFCUxq7dD92QRo%2FlQCRnhRUUWbJSwl69qOBe%2Fu9w72ypAiEAw2BdpeGh%2BizY2CZwdkN%2BVED8YBKZhgq7nTsWAr2mfycq%2FwMIZRAAGgw2Mzc0MjMxODM4MDUiDIpFNZ1A3bHeGrY09yrcA2%2FBtgF3%2Fr%2F5ryzRRFDpyxWrlDIOs%2FwibJ7jEJNWiptKaK04ZJPlxhQkw4bzYkQInYvWZ1E%2FGBEJbpC625%2Bti7qaWMSLXThHylFQ7%2BdS9yMs1XYOLCIHotChVuX6qhsZ9OBm%2Fvre9qHTbnnvx2bZ2yL7%2BhiEwoNTjlKK7MJfr2IHYQ8w2Nggdxqnw1GZwsvh8mz74MRmg%2Beg1AXqVS2NdolG167iXJ8KZbFA4Fa9kDWv2JKdybxWeI%2FPuiXAnyUdskRFyLqc%2FCgQPh30W5IKjsESAZgNB0hq7bHXLubHQjWw0D1neAKU8ANdVb5PR%2F3f1SoB0B3N98f2EA1PN0plmI%2FXM7LU6vYkph52UguERuOyBTuPwddWmNvQZhLgWGZ512TC6zcdm3Jpe7kMA9zFGtdiW2jXqOOYpfQYmlNAgC8MSSRPZa03jgzAmmm0eYzvZP%2FW8Hhh1%2Byrm0hn5Di3Iuxn5v%2FbwC8eGd9K9jSbURmvyZsAD0JISYdjHsTOhoGbmtsZEmHwDqKgniZlYfeQH3zFUQg%2FVLieNQBZriZjtZ9PeHtp4Ba4j85AvC4n%2B6XCBTuo2iu0IwgmHJSZ4NtwpChAJ2xwjbVmdxm%2FdGrAfToDSaOPGLKcAxZw4%2BsSMJSOidEGOqUBETsBEoqTs9cDFRJ1PRS05Lfnj73Zw1YH5UAOhPX5Z6USOTr9Ff5jlcMOdDeVPQSH%2FRZJrMEFN%2BuImtbU1%2BvJZZsFl96BIXxfXq2cmscnabAi7hCGaJbHX0s3wEmiStyLS8bD9yvoqfq7ZGiCW0Kx%2BbTdbXT814dtFL%2FK0GSWSMt0Fr0COMZz7lNbtNB8PtqdXqpCl6jS8qaYH9dlgqIVCiR9iwae&X-Amz-Signature=6b54353d55ac236a0d5b815177501018e5ae806442b1d071148a07738489905b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+
+
+### Software Architecture
+
+
+[Software_Architecture.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/113a8891-78b7-4f36-80e3-a4777bb1a855/c18a4684-829a-4ba9-b090-65e001023c6a/Software_Architecture.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QTEVFONO%2F20260605%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260605T045702Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFCUxq7dD92QRo%2FlQCRnhRUUWbJSwl69qOBe%2Fu9w72ypAiEAw2BdpeGh%2BizY2CZwdkN%2BVED8YBKZhgq7nTsWAr2mfycq%2FwMIZRAAGgw2Mzc0MjMxODM4MDUiDIpFNZ1A3bHeGrY09yrcA2%2FBtgF3%2Fr%2F5ryzRRFDpyxWrlDIOs%2FwibJ7jEJNWiptKaK04ZJPlxhQkw4bzYkQInYvWZ1E%2FGBEJbpC625%2Bti7qaWMSLXThHylFQ7%2BdS9yMs1XYOLCIHotChVuX6qhsZ9OBm%2Fvre9qHTbnnvx2bZ2yL7%2BhiEwoNTjlKK7MJfr2IHYQ8w2Nggdxqnw1GZwsvh8mz74MRmg%2Beg1AXqVS2NdolG167iXJ8KZbFA4Fa9kDWv2JKdybxWeI%2FPuiXAnyUdskRFyLqc%2FCgQPh30W5IKjsESAZgNB0hq7bHXLubHQjWw0D1neAKU8ANdVb5PR%2F3f1SoB0B3N98f2EA1PN0plmI%2FXM7LU6vYkph52UguERuOyBTuPwddWmNvQZhLgWGZ512TC6zcdm3Jpe7kMA9zFGtdiW2jXqOOYpfQYmlNAgC8MSSRPZa03jgzAmmm0eYzvZP%2FW8Hhh1%2Byrm0hn5Di3Iuxn5v%2FbwC8eGd9K9jSbURmvyZsAD0JISYdjHsTOhoGbmtsZEmHwDqKgniZlYfeQH3zFUQg%2FVLieNQBZriZjtZ9PeHtp4Ba4j85AvC4n%2B6XCBTuo2iu0IwgmHJSZ4NtwpChAJ2xwjbVmdxm%2FdGrAfToDSaOPGLKcAxZw4%2BsSMJSOidEGOqUBETsBEoqTs9cDFRJ1PRS05Lfnj73Zw1YH5UAOhPX5Z6USOTr9Ff5jlcMOdDeVPQSH%2FRZJrMEFN%2BuImtbU1%2BvJZZsFl96BIXxfXq2cmscnabAi7hCGaJbHX0s3wEmiStyLS8bD9yvoqfq7ZGiCW0Kx%2BbTdbXT814dtFL%2FK0GSWSMt0Fr0COMZz7lNbtNB8PtqdXqpCl6jS8qaYH9dlgqIVCiR9iwae&X-Amz-Signature=e002fda23b17af65b8a0d179f03b7b5db21b91b6ab0aa08cd878299f0c215aca&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+
+
+**[1.0]**
 
 - **[Layer 1] 전원 분배망 (Power Network):**
 	- 11.1V Li-Po 배터리 → 20A 블레이드 퓨즈 → 30A 스위치 → XT60 Y-케이블 분기
@@ -58,46 +73,20 @@
 	- **센서부:** RPLiDAR A1 (360도 스캔), Pi Camera V2 (차선 영상), HC-SR04 (근접 거리 측정)
 	- **구동부:** JGB37-520 DC 모터 (후륜 구동), LD-1501MG 서보모터 (전륜 조향)
 
-### STM32
+**[4.0]**
 
-
-**STM32F407VET6** 기반의 로봇 컨트롤 보드
-
-
-1. 핵심 프로세서 및 모션 센서
-
-- **STM32F407VET6 Master:** 보드의 두뇌입니다. ARM Cortex-M4 코어를 탑재하여 높은 연산 속도를 자랑하며, 로봇의 복잡한 알고리즘(역기구학, PID 제어 등)을 처리합니다.
-- **MPU6050 IMU:** 6축 가속도계와 자이로스코프가 통합된 센서입니다. 로봇의 기울기, 회전, 균형을 측정하는 데 필수적입니다.
-
-2. 전원부 (Power)
-
-- **5V5A external power supply:** 외부 전원 입력부입니다. 고전류(5A)를 지원하여 모터나 서보에 안정적인 전력을 공급합니다.
-- **Power Interface (파란색 터미널):** 배터리나 외부 전원 어댑터를 연결하는 주 전원 입력 단자입니다.
-- **Power switch:** 보드 전체의 전원을 켜고 끄는 물리 스위치입니다.
-- **On-board power indicator:** 전원이 정상적으로 공급되고 있는지 보여주는 LED입니다.
-
-3. 모터 및 서보 인터페이스
-
-- **Four-way coded motor Interface (PH2.0 * 6):** 엔코더가 달린 모터 4개를 제어하는 포트입니다. 엔코더 신호를 받아 정밀한 속도와 위치 제어가 가능합니다.
-- **5V power supply PWM steering gear interface X4:** 일반적인 서보 모터(Steering gear) 4개를 연결하는 PWM 포트입니다.
-- **Bus steering gear interface x2:** 직렬 버스 서보(Serial Bus Servo)를 위한 인터페이스입니다. 여러 개의 서보를 직렬로 연결해 제어할 때 사용합니다.
-- **Motor control switch:** 모터 드라이버 부분의 전원을 별도로 차단하거나 설정할 때 사용합니다.
-
-4. 통신 및 디버깅 인터페이스
-
-- **USB serial port 1 / burn download:** 펌웨어 업로드(Burning) 및 PC와의 시리얼 통신을 위한 주 포트입니다.
-- **USB serial port 2:** 추가적인 시리얼 통신 장치를 연결할 수 있는 포트입니다.
-- **I2C Extended Interface:** OLED, 각종 센서 등 I2C 통신 방식의 주변 장치를 확장할 수 있습니다. * **Bluetooth module interface:** HC-05/06 같은 블루투스 모듈을 꽂아 스마트폰 앱 등으로 무선 조종을 할 수 있게 합니다.
-- **SBUS remote control receiver interface:** 드론 조종기 같은 RC 수신기를 연결하기 위한 고속 직렬 통신 포트입니다.
-- **GPIO extension and SWD debugging:** STM32의 남는 핀을 사용하거나, ST-Link 같은 디버거를 연결해 실시간 코드 디버깅을 할 때 사용합니다.
-
-5. 사용자 입출력 및 기타
-
-- **0.96 inch LCD display interface:** 작은 OLED 디스플레이를 바로 꽂아 로봇의 상태(배터리, 센서값 등)를 확인할 수 있습니다.
-- **USB HOST interface:** USB 핸들(게임패드) 수신기 등을 연결하여 로봇을 직접 조작할 수 있습니다.
-- **User button x2 / User indicator:** 프로그래밍 가능한 버튼과 LED입니다. 특정 모드 진입이나 상태 표시용으로 설정 가능합니다.
-- **Buzzer:** 경고음이나 알림음을 내는 장치입니다.
-- **Reset button:** 시스템을 강제로 재시작하는 버튼입니다.
+- **[Layer 1] 구동 (Actuators)**
+	- **구동부:** JGB37-520 DC 모터 (후륜 구동), LD-1501MG 서보모터 (전륜 조향)
+	- 11.1V Li-Po 배터리 → 20A 블레이드 퓨즈 → 30A 스위치 → STM32
+	- (분기 1: 고전류) STM32 → 모터 드라이버 (11.1V 직결)
+	- (분기 2: 정전압) STM32 → 5V 강하 → Raspberry Pi 4 & Arduino Mega 2560
+	- (분기3) STM32 -> 8V 강하 -> 조향 서보모터
+- **[Layer 2] 두뇌 / 척수 / 말단 (Computing & Control)**
+	- **상위 제어기 (Raspberry Pi 4):** Ubuntu 22.04 기반 ROS 2 통신망 구축, 고부하 연산(비전, 라이다 처리) 및 자율주행 판단
+	- **중위 제어기 (STM32):** 모터 PWM 신호 생성 / PID(초정밀 속도 제어) / 오도메트리 측정 (IMU 센서)
+	- **하위 제어기 (Arduino Mega 2560):** 실시간성이 중요한 I/O 제어 (초음파 펄스 처리, 조향 서보모터, 하드웨어 인터럽트(AEB))
+- **[Layer 3] 인지 (Sensors)**
+	- **센서부:** RPLiDAR A1 (360도 스캔), Pi Camera V2 (차선 영상), HC-SR04 (근접 거리 측정)
 
 ### Logical/SW Architecture
 
@@ -130,42 +119,39 @@ ROS 2(Humble) 환경에서 노드(Node)들이 어떻게 역할을 분담하는�
 
 | **Source**     | **Destination** | **인터페이스 유형**      | **핀/포트 규격**           | **전달 내용**                          |
 | -------------- | --------------- | ----------------- | --------------------- | ---------------------------------- |
-| 11.1V 메인 전원    | Y-케이블           | **Power**         | XT60 (수 → 암)          | 최대 30A의 시스템 메인 전력                  |
+| 11.1V 메인 전원    | STM32           | **Power**         | XT60 (수 → 암)          | 최대 30A의 시스템 메인 전력                  |
 | Raspberry Pi 4 | Pi Camera V2    | **Data (Video)**  | 15-pin CSI-2          | 실시간 카메라 영상 스트리밍                    |
 | RPLiDAR A1     | Raspberry Pi 4  | **Data (Serial)** | USB 3.0 포트            | 115200 bps 시리얼 데이터 (Point Cloud)   |
 | Raspberry Pi 4 | Arduino Mega    | **Data (Serial)** | USB 2.0 (Type A to B) | 제어 명령 및 초음파 센서 패킷 교환               |
-| STM32          | JGB37-520 (모터)  | **Signal (PWM)**  | Digital PWM (핀 2, 3)  | 0~255 스케일의 전진/후진 속도 제어 신호          |
-| Arduino Mega   | LD-1501MG (서보)  | **Signal (PWM)**  | Digital PWM (핀 9)     | 0~180도 스케일의 조향 제어 신호               |
+| STM32          | JGB37-520 (모터)  | **Signal (PWM)**  | Digital PWM (M1, M2)  | 0~255 스케일의 전진/후진 속도 제어 신호          |
+| STM32          | LD-1501MG (서보)  | **Signal (PWM)**  | Digital PWM (J2)      | 0~180도 스케일의 조향 제어 신호               |
 | Arduino Mega   | HC-SR04         | **Signal (GPIO)** | Digital I/O (핀 22~29) | 10us HIGH 펄스 (Trig) 및 응답 시간 (Echo) |
-| Arduino Mega   | STM32           | **Signal (GPIO)** | Digital (10)          |                                    |
 
 
-|          |                       | 전압 (입력/출력)                     | 전류                | 비고                                            |
-| -------- | --------------------- | ------------------------------ | ----------------- | --------------------------------------------- |
-| Battery  | 11.1V 5000mAh 3S LiPo | 11.1V (완충 시 12.6V)             |                   | XT60 커넥터를 통해 모터 드라이버 및 전압 컨버터로 분배             |
-| 제어 및 연산부 | Raspberry Pi 4        | 5V DC                          | 최소 3.0A (3.5A 권장) | UBEC (5V 5A) 컨버터를 사용 - 배터리 전압을 5V로 강하하여 공급    |
+|          |                       | 전압 (입력/출력)                    | 전류                | 비고                                                   |
+| -------- | --------------------- | ----------------------------- | ----------------- | ---------------------------------------------------- |
+| Battery  | 11.1V 5000mAh 3S LiPo | 11.1V (완충 시 12.6V)            |                   | XT60 커넥터를 통해 STM32로 공급                               |
+| 제어 및 연산부 | Raspberry Pi 4        | 5V DC                         | 최소 3.0A (3.5A 권장) | STM32: 배터리 전압을 5V로 강하하여 공급                           |
 |          | Arduino Mega 2560     | 7~12V (VIN 단자)
-5V (USB/5V 단자)  |                   | UBEC (5V 5A) 컨버터를 사용 - 배터리 전압을 5V로 강하하여 공급    |
-|          | STM32                 | 12V (→ DC 모터)
-3.3V (← Arduino) |                   |                                               |
-| Actuator | 구동 모터 [JGB37-520]     | 12V DC                         |                   | 4채널 엔코더 모터 드라이버를 통해 배터리 전압 11.1V를 직접 공급 받아 구동 |
-|          | 조향 서보 모터 [LD-1501MG]  | 6.0V ~ 7.4V                    |                   | XL4015 벅 컨버터를 통해 배터리 전압을 6.5~7V로 강압하여 단독 공급   |
-| Sensor   | 2D LiDAR [RPLiDAR A1] | 5V                             | 600mA(구동 시)       |                                               |
-|          | HC-SR04               | 5V                             |                   | 아두이노 5V 라인 공유                                 |
-|          | Camera Module v2      | 3.3V                           |                   | 라즈베리파이 CSI 포트로부터 3.3V 전원 공급 받음                |
+5V (USB/5V 단자) |                   | STM32 → RPi → Arduino                                |
+|          | STM32                 | 12V (→ DC 모터)                 |                   |                                                      |
+| Actuator | 구동 모터 [JGB37-520]     | 12V DC                        |                   | STM32의 4채널 엔코더 모터 드라이버를 통해 배터리 전압 11.1V를 직접 공급 받아 구동 |
+|          | 조향 서보 모터 [LD-1501MG]  | 6.0V ~ 7.4V                   |                   | STM32를 통해 배터리 전압을 6.5~7V로 강압하여 단독 공급                 |
+| Sensor   | 2D LiDAR [RPLiDAR A1] | 5V                            | 600mA(구동 시)       |                                                      |
+|          | HC-SR04               | 5V                            |                   | 아두이노 5V 라인 공유                                        |
+|          | Camera Module v2      | 3.3V                          |                   | 라즈베리파이 CSI 포트로부터 3.3V 전원 공급 받음                       |
 
 
-| **전압 레벨**       | **해당 부품**                   | **공급 장치**            |
-| --------------- | --------------------------- | -------------------- |
-| **11.1V (Raw)** | 모터 드라이버 (구동용), 컨버터 입력       | 배터리 직결 (XT60 Y 케이블)  |
-| **6.0~7.4V**    | 조향 서보 모터 (LD-1501MG)        | XL4015 Step-Down 컨버터 |
-| **5.0V**        | 라즈베리파이, 아두이노, LiDAR, 초음파 센서 | UBEC (5V 5A) 컨버터     |
-| **3.3V**        | STM32                       | Arduino Digital PIN  |
+| **전압 레벨**       | **해당 부품**                   | **공급 장치**                  |
+| --------------- | --------------------------- | -------------------------- |
+| **11.1V (Raw)** | 모터 드라이버 (구동용)               | 배터리 직결 (XT60)              |
+| **6.0~7.4V**    | 조향 서보 모터 (LD-1501MG)        | STM32의 SERVO 핀 (J2)        |
+| **5.0V**        | 라즈베리파이, 아두이노, LiDAR, 초음파 센서 | STM32의 5V OUT (C type USB) |
 
 - 공통 그라운드 (GND)
 	- 배터리, 컨버터, 라즈베리파이, 아두이노, 모터 드라이버의 모든 GND는 하나로 묶어야 신호 노이즈 발생 X
 - 전류 용량
-	- UBEC 5A 용량은 라즈베리파이(3A)와 LiDAR(0.6A), 아두이노 및 센서류를 모두 감당하기 충분
+	- STM32 5V OUT pin :: 라즈베리파이(3A)와 LiDAR(0.6A), 아두이노 및 센서류를 모두 감당하기 충분
 	- 단, 배선 시 전압 강하가 일어나지 않도록 두꺼운 와이어 사용
 - 안전 장치
 	- 20A 토글 스위치와 퓨즈를 배터리에 직렬로 연결 → 과전류 발생 시 시스템 보호
@@ -182,58 +168,4 @@ ROS 2 네트워크 상에서 노드들이 주고받는 데이터 패킷 규격
 | **`/scan`**            | `lidar_node`         | `autonomous_node`    | `sensor_msgs/LaserScan`    | 360도 2D 라이다 거리 및 각도 배열 데이터           |
 | **`/image_raw`**       | `camera_node`        | `autonomous_node`    | `sensor_msgs/Image`        | 원본 프레임 이미지 배열 (OpenCV 처리용)           |
 | **`/ultrasonic_data`** | `serial_bridge_node` | `autonomous_node`    | `std_msgs/Int32MultiArray` | 4방향(전/후/좌/우) 초음파 센서의 거리 값 (cm 단위 배열) |
-
-
----
-
-
----
-
-
----
-
-
----
-
-
----
-
-
----
-
-
-### [SAD V5.0] 시스템 아키텍처 상세 기술
-
-
-### 1. 계층별 역할 정의 (Functional Layers)
-
-- **대뇌 계층 (Raspberry Pi 4): 전략적 판단**
-	- **입력:** LiDAR(공간 스캔), Camera(차선 및 객체 인식).
-	- **처리:** ROS 2 기반 SLAM/Navigation. 전체적인 주행 경로를 계산합니다.
-	- **출력:** STM32로 `cmd_vel`(목표 속도, 조향각) 패킷을 USB Serial로 전송합니다.
-- **실행 계층 (STM32F407 통합 보드): 정밀 구동**
-	- **입력:** RPi로부터의 주행 명령, 자체 IMU(기울기/방향), 구동 모터 엔코더.
-	- **처리:** 168MHz 고속 연산을 통한 PID 속도 제어 및 조향 PWM 생성.
-	- **출력:** 2개의 JGB37 구동 모터 및 1개의 LD-1501MG 조향 서보 제어.
-- **안전 계층 (Arduino Mega): 반사 신경 (Reflex)**
-	- **입력:** 12채널 HC-SR04 초음파 센서 (360도 전방위 감시).
-	- **처리:** 각 센서의 거리를 비동기로 측정하여 실시간 장애물 유무 판별.
-	- **출력 1 (Safety):** 장애물 10cm 이내 감지 시 **STM32의 하드웨어 인터럽트 핀(PA5 등)으로 즉시 HIGH 신호 송신.**
-	- **출력 2 (Data):** RPi로 장애물 거리 데이터를 전송하여 지도에 반영(Costmap update).
-
-### 2. 데이터 통신 및 신호 흐름 (Signal Topology)
-
-1. **USB Serial (High-Level):** RPi ↔ STM32 (주행 명령 및 오도메트리 데이터 교환).
-2. **USB Serial (Monitoring):** Arduino ➔ RPi (초음파 거리 데이터 전송).
-3. **E-Stop Discrete Line (Emergency):** **Arduino ➔ STM32 (강제 정지 신호).** * 이 선은 아두이노(5V)에서 STM32(3.3V)로 가므로 **[1kΩ+2kΩ] 전압 분배 저항**이 필수입니다.
-	- STM32는 이 핀에 신호가 들어오는 순간 소프트웨어의 모든 주행 루프를 중단하고 모터를 정지시킵니다.
-
-### 3. 전원 아키텍처 (Power Distribution)
-
-- **메인 소스:** 11.1V 3S Li-Po 배터리.
-- **STM32 구역:** 11.1V 직결 (모터 및 내부 로직용).
-- **RPi & Arduino 구역:** `5V 6A UBEC`를 통해 5V로 강하 후 두 보드에 병렬 공급.
-- **서보모터 구역:** STM32 보드 내장의 5V 서보 전용 포트 활용 + XL4015 전원 공급
-
----
 

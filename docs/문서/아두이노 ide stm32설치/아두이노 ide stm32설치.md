@@ -96,3 +96,11 @@ Failed uploading: uploading error: exit status 1
 
 vncserver -localhost no :1
 
+
+# tigerVNC 화면잠그 풀기
+
+
+loginctl unlock-session
+터미널 입력 안되면
+killall xfce4-screensaver
+

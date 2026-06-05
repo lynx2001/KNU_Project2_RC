@@ -1,6 +1,93 @@
 # PCA(Parking Collision-Avoidance Assist)
 
 
+```javascript
+#!/usr/bin/env python3
+import rclpy
+from rclpy.node import Node
+from geometry_msgs.msg import Twist
+import serial
+
+class PCASafetyNode(Node):
+    def __init__(self):
+        super().__init__('pca_safety_node')
+        
+        # --- 파라미터 (원할 때 외부에서 쉽게 값 변경 가능) ---
+        self.declare_parameter('safe_distance_cm', 3.0)
+        self.min_safe_dist = self.get_parameter('safe_distance_cm').value
+        
+        self.current_min_dist = 999.0
+        self.latest_nav_cmd = Twist()
+        self.pca_active = False
+
+        # --- 아두이노 연결 ---
+        try:
+            self.arduino = serial.Serial('/dev/ttyACM0', 115200, timeout=0.05)
+            self.get_logger().info('✅ PDW(아두이노) 연결 성공!')
+        except serial.SerialException:
+            self.get_logger().error('🚨 아두이노 시리얼 포트 에러!')
+            self.arduino = None
+
+        # --- 토픽 연결 ---
+        # (중요) 주행 제어기(Pure Pursuit 등)가 출력하는 토픽을 구독합니다.
+        self.sub_nav = self.create_subscription(Twist, '/nav_cmd_vel', self.nav_callback, 10)
+        self.pub_cmd = self.create_publisher(Twist, '/cmd_vel', 10)
+
+        self.timer = self.create_timer(0.02, self.control_loop)
+
+    def nav_callback(self, msg):
+        # 운전기사 노드가 내린 주행 명령 저장
+        self.latest_nav_cmd = msg
+
+    def control_loop(self):
+        # 1. 초음파 데이터 파싱 (안전한 에러 처리)
+        if self.arduino and self.arduino.in_waiting > 0:
+            try:
+                line = self.arduino.readline().decode('utf-8').strip()
+                if line.startswith('S,') and line.endswith(',E'):
+                    parts = line.split(',')
+                    if len(parts) == 6:
+                        # 4개 센서 중 최솟값 찾기
+                        dists = [float(p) for p in parts[1:5]]
+                        self.current_min_dist = min(dists)
+            except (ValueError, UnicodeDecodeError):
+                pass # 쓰레기값이 들어와도 무시 (안 뻗음)
+
+        # 2. PCA 제동 판단 로직
+        out_cmd = Twist()
+        if self.current_min_dist < self.min_safe_dist:
+            out_cmd.linear.x = 0.0
+            out_cmd.angular.z = 0.0
+            if not self.pca_active:
+                self.get_logger().error(f'🛑 [PCA 발동] 장애물 감지: {self.current_min_dist}cm! 긴급 제동!')
+                self.pca_active = True
+        else:
+            out_cmd = self.latest_nav_cmd
+            if self.pca_active:
+                self.get_logger().info('✅ [PCA 해제] 경로 클리어. 정상 주행 재개.')
+                self.pca_active = False
+
+        # 3. STM32(하드웨어)로 전달
+        self.pub_cmd.publish(out_cmd)
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = PCASafetyNode()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        if node.arduino and node.arduino.is_open:
+            node.arduino.close()
+        node.destroy_node()
+        rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
+```
+
+
 ## **1. 개요 (Overview)**
 
 
